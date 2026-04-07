@@ -15,6 +15,11 @@ from utils.data import (
     load_prediction_history, predict_upcoming_sales,
     _get_camp_type,
 )
+from utils.cross_channel import (
+    load_cross_channel, compute_overlap, linear_attribution,
+    touch_attribution, conversion_by_gap, geo_overlap,
+    load_monthly_overlap_trend, cannibalization_analysis,
+)
 
 # ─────────────────────────────────────────────
 #  PAGE CONFIG
@@ -282,6 +287,7 @@ with st.sidebar:
             "🔄 Funnel Analysis",
             "📱 Campaign Intelligence",
             "⚖️ Source Comparison",
+            "🔗 Cross-Channel",
             "🎨 Creative Performance",
             "📡 Meta Live",
             "💬 Data Assistant",
@@ -1430,6 +1436,219 @@ elif page == "⚖️ Source Comparison":
                 "canc_after": "Canc. After", "sold": "Sold",
             }, inplace=True)
             st.dataframe(call_display, use_container_width=True, hide_index=True)
+
+
+# ─────────────────────────────────────────────
+#  PAGE: CROSS-CHANNEL  (Eco ↔ Affiliate)
+# ─────────────────────────────────────────────
+elif page == "🔗 Cross-Channel":
+    st.title("Cross-Channel Analytics")
+    st.caption(
+        f"Ecoline ↔ Affiliate overlap & attribution  ·  "
+        f"{start_date.strftime('%b %d')} – {end_date.strftime('%b %d, %Y')}"
+    )
+
+    # ── Load data ───────────────────────────────────────────────────
+    xc_raw = load_cross_channel(start_date, end_date)
+    if xc_raw.empty:
+        st.warning("No cross-channel data for this period.")
+    else:
+        overlap_leads = compute_overlap(xc_raw)
+        cannibal = cannibalization_analysis(overlap_leads)
+        seg = cannibal.get("segments", {})
+
+        # ── 1. TOP KPIs ────────────────────────────────────────────
+        st.markdown("### 📊 Overview")
+        n_eco   = seg.get("eco_only", {}).get("leads", 0)
+        n_aff   = seg.get("aff_only", {}).get("leads", 0)
+        n_ovl   = seg.get("overlap", {}).get("leads", 0)
+        n_total = n_eco + n_aff + n_ovl
+
+        k1, k2, k3, k4 = st.columns(4)
+        k1.metric("Total Unique Leads", f"{n_total:,}")
+        k2.metric("Eco Only", f"{n_eco:,}", f"{round(n_eco/n_total*100,1) if n_total else 0}%")
+        k3.metric("Aff Only", f"{n_aff:,}", f"{round(n_aff/n_total*100,1) if n_total else 0}%")
+        k4.metric("Overlap", f"{n_ovl:,}", f"{round(n_ovl/n_total*100,1) if n_total else 0}%")
+
+        # ── 2. VENN VISUAL ──────────────────────────────────────────
+        st.markdown("### 🔵 Channel Overlap")
+        fig_venn = go.Figure()
+
+        # Eco circle (left)
+        fig_venn.add_shape(type="circle", x0=0, y0=0, x1=3, y1=3,
+                           fillcolor="rgba(99, 110, 250, 0.3)", line_color="rgba(99, 110, 250, 0.8)")
+        # Aff circle (right, overlapping)
+        fig_venn.add_shape(type="circle", x0=1.5, y0=0, x1=4.5, y1=3,
+                           fillcolor="rgba(239, 85, 59, 0.3)", line_color="rgba(239, 85, 59, 0.8)")
+        # Labels
+        fig_venn.add_annotation(x=0.9, y=1.5, text=f"<b>Eco Only</b><br>{n_eco:,}", showarrow=False,
+                                font=dict(size=14, color="#636EFA"))
+        fig_venn.add_annotation(x=2.25, y=1.5, text=f"<b>Overlap</b><br>{n_ovl:,}", showarrow=False,
+                                font=dict(size=14, color="#333"))
+        fig_venn.add_annotation(x=3.6, y=1.5, text=f"<b>Aff Only</b><br>{n_aff:,}", showarrow=False,
+                                font=dict(size=14, color="#EF553B"))
+
+        fig_venn.update_layout(
+            height=250, margin=dict(l=20, r=20, t=10, b=10),
+            xaxis=dict(visible=False, range=[-0.5, 5]),
+            yaxis=dict(visible=False, range=[-0.5, 3.5], scaleanchor="x"),
+            plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
+        )
+        st.plotly_chart(fig_venn, use_container_width=True)
+
+        # ── 3. CANNIBALIZATION vs SYNERGY ───────────────────────────
+        st.markdown("### ⚡ Synergy vs Cannibalization")
+        verdict = cannibal.get("verdict", "neutral")
+        lift = cannibal.get("synergy_lift_appt", 0)
+        if verdict == "synergy":
+            st.success(f"**SYNERGY** — Overlap leads convert to appointments **+{lift}pp** better than single-channel average")
+        elif verdict == "cannibalization":
+            st.error(f"**CANNIBALIZATION** — Overlap leads convert **{lift}pp** worse than single-channel average")
+        else:
+            st.info("**NEUTRAL** — No significant difference between overlap and single-channel conversion")
+
+        # Segment comparison table
+        seg_data = []
+        for s_name, s_label in [("eco_only", "Eco Only"), ("aff_only", "Aff Only"), ("overlap", "Overlap (both)")]:
+            s = seg.get(s_name, {})
+            seg_data.append({
+                "Segment": s_label,
+                "Leads": s.get("leads", 0),
+                "CR → Appt": f"{s.get('cr_appt', 0)}%",
+                "CR → Sold": f"{s.get('cr_sold', 0)}%",
+                "Avg Touches": s.get("avg_touches", 0),
+                "Revenue": f"${s.get('total_revenue', 0):,.0f}",
+            })
+        st.dataframe(pd.DataFrame(seg_data), use_container_width=True, hide_index=True)
+
+        # ── 4. MULTI-TOUCH ATTRIBUTION ──────────────────────────────
+        st.markdown("### 🏷️ Attribution Models")
+        st.caption("Compare how credit is split between Eco and Affiliate across 3 models")
+
+        # Linear
+        lin = linear_attribution(xc_raw)
+        # First-touch / Last-touch
+        ft_lt = touch_attribution(xc_raw)
+
+        if not lin.empty and not ft_lt.empty:
+            attr_tab1, attr_tab2 = st.tabs(["📊 Summary", "📋 Detail"])
+
+            with attr_tab1:
+                # Build comparison chart
+                attr_chart_data = []
+                for _, r in lin.iterrows():
+                    attr_chart_data.append({"Channel": r["channel"].upper(), "Model": "Linear",
+                                            "Attributed Sold": round(r["attributed_sold"], 1)})
+                for _, r in ft_lt.iterrows():
+                    attr_chart_data.append({"Channel": r["channel"].upper(), "Model": r["model"].replace("_", " ").title(),
+                                            "Attributed Sold": round(r["attributed_sold"], 1)})
+
+                fig_attr = px.bar(
+                    pd.DataFrame(attr_chart_data),
+                    x="Model", y="Attributed Sold", color="Channel",
+                    barmode="group",
+                    color_discrete_map={"ECO": "#636EFA", "AFF": "#EF553B"},
+                    title="Attributed Sales by Model",
+                )
+                fig_attr.update_layout(height=350)
+                st.plotly_chart(fig_attr, use_container_width=True)
+
+            with attr_tab2:
+                st.markdown("**Linear Attribution** (equal credit per touch)")
+                lin_display = lin.copy()
+                lin_display.columns = ["Channel", "Leads", "Appts", "Sold", "Revenue ($)", "Total Touches"]
+                lin_display["Channel"] = lin_display["Channel"].str.upper()
+                lin_display["Leads"] = lin_display["Leads"].round(0).astype(int)
+                lin_display["Appts"] = lin_display["Appts"].round(0).astype(int)
+                lin_display["Sold"] = lin_display["Sold"].round(1)
+                lin_display["Revenue ($)"] = lin_display["Revenue ($)"].apply(lambda x: f"${x:,.0f}")
+                st.dataframe(lin_display, use_container_width=True, hide_index=True)
+
+                st.markdown("**First-Touch & Last-Touch Attribution**")
+                ft_display = ft_lt.copy()
+                ft_display.columns = ["Channel", "Sold", "Revenue ($)", "Total Leads", "Model"]
+                ft_display["Channel"] = ft_display["Channel"].str.upper()
+                ft_display["Revenue ($)"] = ft_display["Revenue ($)"].apply(lambda x: f"${x:,.0f}")
+                ft_display = ft_display[["Model", "Channel", "Total Leads", "Sold", "Revenue ($)"]]
+                ft_display["Model"] = ft_display["Model"].str.replace("_", " ").str.title()
+                st.dataframe(ft_display, use_container_width=True, hide_index=True)
+
+        # ── 5. CONVERSION BY TOUCHPOINT GAP ─────────────────────────
+        st.markdown("### ⏱️ Optimal Touchpoint Window")
+        st.caption("How does the gap between first Eco touch and first Aff touch affect conversion?")
+
+        gap_data = conversion_by_gap(overlap_leads)
+        if not gap_data.empty:
+            gc1, gc2 = st.columns(2)
+            with gc1:
+                fig_gap_cr = px.bar(
+                    gap_data, x="gap_bucket", y="cr_appt",
+                    title="CR → Appointment by Gap",
+                    labels={"gap_bucket": "Days Between Touches", "cr_appt": "CR (%)"},
+                    color_discrete_sequence=["#636EFA"],
+                )
+                fig_gap_cr.update_layout(height=300)
+                st.plotly_chart(fig_gap_cr, use_container_width=True)
+            with gc2:
+                fig_gap_sold = px.bar(
+                    gap_data, x="gap_bucket", y="cr_sold",
+                    title="CR → Sold by Gap",
+                    labels={"gap_bucket": "Days Between Touches", "cr_sold": "CR (%)"},
+                    color_discrete_sequence=["#EF553B"],
+                )
+                fig_gap_sold.update_layout(height=300)
+                st.plotly_chart(fig_gap_sold, use_container_width=True)
+
+            st.dataframe(
+                gap_data.rename(columns={
+                    "gap_bucket": "Gap", "leads": "Leads", "appts": "Appts",
+                    "sold": "Sold", "cr_appt": "CR→Appt %", "cr_sold": "CR→Sold %",
+                    "avg_revenue": "Avg Revenue",
+                }),
+                use_container_width=True, hide_index=True,
+            )
+        else:
+            st.info("Not enough overlap leads to analyze touchpoint windows.")
+
+        # ── 6. GEO BREAKDOWN ────────────────────────────────────────
+        st.markdown("### 🗺️ Geographic Overlap")
+        geo_level = st.radio("Group by", ["province", "city"], horizontal=True, key="xc_geo_level")
+        geo_data = geo_overlap(overlap_leads, level=geo_level)
+        if not geo_data.empty:
+            geo_top = geo_data.head(20)
+
+            fig_geo = px.bar(
+                geo_top, x=geo_level, y=["eco_only", "aff_only", "overlap"],
+                title=f"Lead Distribution by {geo_level.title()}",
+                barmode="stack",
+                color_discrete_map={"eco_only": "#636EFA", "aff_only": "#EF553B", "overlap": "#AB63FA"},
+                labels={geo_level: geo_level.title()},
+            )
+            fig_geo.update_layout(height=400)
+            st.plotly_chart(fig_geo, use_container_width=True)
+
+            geo_display = geo_data.copy()
+            geo_display.columns = [
+                geo_level.title(), "Total Leads", "Eco Only", "Aff Only", "Overlap",
+                "Appts", "Sold", "Revenue", "Overlap %", "CR→Appt %", "CR→Sold %",
+            ]
+            geo_display["Revenue"] = geo_display["Revenue"].apply(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
+            st.dataframe(geo_display, use_container_width=True, hide_index=True)
+
+        # ── 7. MONTHLY OVERLAP TREND ────────────────────────────────
+        st.markdown("### 📈 Overlap Trend (Monthly)")
+        st.caption("New leads appearing in both channels per month (full history)")
+
+        trend_data = load_monthly_overlap_trend()
+        if not trend_data.empty:
+            fig_trend = px.area(
+                trend_data, x="month", y="new_overlaps",
+                title="Monthly New Cross-Channel Overlaps",
+                labels={"month": "Month", "new_overlaps": "New Overlaps"},
+                color_discrete_sequence=["#AB63FA"],
+            )
+            fig_trend.update_layout(height=300)
+            st.plotly_chart(fig_trend, use_container_width=True)
 
 
 # ─────────────────────────────────────────────
