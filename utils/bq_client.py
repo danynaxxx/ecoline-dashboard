@@ -1,5 +1,6 @@
 import streamlit as st
 from google.cloud import bigquery
+from google.oauth2 import service_account
 import os
 
 PROJECT_ID = "ecolinew"
@@ -8,12 +9,29 @@ PROJECT_ID = "ecolinew"
 def get_client():
     """
     Returns a BigQuery client.
-    Uses Application Default Credentials (gcloud auth application-default login)
-    or a service account key file if BQ_KEY_PATH env var is set.
+    Priority:
+    1. Streamlit Cloud secrets (gcp_service_account section)
+    2. BQ_KEY_PATH env var (local service account key file)
+    3. Application Default Credentials (gcloud auth)
     """
+    # 1. Streamlit Cloud secrets
+    try:
+        sa_info = st.secrets.get("gcp_service_account")
+        if sa_info:
+            creds = service_account.Credentials.from_service_account_info(
+                dict(sa_info),
+                scopes=["https://www.googleapis.com/auth/bigquery"],
+            )
+            return bigquery.Client(project=PROJECT_ID, credentials=creds)
+    except Exception:
+        pass
+
+    # 2. Service account key file
     key_path = os.environ.get("BQ_KEY_PATH")
     if key_path:
         return bigquery.Client.from_service_account_json(key_path, project=PROJECT_ID)
+
+    # 3. Application Default Credentials (local dev)
     return bigquery.Client(project=PROJECT_ID)
 
 
