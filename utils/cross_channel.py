@@ -91,6 +91,7 @@ def load_cross_channel(start: date, end: date) -> pd.DataFrame:
     df["date"] = df["dt"].dt.date
     df["phone_clean"] = df["phone"].str.replace(r"[^0-9]", "", regex=True)
     df["email_clean"] = df["email"].str.strip().str.lower()
+    df["amount"] = pd.to_numeric(df["amount"], errors="coerce").fillna(0).astype(float)
 
     return df
 
@@ -190,10 +191,11 @@ def linear_attribution(df: pd.DataFrame) -> pd.DataFrame:
     merged = touches.merge(outcomes, on="phone_clean")
 
     # Attributed values
+    merged["weight"] = merged["weight"].astype(float)
     merged["attr_lead"] = merged["weight"]
-    merged["attr_appt"] = merged["weight"] * merged["has_appt"].astype(int)
-    merged["attr_sold"] = merged["weight"] * merged["is_sold"].astype(int)
-    merged["attr_revenue"] = merged["weight"] * merged["revenue"].fillna(0)
+    merged["attr_appt"] = merged["weight"] * merged["has_appt"].astype(float)
+    merged["attr_sold"] = merged["weight"] * merged["is_sold"].astype(float)
+    merged["attr_revenue"] = merged["weight"] * merged["revenue"].astype(float)
 
     result = merged.groupby("channel").agg(
         attributed_leads   = ("attr_lead", "sum"),
@@ -227,7 +229,7 @@ def touch_attribution(df: pd.DataFrame) -> pd.DataFrame:
     ).reset_index()
 
     # Revenue only counts for sold leads
-    lead_touches["sold_revenue"] = lead_touches["revenue"] * lead_touches["is_sold"].astype(int)
+    lead_touches["sold_revenue"] = lead_touches["revenue"] * lead_touches["is_sold"].astype(float)
 
     results = []
     for model, col in [("first_touch", "first_channel"), ("last_touch", "last_channel")]:
