@@ -440,7 +440,6 @@ if page == "📊 Overview":
     _forms_appts = k['appts'] - _calls_funnel['appts']
 
     _cpa  = total_spend / k['appts']     if k['appts']     else None
-    _cpa1 = total_spend / k['showed_up'] if k['showed_up'] else None
     _cps  = total_spend / k['sold']      if k['sold']      else None
 
     # Row 1: spend funnel (6 cols)
@@ -462,11 +461,10 @@ if page == "📊 Overview":
             else:
                 st.metric(label, val)
 
-    # Row 2: quality metrics (5 cols)
-    row2 = st.columns(5)
+    # Row 2: quality metrics (4 cols)
+    row2 = st.columns(4)
     metrics_r2 = [
         ("Showed Up",    f"{k['showed_up']:,}",                                             None),
-        ("CPA1",         fmt_cad(_cpa1) if _cpa1 else "—",                                  None),
         ("Sold",         f"{k['sold']:,}",                                                  pct_delta(k['sold'],        kc['sold'])),
         ("CPS",          fmt_cad(_cps) if _cps else "—",                                    None),
         ("CR L→A",       f"{k['cr_la']}%",                                                  pct_delta(k['cr_la'],       kc['cr_la'])),
@@ -3074,7 +3072,7 @@ elif page == "📖 How It Works":
 - Расходы Affiliate в базе нет.
 - **CPL** (стоимость чистого лида) = расходы ÷ чистые лиды
 - **CPA** (стоимость аппойнтмента) = расходы ÷ аппойнтменты
-- **CPA1** (стоимость состоявшегося визита) = расходы ÷ showed up
+- **CPA1** (стоимость состоявшегося визита) = расходы ÷ (все аппы − upcoming). Учитывает только уже состоявшиеся аппы, исключая те что ещё не прошли.
 - **CPS** (стоимость продажи) = расходы ÷ продажи
 - Расходы по провинциям распределяются пропорционально количеству лидов из каждого города.
 """)
@@ -3564,7 +3562,7 @@ Summary: **daily trends and total spend = cache (up to date), geo breakdown = Bi
 - Only **Meta and TikTok** spend is tracked. Affiliate spend is not available.
 - **CPL** (Cost per Clean Lead) = Total Spend ÷ Clean Leads
 - **CPA** (Cost per Appointment) = Total Spend ÷ Appointments
-- **CPA1** (Cost per Happened Appointment) = Total Spend ÷ Showed Up
+- **CPA1** (Cost per Happened Appointment) = Total Spend ÷ (Appts − Upcoming). Only counts appointments that have already taken place, excluding future ones.
 - **CPS** (Cost per Sale) = Total Spend ÷ Sold
 - Province spend is distributed to cities proportionally by clean lead share within each province.
 """)
