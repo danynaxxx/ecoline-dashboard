@@ -3437,7 +3437,8 @@ A lead is **clean** if it passes deduplication AND has a valid contact method. A
 **Dedup window (default: 45 days):** if the same phone/email appeared within the last 45 days, the newer record is marked NOT clean (duplicate).
 
 **Hard overrides — always clean:**
-- Lead has a `cf_booked_date` or `cf_cancelled_date` → confirmed funnel engagement, always counted.
+- Lead has a `cf_appointment_date` or `cf_cancelled_date` AND is **not** a duplicate within the dedup window → confirmed funnel engagement, always counted.
+- Note: if the same phone/email appeared within the dedup window, deduplication takes priority even if the duplicate has an appointment. This prevents re-submits from bypassing the dedup window.
 
 **Hard overrides — never clean:**
 - Invalid phone + valid email + status = `lead` (no CRM activity, no appointment) → email-only leads that never responded are excluded. They can't be reliably contacted or tracked.
