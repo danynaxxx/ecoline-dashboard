@@ -233,6 +233,25 @@ button[kind="secondary"] {
 
 /* ── WARNINGS ── */
 [data-testid="stWarning"] { border-radius: 10px !important; }
+
+/* ── EXPANDER FIX — prevent text overlap with arrow icon ── */
+[data-testid="stExpander"] details summary {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    padding-right: 10px !important;
+}
+[data-testid="stExpander"] details summary span {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+/* Fix radio buttons / sidebar nav overlap */
+[data-testid="stSidebar"] .stRadio label {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -241,6 +260,16 @@ button[kind="secondary"] {
 # ─────────────────────────────────────────────
 with st.sidebar:
     st.markdown('<p class="sidebar-header">🌿 Ecoline</p>', unsafe_allow_html=True)
+    st.divider()
+
+    # ── DATABASE SELECTOR ──
+    from utils.bq_client import PROJECTS
+    _db_label = st.selectbox(
+        "🗄️ Database",
+        options=list(PROJECTS.keys()),
+        index=0,
+    )
+    active_project = PROJECTS[_db_label]
     st.divider()
 
     page = st.radio(
@@ -296,20 +325,20 @@ with st.sidebar:
 load_start = start_date - timedelta(days=max(default_dedup, 90))
 
 with st.spinner("Fetching data from BigQuery…"):
-    leads_raw   = load_leads(load_start, end_date)
-    calls_raw   = load_calls(start_date, end_date)
-    spend_df    = load_spend(start_date, end_date)
-    spend_daily = load_spend_daily(start_date, end_date)
+    leads_raw   = load_leads(load_start, end_date, active_project)
+    calls_raw   = load_calls(start_date, end_date, active_project)
+    spend_df    = load_spend(start_date, end_date, active_project)
+    spend_daily = load_spend_daily(start_date, end_date, active_project)
 
     # Dedup full history, then filter to chosen date range
     leads_all   = apply_dedup(leads_raw, default_dedup)
     leads_range = leads_all[leads_all["date"].between(start_date, end_date)].copy()
 
     # Comparison period
-    leads_comp_raw = load_leads(comp_start - timedelta(days=default_dedup), comp_end)
+    leads_comp_raw = load_leads(comp_start - timedelta(days=default_dedup), comp_end, active_project)
     leads_comp_all = apply_dedup(leads_comp_raw, default_dedup)
     leads_comp     = leads_comp_all[leads_comp_all["date"].between(comp_start, comp_end)].copy()
-    calls_comp     = load_calls(comp_start, comp_end)
+    calls_comp     = load_calls(comp_start, comp_end, active_project)
 
 # Apply source filter
 def filter_source(df):
@@ -399,7 +428,7 @@ if page == "📊 Overview":
     # Total spend
     total_spend = spend_daily["spend"].sum()
     total_clicks = spend_daily["clicks"].sum()
-    comp_spend = load_spend_daily(comp_start, comp_end)["spend"].sum()
+    comp_spend = load_spend_daily(comp_start, comp_end, active_project)["spend"].sum()
 
     # KPI row
     k  = funnel
@@ -479,7 +508,7 @@ if page == "📊 Overview":
     cr_as_pct = round(k['sold'] / showed_up * 100, 1) if showed_up else 0
 
     # Calibrated prediction: use historical upcoming→sold rate from closed months
-    pred_hist = load_prediction_history()
+    pred_hist = load_prediction_history(active_project)
     current_month = end_date.month  # use the calendar month of the selected period end
 
     if not pred_hist.empty:
@@ -2586,7 +2615,7 @@ RULES:
                     try:
                         _api_messages = [{"role": m["role"], "content": m["content"]} for m in st.session_state.da_messages]
                         _response = _client.messages.create(
-                            model="claude-sonnet-4-20250514",
+                            model="claude-haiku-4-5-20251001",
                             max_tokens=2048,
                             system=_da_context,
                             messages=_api_messages,
