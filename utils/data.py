@@ -134,50 +134,81 @@ def predict_upcoming_sales(upcoming_df: pd.DataFrame) -> dict:
 # ─────────────────────────────────────────────
 
 @st.cache_data(ttl=3600, show_spinner="Loading leads…")
-def load_leads(start: date, end: date) -> pd.DataFrame:
-    sql = f"""
-    SELECT
-        l.row_num,
-        l.dt,
-        l.phone,
-        l.email,
-        l.name,
-        l.postal_code,
-        l.utm_source,
-        l.utm_medium,
-        l.utm_campaign,
-        l.utm_content,
-        l.utm_term,
-        ls.status_with_cancelled          AS status,
-        ls.cf_booked_date,
-        ls.cf_appointment_date,
-        ls.cf_sold_date,
-        ls.cf_cancelled_date,
-        ls.cf_amount                       AS amount,
-        COALESCE(p.province, 'Unknown')    AS province,
-        COALESCE(ccm.city, c.city, 'Unknown city') AS city
-    FROM `ecolinew.raw.leads` l
-    LEFT JOIN `ecolinew.raw.leads_status` ls ON l.row_num = ls.row_num
-    LEFT JOIN `ecolinew.raw.city_map`     c
-        ON UPPER(SUBSTR(REGEXP_REPLACE(l.postal_code, r'\\s', ''), 1, 3)) = c.fsa_postal_code
-    LEFT JOIN `ecolinew.raw.call_city_map` ccm
-        ON LOWER(c.city) = ccm.cust_city_key
-    LEFT JOIN `ecolinew.raw.province_map` p
-        ON UPPER(SUBSTR(REGEXP_REPLACE(l.postal_code, r'\\s', ''), 1, 1)) = p.postal_district
-    WHERE DATE(l.dt) BETWEEN '{start}' AND '{end}'
-      AND (
-          -- Valid North American phone (primary identifier)
-          REGEXP_CONTAINS(REGEXP_REPLACE(COALESCE(l.phone, ''), r'[^0-9]', ''), r'^[2-9][0-9]{{9}}$')
-          -- OR has a plausible email (can be reached / booked via email)
-          OR (l.email IS NOT NULL AND l.email LIKE '%@%.%')
-          -- OR already has an appointment or cancellation in CRM
-          -- (proves the lead went through the funnel regardless of phone quality)
-          OR ls.cf_appointment_date IS NOT NULL
-          OR ls.cf_cancelled_date   IS NOT NULL
-      )
-    ORDER BY l.dt
-    """
-    df = run_query(sql)
+def load_leads(start: date, end: date, project_id: str = "ecolinew") -> pd.DataFrame:
+    # eco-affiliate: leads_with_status has lead_row_num (not row_num),
+    # province & city already embedded — no JOINs needed
+    if project_id == "eco-affiliate":
+        sql = f"""
+        SELECT
+            lws.lead_row_num                    AS row_num,
+            lws.dt,
+            lws.phone,
+            lws.email,
+            lws.name,
+            lws.postal_code,
+            lws.utm_source,
+            lws.utm_medium,
+            lws.utm_campaign,
+            lws.utm_content,
+            lws.utm_term,
+            lws.status_with_cancelled           AS status,
+            lws.cf_booked_date,
+            lws.cf_appointment_date,
+            lws.cf_sold_date,
+            lws.cf_cancelled_date,
+            lws.cf_amount                       AS amount,
+            COALESCE(lws.province, 'Unknown')   AS province,
+            COALESCE(lws.city, 'Unknown city')  AS city
+        FROM `eco-affiliate.raw.leads_with_status` lws
+        WHERE DATE(lws.dt) BETWEEN '{start}' AND '{end}'
+          AND (
+              REGEXP_CONTAINS(REGEXP_REPLACE(COALESCE(lws.phone, ''), r'[^0-9]', ''), r'^[2-9][0-9]{{9}}$')
+              OR (lws.email IS NOT NULL AND lws.email LIKE '%@%.%')
+              OR lws.cf_appointment_date IS NOT NULL
+              OR lws.cf_cancelled_date   IS NOT NULL
+          )
+        ORDER BY lws.dt
+        """
+    else:
+        sql = f"""
+        SELECT
+            l.row_num,
+            l.dt,
+            l.phone,
+            l.email,
+            l.name,
+            l.postal_code,
+            l.utm_source,
+            l.utm_medium,
+            l.utm_campaign,
+            l.utm_content,
+            l.utm_term,
+            ls.status_with_cancelled          AS status,
+            ls.cf_booked_date,
+            ls.cf_appointment_date,
+            ls.cf_sold_date,
+            ls.cf_cancelled_date,
+            ls.cf_amount                       AS amount,
+            COALESCE(p.province, 'Unknown')    AS province,
+            COALESCE(ccm.city, c.city, 'Unknown city') AS city
+        FROM `{project_id}.raw.leads` l
+        LEFT JOIN `{project_id}.raw.leads_status` ls ON l.row_num = ls.row_num
+        LEFT JOIN `{project_id}.raw.city_map`     c
+            ON UPPER(SUBSTR(REGEXP_REPLACE(l.postal_code, r'\\s', ''), 1, 3)) = c.fsa_postal_code
+        LEFT JOIN `{project_id}.raw.call_city_map` ccm
+            ON LOWER(c.city) = ccm.cust_city_key
+        LEFT JOIN `{project_id}.raw.province_map` p
+            ON UPPER(SUBSTR(REGEXP_REPLACE(l.postal_code, r'\\s', ''), 1, 1)) = p.postal_district
+        WHERE DATE(l.dt) BETWEEN '{start}' AND '{end}'
+          AND (
+              REGEXP_CONTAINS(REGEXP_REPLACE(COALESCE(l.phone, ''), r'[^0-9]', ''), r'^[2-9][0-9]{{9}}$')
+              OR (l.email IS NOT NULL AND l.email LIKE '%@%.%')
+              OR ls.cf_appointment_date IS NOT NULL
+              OR ls.cf_cancelled_date   IS NOT NULL
+          )
+        ORDER BY l.dt
+        """
+    df = run_query(sql, project_id)
     df["dt"] = pd.to_datetime(df["dt"], utc=True)
     df["date"] = df["dt"].dt.date
     df["phone_clean"] = df["phone"].str.replace(r"[^0-9]", "", regex=True)
@@ -218,9 +249,11 @@ def load_leads(start: date, end: date) -> pd.DataFrame:
 
 
 @st.cache_data(ttl=3600, show_spinner="Loading calls…")
-def load_calls(start: date, end: date) -> pd.DataFrame:
-    province_case = """
-        CASE TRIM(REGEXP_EXTRACT(TRIM(c.name), r'\\b([A-Z]{{2}})\\s*$'))
+def load_calls(start: date, end: date, project_id: str = "ecolinew") -> pd.DataFrame:
+    # alias differs: ecolinew uses 'c', affiliate uses 'cws'
+    _alias = "cws" if project_id == "eco-affiliate" else "c"
+    province_case = f"""
+        CASE TRIM(REGEXP_EXTRACT(TRIM({_alias}.name), r'\\b([A-Z]{{{{2}}}})\\s*$'))
             WHEN 'AB' THEN 'Alberta'
             WHEN 'BC' THEN 'British Columbia'
             WHEN 'MB' THEN 'Manitoba'
@@ -237,32 +270,61 @@ def load_calls(start: date, end: date) -> pd.DataFrame:
             ELSE 'Unknown'
         END
     """
-    sql = f"""
-    SELECT
-        c.calls_row_num                      AS row_num,
-        c.dt,
-        c.phone,
-        c.email,
-        c.name,
-        c.source_name,
-        c.tracking_number,
-        COALESCE(ccm.city, c.cust_city)      AS city,
-        {province_case}                      AS province,
-        c.first_call,
-        cs.status_with_cancelled             AS status,
-        cs.cf_booked_date,
-        cs.cf_appointment_date,
-        cs.cf_sold_date,
-        cs.cf_cancelled_date,
-        cs.cf_amount                         AS amount
-    FROM `ecolinew.raw.calls` c
-    LEFT JOIN `ecolinew.raw.calls_status` cs ON c.calls_row_num = cs.calls_row_num
-    LEFT JOIN `ecolinew.raw.call_city_map` ccm ON LOWER(TRIM(c.cust_city)) = ccm.cust_city_key
-    WHERE DATE(c.dt) BETWEEN '{start}' AND '{end}'
-      AND c.first_call = 'TRUE'
-    ORDER BY c.dt
-    """
-    df = run_query(sql)
+    # eco-affiliate: calls_with_status has status already embedded
+    # calls_row_num matches ecolinew naming; need city_map JOIN for province
+    if project_id == "eco-affiliate":
+        sql = f"""
+        SELECT
+            cws.calls_row_num                           AS row_num,
+            cws.dt,
+            cws.phone,
+            cws.email,
+            cws.name,
+            cws.source_name,
+            cws.tracking_number,
+            COALESCE(ccm.city, cws.cust_city)           AS city,
+            {province_case}                             AS province,
+            cws.first_call,
+            cws.status_with_cancelled                   AS status,
+            cws.cf_booked_date,
+            cws.cf_appointment_date,
+            cws.cf_sold_date,
+            cws.cf_cancelled_date,
+            cws.cf_amount                               AS amount
+        FROM `eco-affiliate.raw.calls_with_status` cws
+        LEFT JOIN `eco-affiliate.raw.call_city_map` ccm
+            ON LOWER(TRIM(cws.cust_city)) = ccm.cust_city_key
+        WHERE DATE(cws.dt) BETWEEN '{start}' AND '{end}'
+          AND cws.first_call = TRUE
+        ORDER BY cws.dt
+        """
+    else:
+        sql = f"""
+        SELECT
+            c.calls_row_num                      AS row_num,
+            c.dt,
+            c.phone,
+            c.email,
+            c.name,
+            c.source_name,
+            c.tracking_number,
+            COALESCE(ccm.city, c.cust_city)      AS city,
+            {province_case}                      AS province,
+            c.first_call,
+            cs.status_with_cancelled             AS status,
+            cs.cf_booked_date,
+            cs.cf_appointment_date,
+            cs.cf_sold_date,
+            cs.cf_cancelled_date,
+            cs.cf_amount                         AS amount
+        FROM `{project_id}.raw.calls` c
+        LEFT JOIN `{project_id}.raw.calls_status` cs ON c.calls_row_num = cs.calls_row_num
+        LEFT JOIN `{project_id}.raw.call_city_map` ccm ON LOWER(TRIM(c.cust_city)) = ccm.cust_city_key
+        WHERE DATE(c.dt) BETWEEN '{start}' AND '{end}'
+          AND c.first_call = 'TRUE'
+        ORDER BY c.dt
+        """
+    df = run_query(sql, project_id)
     df["dt"] = pd.to_datetime(df["dt"], utc=True)
     df["date"] = df["dt"].dt.date
     df["phone_clean"] = df["phone"].str.replace(r"[^0-9]", "", regex=True)
@@ -292,33 +354,37 @@ def load_calls(start: date, end: date) -> pd.DataFrame:
 
 
 @st.cache_data(ttl=3600, show_spinner="Loading prediction history…")
-def load_prediction_history() -> pd.DataFrame:
+def load_prediction_history(project_id: str = "ecolinew") -> pd.DataFrame:
     """
     For each past month: how many appointments were 'upcoming' at month end
     (scheduled after the last day of that lead month) and what actually happened.
     Used to calibrate the upcoming→sold prediction rate.
     Only loads months at least 2 months ago so the data is settled.
     """
-    sql = """
+    # eco-affiliate: leads_with_status is pre-joined, use l.* for all fields
+    src_table = ("`eco-affiliate.raw.leads_with_status` l"
+                 if project_id == "eco-affiliate"
+                 else "`{p}.raw.leads` l LEFT JOIN `{p}.raw.leads_status` ls ON l.row_num = ls.row_num".format(p=project_id))
+    alias = "l" if project_id == "eco-affiliate" else "ls"
+    sql = f"""
     SELECT
       FORMAT_DATE('%Y-%m', DATE(l.dt))   AS lead_month,
       LAST_DAY(DATE(l.dt), MONTH)        AS month_end,
-      COUNTIF(ls.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH))
+      COUNTIF({alias}.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH))
           AS upcoming_at_month_end,
-      COUNTIF(ls.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH)
-          AND ls.status_with_cancelled = 'sold')
+      COUNTIF({alias}.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH)
+          AND {alias}.status_with_cancelled = 'sold')
           AS upcoming_became_sold,
-      COUNTIF(ls.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH)
-          AND ls.status_with_cancelled = 'cancelled before appt')
+      COUNTIF({alias}.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH)
+          AND {alias}.status_with_cancelled = 'cancelled before appt')
           AS upcoming_canc_before,
-      COUNTIF(ls.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH)
-          AND ls.status_with_cancelled = 'cancelled')
+      COUNTIF({alias}.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH)
+          AND {alias}.status_with_cancelled = 'cancelled')
           AS upcoming_canc_after,
-      COUNTIF(ls.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH)
-          AND ls.status_with_cancelled = 'appointment')
+      COUNTIF({alias}.cf_appointment_date > LAST_DAY(DATE(l.dt), MONTH)
+          AND {alias}.status_with_cancelled = 'appointment')
           AS upcoming_still_pending
-    FROM `ecolinew.raw.leads` l
-    LEFT JOIN `ecolinew.raw.leads_status` ls ON l.row_num = ls.row_num
+    FROM {src_table}
     WHERE DATE(l.dt) BETWEEN
         DATE_TRUNC(DATE_SUB(CURRENT_DATE(), INTERVAL 12 MONTH), MONTH)
       AND
@@ -326,13 +392,13 @@ def load_prediction_history() -> pd.DataFrame:
       AND (
         REGEXP_CONTAINS(REGEXP_REPLACE(COALESCE(l.phone,''), r'[^0-9]',''), r'^[2-9][0-9]{{9}}$')
         OR (l.email IS NOT NULL AND l.email LIKE '%@%.%')
-        OR ls.cf_appointment_date IS NOT NULL
-        OR ls.cf_cancelled_date   IS NOT NULL
+        OR {alias}.cf_appointment_date IS NOT NULL
+        OR {alias}.cf_cancelled_date   IS NOT NULL
       )
     GROUP BY 1, 2
     ORDER BY 1
     """
-    df = run_query(sql)
+    df = run_query(sql, project_id)
     if df.empty:
         return df
     df["upcoming_at_month_end"]  = df["upcoming_at_month_end"].astype(int)
@@ -360,14 +426,43 @@ def load_prediction_history() -> pd.DataFrame:
 
 
 @st.cache_data(ttl=3600, show_spinner="Loading spend…")
-def load_spend(start: date, end: date) -> pd.DataFrame:
-    sql = f"""
-    SELECT date, province, spend, clicks
-    FROM `ecolinew.raw.spend_geo_snap`
-    WHERE source = 'facebook'
-      AND date BETWEEN '{start}' AND '{end}'
-    """
-    df = run_query(sql)
+def load_spend(start: date, end: date, project_id: str = "ecolinew") -> pd.DataFrame:
+    # eco-affiliate: no real ad spend — calculate as leads × $70 CAD per province
+    if project_id == "eco-affiliate":
+        AFFILIATE_CPL_CAD = 70.0
+        sql = f"""
+        SELECT
+            DATE(lws.dt)                        AS date,
+            COALESCE(lws.province, 'Unknown')   AS province,
+            COUNT(*)                            AS lead_count
+        FROM `eco-affiliate.raw.leads_with_status` lws
+        WHERE DATE(lws.dt) BETWEEN '{start}' AND '{end}'
+          AND (
+              REGEXP_CONTAINS(REGEXP_REPLACE(COALESCE(lws.phone,''), r'[^0-9]',''), r'^[2-9][0-9]{{9}}$')
+              OR (lws.email IS NOT NULL AND lws.email LIKE '%@%.%')
+              OR lws.cf_appointment_date IS NOT NULL
+              OR lws.cf_cancelled_date   IS NOT NULL
+          )
+        GROUP BY 1, 2
+        ORDER BY 1
+        """
+        df = run_query(sql, project_id)
+        if df.empty:
+            return pd.DataFrame(columns=["date", "province", "spend", "clicks"])
+        df["date"]   = pd.to_datetime(df["date"]).dt.date
+        df["spend"]  = df["lead_count"].astype(float) * AFFILIATE_CPL_CAD
+        df["clicks"] = 0
+        return df[["date", "province", "spend", "clicks"]]
+    else:
+        sql = f"""
+        SELECT date, province, spend, clicks
+        FROM `{project_id}.raw.spend_geo_snap`
+        WHERE source = 'facebook'
+          AND date BETWEEN '{start}' AND '{end}'
+        """
+    df = run_query(sql, project_id)
+    if df.empty:
+        return df
     df["spend"] = df["spend"].astype(float)
     df["clicks"] = df["clicks"].astype(float)
     return df
@@ -404,11 +499,41 @@ def _load_meta_spend_cache() -> pd.DataFrame | None:
 
 
 @st.cache_data(ttl=3600, show_spinner="Loading daily spend…")
-def load_spend_daily(start: date, end: date) -> pd.DataFrame:
+def load_spend_daily(start: date, end: date, project_id: str = "ecolinew") -> pd.DataFrame:
     """
-    Load daily spend. Prefers Meta direct cache for recent dates (no Windsor delay).
-    Falls back to BigQuery Windsor data for any dates not in the cache.
+    Load daily spend.
+    - For eco-affiliate: spend is calculated as clean leads × $70 CAD (fixed price per lead).
+      No real ad spend is shared — affiliate sells leads at a fixed rate.
+    - For ecolinew: prefers Meta direct cache, falls back to BigQuery Windsor data.
     """
+    # ── AFFILIATE: spend = leads × $70 CAD ─────────────────────────────────
+    if project_id == "eco-affiliate":
+        AFFILIATE_CPL_CAD = 70.0
+        sql = f"""
+        SELECT
+            DATE(lws.dt)  AS date,
+            COUNT(*)      AS lead_count
+        FROM `eco-affiliate.raw.leads_with_status` lws
+        WHERE DATE(lws.dt) BETWEEN '{start}' AND '{end}'
+          AND (
+              REGEXP_CONTAINS(REGEXP_REPLACE(COALESCE(lws.phone,''), r'[^0-9]',''), r'^[2-9][0-9]{{9}}$')
+              OR (lws.email IS NOT NULL AND lws.email LIKE '%@%.%')
+              OR lws.cf_appointment_date IS NOT NULL
+              OR lws.cf_cancelled_date   IS NOT NULL
+          )
+        GROUP BY 1
+        ORDER BY 1
+        """
+        df = run_query(sql, project_id)
+        if df.empty:
+            return pd.DataFrame(columns=["date", "source", "spend", "clicks"])
+        df["date"]   = pd.to_datetime(df["date"]).dt.date
+        df["spend"]  = df["lead_count"].astype(float) * AFFILIATE_CPL_CAD
+        df["clicks"] = 0
+        df["source"] = "affiliate"
+        return df[["date", "source", "spend", "clicks"]]
+
+    # ── MAIN (ecolinew): Meta cache + Windsor BQ ────────────────────────────
     cache_df = _load_meta_spend_cache()
 
     if cache_df is not None and not cache_df.empty:
@@ -423,11 +548,11 @@ def load_spend_daily(start: date, end: date) -> pd.DataFrame:
             bq_end   = missing[-1]
             sql = f"""
             SELECT date, source, spend, clicks
-            FROM `ecolinew.raw.spend_snap`
+            FROM `{project_id}.raw.spend_snap`
             WHERE source IN ('facebook', 'tiktok')
               AND date BETWEEN '{bq_start}' AND '{bq_end}'
             """
-            bq_df = run_query(sql)
+            bq_df = run_query(sql, project_id)
             bq_df["spend"]  = bq_df["spend"].astype(float)
             bq_df["clicks"] = bq_df["clicks"].astype(float)
             bq_df["date"]   = pd.to_datetime(bq_df["date"]).dt.date
@@ -439,11 +564,11 @@ def load_spend_daily(start: date, end: date) -> pd.DataFrame:
     # Full fallback to Windsor BQ
     sql = f"""
     SELECT date, source, spend, clicks
-    FROM `ecolinew.raw.spend_snap`
+    FROM `{project_id}.raw.spend_snap`
     WHERE source IN ('facebook', 'tiktok')
       AND date BETWEEN '{start}' AND '{end}'
     """
-    df = run_query(sql)
+    df = run_query(sql, project_id)
     df["spend"]  = df["spend"].astype(float)
     df["clicks"] = df["clicks"].astype(float)
     return df
@@ -501,7 +626,10 @@ def apply_dedup(df: pd.DataFrame, dedup_days: int) -> pd.DataFrame:
     df["is_clean"] = df["_days_since_prev"].isna() | (df["_days_since_prev"] >= dedup_days)
 
     # ── Hard override +: appointment/cancellation → always clean ───────────
-    df.loc[has_appt_or_canc, "is_clean"] = True
+    # Exception: if this is a recent duplicate (within dedup window), dedup takes priority.
+    # This prevents re-submits with appointments from bypassing deduplication.
+    is_recent_dup = df["_days_since_prev"].notna() & (df["_days_since_prev"] < dedup_days)
+    df.loc[has_appt_or_canc & ~is_recent_dup, "is_clean"] = True
 
     # ── Hard override −: invalid phone + no real engagement → NOT clean ────
     # Email-only leads that never booked, cancelled, or converted can't be
@@ -529,7 +657,8 @@ def compute_funnel(df: pd.DataFrame, appt_window=None) -> dict:
     """
     total = len(df)
     clean = int(df["is_clean"].fillna(False).sum()) if "is_clean" in df.columns else total
-    sold  = int((df["status"] == "sold").sum())
+    is_clean_mask = df["is_clean"].fillna(False) if "is_clean" in df.columns else pd.Series(True, index=df.index)
+    sold  = int(((df["status"] == "sold") & is_clean_mask).sum())
 
     appt_dt  = pd.to_datetime(df["cf_appointment_date"]) if "cf_appointment_date" in df.columns else pd.Series(pd.NaT, index=df.index)
     sold_dt  = pd.to_datetime(df["cf_sold_date"])        if "cf_sold_date"         in df.columns else pd.Series(pd.NaT, index=df.index)
