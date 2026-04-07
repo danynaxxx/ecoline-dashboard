@@ -1,0 +1,127 @@
+{
+  "fetched_at": "2026-04-04T00:00:00Z",
+  "date_preset": "last_month",
+  "breakdowns": {
+    "120214739636260277": {
+      "campaign_name": "ACC3 - ALL REGIONS - LG - ABO",
+      "rows": [
+        {"region": "Alberta", "spend": 6949.19, "impressions": 428187, "leads": 68, "cpm": 16.23},
+        {"region": "British Columbia", "spend": 5823.90, "impressions": 341483, "leads": 61, "cpm": 17.05},
+        {"region": "Manitoba", "spend": 2380.77, "impressions": 199839, "leads": 29, "cpm": 11.91},
+        {"region": "New Brunswick", "spend": 346.46, "impressions": 13296, "leads": 2, "cpm": 26.06},
+        {"region": "Newfoundland and Labrador", "spend": 388.94, "impressions": 21160, "leads": 2, "cpm": 18.38},
+        {"region": "Nova Scotia", "spend": 588.99, "impressions": 23141, "leads": 5, "cpm": 25.45},
+        {"region": "Ontario", "spend": 3272.65, "impressions": 193607, "leads": 30, "cpm": 16.90},
+        {"region": "Saskatchewan", "spend": 2191.02, "impressions": 172754, "leads": 18, "cpm": 12.68}
+      ]
+    },
+    "120214817445000277": {
+      "campaign_name": "ACC3 - ALL REGIONS - LG - ABO - HARD FORM",
+      "rows": [
+        {"region": "Alberta", "spend": 8019.62, "impressions": 286227, "leads": 70, "cpm": 28.02},
+        {"region": "British Columbia", "spend": 6273.29, "impressions": 217303, "leads": 48, "cpm": 28.87},
+        {"region": "Manitoba", "spend": 2257.12, "impressions": 113552, "leads": 24, "cpm": 19.88},
+        {"region": "Ontario", "spend": 5572.03, "impressions": 200843, "leads": 50, "cpm": 27.74},
+        {"region": "Saskatchewan", "spend": 3428.53, "impressions": 173625, "leads": 32, "cpm": 19.75}
+      ]
+    },
+    "120215097250010277": {
+      "campaign_name": "ACC3 - ALL REGIONS - LG - ABO - HARD FORM - MANUFACTURER",
+      "rows": [
+        {"region": "Alberta", "spend": 1909.66, "impressions": 57057, "leads": 15, "cpm": 33.47},
+        {"region": "British Columbia", "spend": 1792.23, "impressions": 52826, "leads": 22, "cpm": 33.93}
+      ]
+    },
+    "120230059608380461": {
+      "campaign_name": "ACC4 - ALL REGIONS - CONV - Cost Cap 3 - TEST 2",
+      "rows": [
+        {"region": "Alberta", "spend": 52926.83, "impressions": 2425093, "leads": null, "cpm": 21.82},
+        {"region": "British Columbia", "spend": 29862.54, "impressions": 1292262, "leads": null, "cpm": 23.11},
+        {"region": "Manitoba", "spend": 15625.39, "impressions": 919438, "leads": null, "cpm": 16.99},
+        {"region": "New Brunswick", "spend": 27720.14, "impressions": 1604042, "leads": null, "cpm": 17.28},
+        {"region": "Newfoundland and Labrador", "spend": 9903.22, "impressions": 687193, "leads": 1, "cpm": 14.41},
+        {"region": "Nova Scotia", "spend": 18199.42, "impressions": 1036257, "leads": null, "cpm": 17.56},
+        {"region": "Ontario", "spend": 21774.91, "impressions": 924497, "leads": null, "cpm": 23.55},
+        {"region": "Saskatchewan", "spend": 13685.45, "impressions": 897922, "leads": null, "cpm": 15.24}
+      ]
+    },
+    "120237015130990461": {
+      "campaign_name": "ACC4 - ALL REGIONS - CONV - WEB - SPRING INSTALLATION",
+      "rows": [
+        {"region": "Alberta", "spend": 21088.91, "impressions": 1173072, "leads": null, "cpm": 17.98},
+        {"region": "British Columbia", "spend": 9356.74, "impressions": 500729, "leads": null, "cpm": 18.69},
+        {"region": "Manitoba", "spend": 7139.73, "impressions": 516305, "leads": 1, "cpm": 13.83},
+        {"region": "New Brunswick", "spend": 13383.61, "impressions": 1059077, "leads": 2, "cpm": 12.64},
+        {"region": "Newfoundland and Labrador", "spend": 4941.52, "impressions": 455424, "leads": null, "cpm": 10.85},
+        {"region": "Nova Scotia", "spend": 9011.56, "impressions": 682923, "leads": null, "cpm": 13.20},
+        {"region": "Ontario", "spend": 7534.67, "impressions": 434635, "leads": null, "cpm": 17.34},
+        {"region": "Saskatchewan", "spend": 6661.04, "impressions": 525962, "leads": null, "cpm": 12.66}
+      ]
+    },
+    "120239387801490461": {
+      "campaign_name": "ACC4 - ALL REGIONS - CONV - WEB - SUMMER INSTALLATION",
+      "rows": [
+        {"region": "Alberta", "spend": 424.80, "impressions": 21648, "leads": null, "cpm": 19.62},
+        {"region": "British Columbia", "spend": 178.86, "impressions": 8780, "leads": null, "cpm": 20.37},
+        {"region": "Manitoba", "spend": 144.07, "impressions": 9088, "leads": null, "cpm": 15.85},
+        {"region": "New Brunswick", "spend": 471.17, "impressions": 33978, "leads": null, "cpm": 13.87},
+        {"region": "Newfoundland and Labrador", "spend": 167.39, "impressions": 14545, "leads": null, "cpm": 11.51},
+        {"region": "Nova Scotia", "spend": 186.54, "impressions": 13411, "leads": null, "cpm": 13.91},
+        {"region": "Ontario", "spend": 151.27, "impressions": 7554, "leads": null, "cpm": 20.03},
+        {"region": "Saskatchewan", "spend": 120.89, "impressions": 8588, "leads": null, "cpm": 14.08}
+      ]
+    },
+    "120237520148280330": {
+      "campaign_name": "ACC7 - ALL REGIONS - LG - ABO - Spring installation",
+      "rows": [
+        {"region": "Alberta", "spend": 13558.37, "impressions": 380103, "leads": 131, "cpm": 35.67},
+        {"region": "British Columbia", "spend": 2067.47, "impressions": 56772, "leads": 10, "cpm": 36.42},
+        {"region": "Manitoba", "spend": 3015.21, "impressions": 98672, "leads": 33, "cpm": 30.56},
+        {"region": "New Brunswick", "spend": 3470.13, "impressions": 109075, "leads": 29, "cpm": 31.81},
+        {"region": "Newfoundland and Labrador", "spend": 1618.24, "impressions": 63590, "leads": 12, "cpm": 25.45},
+        {"region": "Nova Scotia", "spend": 2620.45, "impressions": 75201, "leads": 30, "cpm": 34.85},
+        {"region": "Ontario", "spend": 11110.82, "impressions": 294199, "leads": 101, "cpm": 37.77},
+        {"region": "Saskatchewan", "spend": 2247.75, "impressions": 89307, "leads": 26, "cpm": 25.17}
+      ]
+    },
+    "120238556595110330": {
+      "campaign_name": "ACC7 - ALL REGIONS - LG - DCO - Spring installation - Hyp 200 - p2",
+      "rows": [
+        {"region": "Alberta", "spend": 6225.22, "impressions": 824815, "leads": 274, "cpm": 7.55},
+        {"region": "British Columbia", "spend": 860.58, "impressions": 115842, "leads": 29, "cpm": 7.43},
+        {"region": "Manitoba", "spend": 1636.19, "impressions": 221271, "leads": 67, "cpm": 7.39},
+        {"region": "New Brunswick", "spend": 1701.31, "impressions": 227142, "leads": 71, "cpm": 7.49},
+        {"region": "Newfoundland and Labrador", "spend": 1246.57, "impressions": 192090, "leads": 53, "cpm": 6.49},
+        {"region": "Nova Scotia", "spend": 1769.68, "impressions": 234636, "leads": 76, "cpm": 7.54},
+        {"region": "Ontario", "spend": 7000.63, "impressions": 882453, "leads": 282, "cpm": 7.93},
+        {"region": "Saskatchewan", "spend": 1085.29, "impressions": 153937, "leads": 35, "cpm": 7.05}
+      ]
+    },
+    "120239791128850330": {
+      "campaign_name": "ACC7 - ALL REGIONS - LG - DCO - Summer installation",
+      "rows": [
+        {"region": "Alberta", "spend": 769.31, "impressions": 52200, "leads": 23, "cpm": 14.74},
+        {"region": "British Columbia", "spend": 105.18, "impressions": 6547, "leads": 5, "cpm": 16.06},
+        {"region": "Manitoba", "spend": 192.55, "impressions": 13949, "leads": 3, "cpm": 13.80},
+        {"region": "New Brunswick", "spend": 420.24, "impressions": 28295, "leads": 13, "cpm": 14.85},
+        {"region": "Newfoundland and Labrador", "spend": 219.46, "impressions": 22762, "leads": 5, "cpm": 9.64},
+        {"region": "Nova Scotia", "spend": 330.65, "impressions": 24910, "leads": 13, "cpm": 13.27},
+        {"region": "Ontario", "spend": 847.10, "impressions": 60341, "leads": 28, "cpm": 14.04},
+        {"region": "Saskatchewan", "spend": 158.26, "impressions": 13322, "leads": 4, "cpm": 11.88}
+      ]
+    },
+    "120231724302180251": {
+      "campaign_name": "ACC8 - ALL REGIONS - CONV - BID CAP - CBO - TEST 3",
+      "rows": [
+        {"region": "Alberta", "spend": 1590.32, "impressions": 75670, "leads": null, "cpm": 21.02},
+        {"region": "British Columbia", "spend": 897.17, "impressions": 44169, "leads": null, "cpm": 20.31},
+        {"region": "Manitoba", "spend": 579.34, "impressions": 34327, "leads": null, "cpm": 16.88},
+        {"region": "New Brunswick", "spend": 1257.89, "impressions": 68167, "leads": null, "cpm": 18.45},
+        {"region": "Newfoundland and Labrador", "spend": 335.69, "impressions": 24590, "leads": null, "cpm": 13.65},
+        {"region": "Nova Scotia", "spend": 584.33, "impressions": 35745, "leads": null, "cpm": 16.35},
+        {"region": "Ontario", "spend": 545.12, "impressions": 23660, "leads": null, "cpm": 23.04},
+        {"region": "Saskatchewan", "spend": 432.32, "impressions": 27615, "leads": null, "cpm": 15.66}
+      ]
+    }
+  }
+}

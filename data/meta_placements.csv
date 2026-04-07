@@ -1,0 +1,1801 @@
+ad_id,ad_name,account,publisher_platform,platform_position,spend,impressions,clicks,link_clicks,landing_page_views
+6286157159283,video_ 1,ACC1,audience_network,an_classic,354.988388,49825,50,51,33
+6286157159283,video_ 1,ACC1,facebook,facebook_reels,0.659923,271,0,,
+6286157159283,video_ 1,ACC1,facebook,facebook_stories,0.239972,18,0,,
+6286157159283,video_ 1,ACC1,facebook,feed,0.569933,258,1,,3
+6286157159283,video_ 1,ACC1,facebook,instream_video,9.258915,702,1,1,1
+6286157159283,video_ 1,ACC1,facebook,marketplace,95.128849,52637,10,10,8
+6286157159283,video_ 1,ACC1,facebook,search,31.576299,35038,17,15,10
+6286157159283,video_ 1,ACC1,facebook,video_feeds,0.329961,89,0,,
+6286157159283,video_ 1,ACC1,instagram,feed,0.479944,93,0,,
+6286157159283,video_ 1,ACC1,instagram,instagram_explore,0.029996,14,0,,
+6286157159283,video_ 1,ACC1,instagram,instagram_reels,0.529938,241,0,,
+6286157159283,video_ 1,ACC1,instagram,instagram_stories,18.067882,953,1,1,3
+6286192455683,video_ 2,ACC1,audience_network,an_classic,474.798578,77382,78,84,63
+6286192455683,video_ 2,ACC1,facebook,facebook_reels,0.9199,349,0,,
+6286192455683,video_ 2,ACC1,facebook,facebook_stories,0.319965,27,0,,
+6286192455683,video_ 2,ACC1,facebook,feed,13.93849,5828,13,5,3
+6286192455683,video_ 2,ACC1,facebook,instream_video,41.635491,2777,6,7,1
+6286192455683,video_ 2,ACC1,facebook,marketplace,218.566328,135852,64,61,41
+6286192455683,video_ 2,ACC1,facebook,search,433.293073,246537,298,300,146
+6286192455683,video_ 2,ACC1,facebook,video_feeds,1.129878,487,2,1,1
+6286192455683,video_ 2,ACC1,instagram,feed,0.389958,97,0,,
+6286192455683,video_ 2,ACC1,instagram,instagram_explore,7.249215,2478,0,,
+6286192455683,video_ 2,ACC1,instagram,instagram_reels,1.409847,565,2,,
+6286192455683,video_ 2,ACC1,instagram,instagram_stories,6.669278,345,1,,
+6286192455683,video_ 2,ACC1,messenger,messenger_stories,0.009999,2,0,,
+6286193506283,video_ 2,ACC1,audience_network,an_classic,47.99718,6570,7,7,3
+6286193506283,video_ 2,ACC1,audience_network,rewarded_video,557.217267,28356,59,61,36
+6286193506283,video_ 2,ACC1,facebook,facebook_reels,1.249927,354,0,,
+6286193506283,video_ 2,ACC1,facebook,facebook_stories,0.33998,16,0,,
+6286193506283,video_ 2,ACC1,facebook,feed,7.559556,2001,2,1,1
+6286193506283,video_ 2,ACC1,facebook,instream_video,290.642926,17534,81,80,93
+6286193506283,video_ 2,ACC1,facebook,marketplace,292.272831,102962,42,34,19
+6286193506283,video_ 2,ACC1,facebook,search,86.964891,43113,52,52,37
+6286193506283,video_ 2,ACC1,facebook,video_feeds,2.569849,398,1,,
+6286193506283,video_ 2,ACC1,instagram,feed,3.23981,191,0,,
+6286193506283,video_ 2,ACC1,instagram,instagram_explore,0.329981,131,0,,
+6286193506283,video_ 2,ACC1,instagram,instagram_reels,0.659961,171,0,,
+6286193506283,video_ 2,ACC1,instagram,instagram_stories,70.795841,2877,5,5,10
+6286193506683,video_ 1,ACC1,facebook,facebook_reels,0.839857,186,2,,
+6286193506683,video_ 1,ACC1,facebook,feed,1.949667,591,1,1,1
+6286193506683,video_ 1,ACC1,facebook,instream_video,138.286384,6596,43,43,32
+6286193506683,video_ 1,ACC1,facebook,marketplace,80.726214,20260,8,8,2
+6286193506683,video_ 1,ACC1,facebook,search,82.85585,33551,41,41,26
+6286193506683,video_ 1,ACC1,facebook,video_feeds,3.149462,311,1,,
+6286193506683,video_ 1,ACC1,instagram,feed,1.969664,87,0,,
+6286193506683,video_ 1,ACC1,instagram,instagram_explore,0.239959,75,0,,
+6286193506683,video_ 1,ACC1,instagram,instagram_reels,0.479918,102,0,,
+6286193506683,video_ 1,ACC1,instagram,instagram_stories,40.843025,1490,4,3,3
+6286193662483,video_ 2,ACC1,audience_network,an_classic,36.306397,4424,2,2,2
+6286193662483,video_ 2,ACC1,facebook,facebook_reels,1.869814,378,1,,
+6286193662483,video_ 2,ACC1,facebook,facebook_stories,0.989902,32,0,,
+6286193662483,video_ 2,ACC1,facebook,feed,6.439361,1446,4,1,1
+6286193662483,video_ 2,ACC1,facebook,instream_video,674.143105,34231,230,228,206
+6286193662483,video_ 2,ACC1,facebook,marketplace,705.040039,190246,49,48,22
+6286193662483,video_ 2,ACC1,facebook,search,162.95383,72287,53,51,31
+6286193662483,video_ 2,ACC1,facebook,video_feeds,8.199186,988,1,,
+6286193662483,video_ 2,ACC1,instagram,feed,5.829422,239,0,,
+6286193662483,video_ 2,ACC1,instagram,instagram_explore,0.559944,156,0,,
+6286193662483,video_ 2,ACC1,instagram,instagram_reels,0.739927,158,0,,
+6286193662483,video_ 2,ACC1,instagram,instagram_stories,110.129072,4142,3,3,2
+6286193662483,video_ 2,ACC1,messenger,messenger_stories,0,1,0,,
+6286193865683,video_ 2,ACC1,facebook,facebook_reels,1.529545,221,1,,
+6286193865683,video_ 2,ACC1,facebook,feed,29.841116,7829,8,3,
+6286193865683,video_ 2,ACC1,facebook,instream_video,352.325108,17470,116,115,76
+6286193865683,video_ 2,ACC1,facebook,marketplace,1021.885771,273100,156,145,80
+6286193865683,video_ 2,ACC1,facebook,search,240.588374,83924,130,138,109
+6286193865683,video_ 2,ACC1,facebook,video_feeds,19.334244,1227,3,2,2
+6286193865683,video_ 2,ACC1,instagram,feed,4.848557,199,0,,
+6286193865683,video_ 2,ACC1,instagram,instagram_explore,1.729485,487,0,,
+6286193865683,video_ 2,ACC1,instagram,instagram_reels,0.309908,32,0,,
+6286193865683,video_ 2,ACC1,instagram,instagram_stories,40.667893,1480,1,1,1
+6516361446283,"Jun 28, 2023",ACC1,instagram,feed,626.053082,125608,146,77,2
+6516361446283,"Jun 28, 2023",ACC1,instagram,instagram_explore,230.596918,96616,113,49,1
+6516362244683,"jul 19, 2023",ACC1,instagram,feed,673.854265,138155,130,57,
+6516362244683,"jul 19, 2023",ACC1,instagram,instagram_explore,182.675735,76260,73,31,
+6516362899483,"Jul 21, 2023",ACC1,instagram,feed,820.657579,42012,158,121,2
+6516362899483,"Jul 21, 2023",ACC1,instagram,instagram_explore,36.072421,4034,9,5,5
+6516366549483,"jul 21, 2023",ACC1,instagram,feed,818.792622,42038,148,101,
+6516366549483,"jul 21, 2023",ACC1,instagram,instagram_explore,37.257378,4317,7,7,
+6516368068883,"jun 28, 2023",ACC1,instagram,feed,3.815933,484,2,2,
+6516368068883,"jun 28, 2023",ACC1,instagram,instagram_explore,0.974067,334,3,3,
+6516369453083,"jun 29, 2023",ACC1,instagram,feed,561.179909,55706,606,565,8
+6516369453083,"jun 29, 2023",ACC1,instagram,instagram_explore,1.280091,585,1,1,
+6516369637883,"jul 10, 2023",ACC1,instagram,feed,1581.743526,150625,2156,1879,53
+6516369637883,"jul 10, 2023",ACC1,instagram,instagram_explore,390.126474,114150,578,456,15
+6516369750083,"jul 17, 2023",ACC1,instagram,feed,22.492184,2037,27,24,1
+6516369750083,"jul 17, 2023",ACC1,instagram,instagram_explore,2.757816,1314,5,3,
+6516369851683,"jul 19, 2023",ACC1,instagram,feed,3.84,384,4,2,1
+6516369851683,"jul 19, 2023",ACC1,instagram,instagram_explore,1.29,449,2,,
+6516371430683,"jul 21, 2023",ACC1,instagram,feed,591.209728,43894,523,452,8
+6516371430683,"jul 21, 2023",ACC1,instagram,instagram_explore,16.500272,3603,11,6,
+6516372066883,"jul 26, 2023",ACC1,instagram,feed,443.014375,56197,538,412,13
+6516372066883,"jul 26, 2023",ACC1,instagram,instagram_explore,126.115625,36664,153,100,
+6516372324483,"aug 3, 2023",ACC1,instagram,feed,210.610969,23857,225,175,8
+6516372324483,"aug 3, 2023",ACC1,instagram,instagram_explore,61.419031,16908,67,40,
+6516372573883,"aug 7, 2023",ACC1,instagram,feed,616.677926,102890,724,536,19
+6516372573883,"aug 7, 2023",ACC1,instagram,instagram_explore,494.692074,152927,662,456,5
+6516372671883,"aug 8, 2023",ACC1,instagram,feed,8.44,604,11,9,
+6516372671883,"aug 8, 2023",ACC1,instagram,instagram_explore,1.63,406,5,3,
+6693840871883,post 1,ACC1,facebook,facebook_profile_feed,0.139958,12,0,,
+6693840871883,post 1,ACC1,facebook,facebook_reels,1891.997243,398773,3004,,
+6693840871883,post 1,ACC1,facebook,feed,132.870479,10781,109,5,
+6693840871883,post 1,ACC1,facebook,marketplace,0,1,0,,
+6693840871883,post 1,ACC1,facebook,search,0,3,0,,
+6693840871883,post 1,ACC1,facebook,video_feeds,25.822319,9051,66,,
+6693844246083,"post from Jan 23, 2025",ACC1,instagram,feed,24.510262,2077,64,66,
+6693844246083,"post from Jan 23, 2025",ACC1,instagram,instagram_explore,1.270014,172,1,1,
+6693844246083,"post from Jan 23, 2025",ACC1,instagram,instagram_explore_grid_home,0.670007,457,5,5,
+6693844246083,"post from Jan 23, 2025",ACC1,instagram,instagram_profile_feed,0,1,0,,
+6693844246083,"post from Jan 23, 2025",ACC1,instagram,instagram_profile_reels,0.100001,59,0,,
+6693844246083,"post from Jan 23, 2025",ACC1,instagram,instagram_reels,65.120695,11807,150,151,
+6693844246083,"post from Jan 23, 2025",ACC1,instagram,instagram_stories,2717.489021,237395,6550,6552,2
+6693845023283,"post from Jan 21, 2025",ACC1,instagram,feed,17.269859,468,28,37,
+6693845023283,"post from Jan 21, 2025",ACC1,instagram,instagram_explore,1.059378,24,1,1,
+6693845023283,"post from Jan 21, 2025",ACC1,instagram,instagram_explore_grid_home,0.109935,28,0,,
+6693845023283,"post from Jan 21, 2025",ACC1,instagram,instagram_profile_reels,0,9,0,,
+6693845023283,"post from Jan 21, 2025",ACC1,instagram,instagram_reels,38.277523,5544,89,89,
+6693845023283,"post from Jan 21, 2025",ACC1,instagram,instagram_stories,11.403304,553,17,21,
+6693845175483,"post from Jan 20, 2025",ACC1,instagram,feed,105.310871,16290,249,262,
+6693845175483,"post from Jan 20, 2025",ACC1,instagram,instagram_explore,5.509522,1274,9,10,
+6693845175483,"post from Jan 20, 2025",ACC1,instagram,instagram_explore_grid_home,0.469959,157,1,1,
+6693845175483,"post from Jan 20, 2025",ACC1,instagram,instagram_profile_feed,0.009999,9,0,,
+6693845175483,"post from Jan 20, 2025",ACC1,instagram,instagram_profile_reels,0.259977,211,0,,
+6693845175483,"post from Jan 20, 2025",ACC1,instagram,instagram_reels,43.60622,8381,83,87,
+6693845175483,"post from Jan 20, 2025",ACC1,instagram,instagram_stories,2152.023451,284884,5123,5133,1
+6693849201683,post 2,ACC1,facebook,facebook_profile_feed,0.04,3,0,,
+6693849201683,post 2,ACC1,facebook,facebook_reels,11.62,1476,20,,
+6693849201683,post 2,ACC1,facebook,feed,14.47,402,20,,
+6693849201683,post 2,ACC1,facebook,video_feeds,0.1,13,0,,
+6693849516883,post 3,ACC1,facebook,facebook_profile_feed,0.10999,15,0,,
+6693849516883,post 3,ACC1,facebook,facebook_reels,154.715831,29712,207,,
+6693849516883,post 3,ACC1,facebook,feed,163.645014,9887,126,3,
+6693849516883,post 3,ACC1,facebook,marketplace,0.009999,1,0,,
+6693849516883,post 3,ACC1,facebook,search,0,6,0,,
+6693849516883,post 3,ACC1,facebook,video_feeds,9.109166,2898,12,,
+6693857191083,post 4,ACC1,facebook,facebook_profile_feed,0.239878,15,0,,
+6693857191083,post 4,ACC1,facebook,facebook_reels,283.815429,43760,425,,
+6693857191083,post 4,ACC1,facebook,feed,196.230044,8678,212,13,
+6693857191083,post 4,ACC1,facebook,marketplace,0,4,0,,
+6693857191083,post 4,ACC1,facebook,search,0.01999,11,0,,
+6693857191083,post 4,ACC1,facebook,video_feeds,10.484659,3519,24,,
+6693857195883,post 5,ACC1,facebook,facebook_profile_feed,0.089986,8,0,,
+6693857195883,post 5,ACC1,facebook,facebook_reels,1500.243496,287885,2572,,
+6693857195883,post 5,ACC1,facebook,feed,112.732229,8383,99,4,
+6693857195883,post 5,ACC1,facebook,search,0.009998,6,0,,
+6693857195883,post 5,ACC1,facebook,video_feeds,163.084291,60400,418,,
+6740131607283,post 2,ACC1,facebook,facebook_profile_feed,2.620615,99,2,,
+6740131607283,post 2,ACC1,facebook,facebook_reels,1182.157474,200881,1125,3,
+6740131607283,post 2,ACC1,facebook,feed,898.930995,176089,281,23,
+6740131607283,post 2,ACC1,facebook,marketplace,0.230054,64,0,,
+6740131607283,post 2,ACC1,facebook,search,0.240056,63,1,1,
+6740131607283,post 2,ACC1,facebook,video_feeds,3.430805,401,6,,
+6740131607883,post 4,ACC1,facebook,facebook_profile_feed,3.079477,165,1,,
+6740131607883,post 4,ACC1,facebook,facebook_reels,1731.76574,285389,1823,1,
+6740131607883,post 4,ACC1,facebook,feed,553.565939,122177,178,18,
+6740131607883,post 4,ACC1,facebook,marketplace,0.179969,35,0,,
+6740131607883,post 4,ACC1,facebook,search,0.199966,56,0,,
+6740131607883,post 4,ACC1,facebook,video_feeds,6.418909,526,1,,
+6740131608083,post 3,ACC1,facebook,facebook_profile_feed,1.370074,25,1,,
+6740131608083,post 3,ACC1,facebook,facebook_reels,285.425518,45956,235,,
+6740131608083,post 3,ACC1,facebook,feed,264.354372,51003,75,9,
+6740131608083,post 3,ACC1,facebook,marketplace,0.090005,11,0,,
+6740131608083,post 3,ACC1,facebook,search,0.100005,41,0,,
+6740131608083,post 3,ACC1,facebook,video_feeds,0.470026,63,0,,
+6740131608283,post 1,ACC1,facebook,facebook_profile_feed,1.260157,135,1,,
+6740131608283,post 1,ACC1,facebook,facebook_reels,4546.137445,753710,5434,8,2
+6740131608283,post 1,ACC1,facebook,feed,1199.049664,297825,378,33,
+6740131608283,post 1,ACC1,facebook,marketplace,0.260032,76,0,,
+6740131608283,post 1,ACC1,facebook,search,0.190024,65,0,,
+6740131608283,post 1,ACC1,facebook,video_feeds,21.452678,2182,20,,
+6740136118683,"post from Mar 25, 2025",ACC1,instagram,feed,0.26,17,0,,
+6740136118683,"post from Mar 25, 2025",ACC1,instagram,instagram_explore,0,1,0,,
+6740136118683,"post from Mar 25, 2025",ACC1,instagram,instagram_explore_grid_home,0,1,0,,
+6740136118683,"post from Mar 25, 2025",ACC1,instagram,instagram_profile_reels,0,1,0,,
+6740136118683,"post from Mar 25, 2025",ACC1,instagram,instagram_reels,0.41,57,1,1,
+6740136118683,"post from Mar 25, 2025",ACC1,instagram,instagram_stories,0.37,38,0,,
+6740138478683,"post from Mar 24, 2025",ACC1,instagram,feed,0.3,18,0,,
+6740138478683,"post from Mar 24, 2025",ACC1,instagram,instagram_explore,0.02,1,0,,
+6740138478683,"post from Mar 24, 2025",ACC1,instagram,instagram_reels,0.39,39,0,,
+6740138478683,"post from Mar 24, 2025",ACC1,instagram,instagram_stories,3.49,391,8,8,
+6740157934083,"post from Mar 21, 2025",ACC1,instagram,feed,14.1,1981,33,33,
+6740157934083,"post from Mar 21, 2025",ACC1,instagram,instagram_explore,1,243,1,1,
+6740157934083,"post from Mar 21, 2025",ACC1,instagram,instagram_explore_grid_home,0.06,17,0,,
+6740157934083,"post from Mar 21, 2025",ACC1,instagram,instagram_profile_reels,0.04,30,0,,
+6740157934083,"post from Mar 21, 2025",ACC1,instagram,instagram_reels,6.92,1420,13,13,
+6740157934083,"post from Mar 21, 2025",ACC1,instagram,instagram_stories,7.89,1341,20,20,
+6779621530683,"post from Mar 19, 2025",ACC1,instagram,feed,42.028907,2482,86,106,
+6779621530683,"post from Mar 19, 2025",ACC1,instagram,instagram_explore,4.249889,229,10,10,
+6779621530683,"post from Mar 19, 2025",ACC1,instagram,instagram_explore_grid_home,0.179995,104,0,,
+6779621530683,"post from Mar 19, 2025",ACC1,instagram,instagram_reels,656.862919,102108,1535,1575,
+6779621530683,"post from Mar 19, 2025",ACC1,instagram,instagram_stories,3142.208289,369835,7622,7727,
+6779621530883,"post from Mar 20, 2025",ACC1,instagram,feed,89.506422,7901,178,199,1
+6779621530883,"post from Mar 20, 2025",ACC1,instagram,instagram_explore,6.710481,765,13,13,
+6779621530883,"post from Mar 20, 2025",ACC1,instagram,instagram_explore_grid_home,0.750054,363,0,,
+6779621530883,"post from Mar 20, 2025",ACC1,instagram,instagram_profile_reels,0.130009,30,0,,
+6779621530883,"post from Mar 20, 2025",ACC1,instagram,instagram_reels,1757.176068,363198,4192,4250,2
+6779621530883,"post from Mar 20, 2025",ACC1,instagram,instagram_stories,6508.726966,308178,15311,15393,2
+6935452415083,post 5 - 28.08,ACC1,facebook,facebook_profile_feed,0.04997,3,0,,
+6935452415083,post 5 - 28.08,ACC1,facebook,facebook_reels,2043.565849,416142,4289,5,
+6935452415083,post 5 - 28.08,ACC1,facebook,feed,9.5943,768,12,,
+120206400638290151,window_2_dec_21,ACC2,audience_network,an_classic,14.904144,1444,13,13,9
+120206400638290151,window_2_dec_21,ACC2,facebook,facebook_reels,78.579128,7422,15,7,4
+120206400638290151,window_2_dec_21,ACC2,facebook,facebook_reels_overlay,1.589376,283,1,1,1
+120206400638290151,window_2_dec_21,ACC2,facebook,facebook_stories,66.773766,2368,20,20,7
+120206400638290151,window_2_dec_21,ACC2,facebook,feed,3334.170068,200187,1846,613,423
+120206400638290151,window_2_dec_21,ACC2,facebook,instream_video,20.302024,2798,9,9,5
+120206400638290151,window_2_dec_21,ACC2,facebook,marketplace,219.783651,34037,69,67,43
+120206400638290151,window_2_dec_21,ACC2,facebook,right_hand_column,0.579772,546,0,,
+120206400638290151,window_2_dec_21,ACC2,facebook,search,71.571881,4179,24,16,10
+120206400638290151,window_2_dec_21,ACC2,facebook,video_feeds,90.014635,6532,52,27,20
+120206400638290151,window_2_dec_21,ACC2,instagram,feed,911.221998,40621,118,66,48
+120206400638290151,window_2_dec_21,ACC2,instagram,instagram_explore,20.631894,3310,3,1,1
+120206400638290151,window_2_dec_21,ACC2,instagram,instagram_explore_grid_home,7.467066,1404,2,,
+120206400638290151,window_2_dec_21,ACC2,instagram,instagram_profile_feed,3.898468,648,0,,
+120206400638290151,window_2_dec_21,ACC2,instagram,instagram_reels,30.927849,2094,1,,
+120206400638290151,window_2_dec_21,ACC2,instagram,instagram_reels_overlay,0.55978,356,0,,
+120206400638290151,window_2_dec_21,ACC2,instagram,instagram_search,0.109957,19,1,,
+120206400638290151,window_2_dec_21,ACC2,instagram,instagram_stories,217.424578,15598,55,45,15
+120206400638290151,window_2_dec_21,ACC2,messenger,messenger_stories,0.089965,7,0,,
+120206715522530151,before_after7_2_dec_25,ACC2,facebook,facebook_reels,7.713263,429,1,,
+120206715522530151,before_after7_2_dec_25,ACC2,facebook,facebook_reels_overlay,0.109904,17,0,,
+120206715522530151,before_after7_2_dec_25,ACC2,facebook,facebook_stories,12.62897,406,2,2,
+120206715522530151,before_after7_2_dec_25,ACC2,facebook,feed,155.983765,5456,74,29,
+120206715522530151,before_after7_2_dec_25,ACC2,facebook,instream_video,0.009991,1,0,,
+120206715522530151,before_after7_2_dec_25,ACC2,facebook,marketplace,3.956544,244,3,1,
+120206715522530151,before_after7_2_dec_25,ACC2,facebook,search,1.248909,113,0,,
+120206715522530151,before_after7_2_dec_25,ACC2,facebook,video_feeds,1.538656,66,0,,
+120206715522530151,before_after7_2_dec_25,ACC2,instagram,feed,30.863044,1067,4,2,
+120206715522530151,before_after7_2_dec_25,ACC2,instagram,instagram_explore,0.309729,17,0,,
+120206715522530151,before_after7_2_dec_25,ACC2,instagram,instagram_explore_grid_home,0.059948,28,0,,
+120206715522530151,before_after7_2_dec_25,ACC2,instagram,instagram_reels,7.313612,432,3,1,
+120206715522530151,before_after7_2_dec_25,ACC2,instagram,instagram_stories,75.953663,4365,25,22,
+120206735801580151,before_after7_4_dec_26,ACC2,facebook,facebook_reels,5.94,426,2,,
+120206735801580151,before_after7_4_dec_26,ACC2,facebook,facebook_reels_overlay,0.03,6,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,facebook,facebook_stories,1.31,45,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,facebook,feed,45.79,1918,19,5,
+120206735801580151,before_after7_4_dec_26,ACC2,facebook,instream_video,0.02,1,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,facebook,marketplace,0.91,79,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,facebook,search,0.36,37,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,facebook,video_feeds,0.08,9,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,instagram,feed,12.35,573,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,instagram,instagram_explore,0.1,13,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,instagram,instagram_explore_grid_home,0.02,10,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,instagram,instagram_reels,1.2,153,0,,
+120206735801580151,before_after7_4_dec_26,ACC2,instagram,instagram_stories,3.32,208,0,,
+120206885591780151,before_after7_3_dec_28,ACC2,facebook,facebook_reels,27.587288,1381,9,5,
+120206885591780151,before_after7_3_dec_28,ACC2,facebook,facebook_reels_overlay,0.169983,14,0,,
+120206885591780151,before_after7_3_dec_28,ACC2,facebook,facebook_stories,24.807561,954,11,10,
+120206885591780151,before_after7_3_dec_28,ACC2,facebook,feed,130.687152,3942,34,15,
+120206885591780151,before_after7_3_dec_28,ACC2,facebook,instream_video,0.019998,1,0,,
+120206885591780151,before_after7_3_dec_28,ACC2,facebook,marketplace,4.099597,272,2,1,
+120206885591780151,before_after7_3_dec_28,ACC2,facebook,search,2.569747,197,1,1,
+120206885591780151,before_after7_3_dec_28,ACC2,facebook,video_feeds,0.299971,18,0,,
+120206885591780151,before_after7_3_dec_28,ACC2,instagram,feed,46.495429,1816,5,3,
+120206885591780151,before_after7_3_dec_28,ACC2,instagram,instagram_explore,0.529948,36,0,,
+120206885591780151,before_after7_3_dec_28,ACC2,instagram,instagram_explore_grid_home,0.139986,25,0,,
+120206885591780151,before_after7_3_dec_28,ACC2,instagram,instagram_reels,7.159296,474,0,,
+120206885591780151,before_after7_3_dec_28,ACC2,instagram,instagram_stories,60.594043,2904,13,10,
+120206960087450151,before_after_vid1_1_dec_29,ACC2,audience_network,an_classic,10.386513,734,17,17,11
+120206960087450151,before_after_vid1_1_dec_29,ACC2,audience_network,rewarded_video,9.046963,616,6,6,3
+120206960087450151,before_after_vid1_1_dec_29,ACC2,facebook,facebook_reels,210.409366,21132,76,40,23
+120206960087450151,before_after_vid1_1_dec_29,ACC2,facebook,facebook_reels_overlay,4.298557,498,2,1,1
+120206960087450151,before_after_vid1_1_dec_29,ACC2,facebook,facebook_stories,137.253924,6351,56,53,22
+120206960087450151,before_after_vid1_1_dec_29,ACC2,facebook,feed,2281.514105,153937,1974,904,727
+120206960087450151,before_after_vid1_1_dec_29,ACC2,facebook,instream_video,25.421466,2489,8,8,5
+120206960087450151,before_after_vid1_1_dec_29,ACC2,facebook,marketplace,189.376427,25786,69,60,42
+120206960087450151,before_after_vid1_1_dec_29,ACC2,facebook,search,22.152563,1574,6,4,2
+120206960087450151,before_after_vid1_1_dec_29,ACC2,facebook,video_feeds,74.964835,8175,43,28,17
+120206960087450151,before_after_vid1_1_dec_29,ACC2,instagram,feed,1054.066154,49639,258,197,154
+120206960087450151,before_after_vid1_1_dec_29,ACC2,instagram,instagram_explore,12.615765,2192,4,3,3
+120206960087450151,before_after_vid1_1_dec_29,ACC2,instagram,instagram_explore_grid_home,3.398859,690,0,,
+120206960087450151,before_after_vid1_1_dec_29,ACC2,instagram,instagram_profile_feed,4.578463,546,3,2,2
+120206960087450151,before_after_vid1_1_dec_29,ACC2,instagram,instagram_reels,132.855401,8759,30,25,25
+120206960087450151,before_after_vid1_1_dec_29,ACC2,instagram,instagram_search,0.11996,14,0,,
+120206960087450151,before_after_vid1_1_dec_29,ACC2,instagram,instagram_stories,474.580685,29954,179,168,114
+120206960087450151,before_after_vid1_1_dec_29,ACC2,messenger,messenger_stories,0.019993,3,0,,
+120206961248040151,before_after_vid1_2_dec_29,ACC2,audience_network,an_classic,34.241899,2668,45,45,18
+120206961248040151,before_after_vid1_2_dec_29,ACC2,audience_network,rewarded_video,18.355657,1176,19,20,4
+120206961248040151,before_after_vid1_2_dec_29,ACC2,facebook,facebook_reels,200.132651,24126,84,32,29
+120206961248040151,before_after_vid1_2_dec_29,ACC2,facebook,facebook_reels_overlay,5.458709,613,4,2,1
+120206961248040151,before_after_vid1_2_dec_29,ACC2,facebook,facebook_stories,138.317276,8077,55,51,26
+120206961248040151,before_after_vid1_2_dec_29,ACC2,facebook,feed,3932.539617,271251,2919,1256,1042
+120206961248040151,before_after_vid1_2_dec_29,ACC2,facebook,instream_video,26.813656,3450,11,11,3
+120206961248040151,before_after_vid1_2_dec_29,ACC2,facebook,marketplace,251.470506,37283,92,84,56
+120206961248040151,before_after_vid1_2_dec_29,ACC2,facebook,search,14.046677,1305,10,9,4
+120206961248040151,before_after_vid1_2_dec_29,ACC2,facebook,video_feeds,114.073012,13798,83,53,41
+120206961248040151,before_after_vid1_2_dec_29,ACC2,instagram,feed,1408.726715,70013,303,232,156
+120206961248040151,before_after_vid1_2_dec_29,ACC2,instagram,instagram_explore,23.644406,4907,6,4,3
+120206961248040151,before_after_vid1_2_dec_29,ACC2,instagram,instagram_explore_grid_home,4.728881,1297,3,1,1
+120206961248040151,before_after_vid1_2_dec_29,ACC2,instagram,instagram_profile_feed,8.857904,1381,2,1,2
+120206961248040151,before_after_vid1_2_dec_29,ACC2,instagram,instagram_reels,132.63862,11336,33,26,15
+120206961248040151,before_after_vid1_2_dec_29,ACC2,instagram,instagram_search,0.149965,39,1,,
+120206961248040151,before_after_vid1_2_dec_29,ACC2,instagram,instagram_stories,406.36386,32320,129,122,72
+120206961248040151,before_after_vid1_2_dec_29,ACC2,messenger,messenger_stories,0.049988,4,0,,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,facebook,facebook_reels,42.959375,3443,10,1,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,facebook,facebook_reels_overlay,0.109973,8,0,,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,facebook,facebook_stories,41.719682,2069,12,10,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,facebook,feed,117.830857,3801,51,24,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,facebook,instream_video,0.629844,38,0,,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,facebook,marketplace,1.279684,65,3,2,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,facebook,search,0.649839,36,0,,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,facebook,video_feeds,0.92977,39,0,,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,instagram,feed,73.611794,2398,10,9,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,instagram,instagram_explore,0.099975,22,0,,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,instagram,instagram_reels,21.774615,1125,2,1,
+120207133348050151,before_after_vid1_1_jan_3,ACC2,instagram,instagram_stories,62.294593,2544,17,15,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,facebook,facebook_reels,150.840978,12999,53,19,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,facebook,facebook_reels_overlay,0.729956,58,1,1,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,facebook,facebook_stories,72.315675,3260,20,17,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,facebook,feed,598.034233,17924,220,105,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,facebook,instream_video,0.979941,122,0,,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,facebook,marketplace,2.33986,196,2,2,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,facebook,search,3.869769,248,0,,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,facebook,video_feeds,1.949883,122,1,,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,instagram,feed,202.107912,5782,17,12,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,instagram,instagram_explore,1.489911,129,0,,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,instagram,instagram_reels,41.887495,2597,6,3,
+120207435927850151,before_after_vid1_2_jan_8,ACC2,instagram,instagram_stories,93.864386,4750,26,23,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,facebook,facebook_reels,97.423885,7532,22,9,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,facebook,facebook_reels_overlay,0.189969,25,0,,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,facebook,facebook_stories,60.320023,2195,17,16,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,facebook,feed,396.704382,14708,180,75,1
+120207736470930151,before_after_vid1_3_jan_13,ACC2,facebook,instream_video,0.989836,19,0,,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,facebook,marketplace,0.649893,53,0,,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,facebook,search,1.129813,69,1,1,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,facebook,video_feeds,2.449595,116,2,1,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,instagram,feed,208.905445,7193,27,17,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,instagram,instagram_explore,2.77954,248,0,,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,instagram,instagram_reels,37.863737,2537,4,1,
+120207736470930151,before_after_vid1_3_jan_13,ACC2,instagram,instagram_stories,157.893883,7352,45,36,
+120208468856910151,best_price_1,ACC2,audience_network,an_classic,0.199935,24,0,,
+120208468856910151,best_price_1,ACC2,facebook,facebook_reels,0.649787,30,0,,
+120208468856910151,best_price_1,ACC2,facebook,facebook_stories,0.419863,2,0,,
+120208468856910151,best_price_1,ACC2,facebook,feed,143.583013,5660,278,84,63
+120208468856910151,best_price_1,ACC2,facebook,instream_video,0.069977,4,0,,
+120208468856910151,best_price_1,ACC2,facebook,marketplace,0.839725,92,0,,
+120208468856910151,best_price_1,ACC2,facebook,right_hand_column,0.009997,7,0,,
+120208468856910151,best_price_1,ACC2,facebook,search,0.079974,28,0,,
+120208468856910151,best_price_1,ACC2,facebook,video_feeds,1.439529,75,0,,
+120208468856910151,best_price_1,ACC2,instagram,feed,4.658476,144,0,,
+120208468856910151,best_price_1,ACC2,instagram,instagram_explore,0,1,0,,
+120208468856910151,best_price_1,ACC2,instagram,instagram_profile_feed,0,1,0,,
+120208468856910151,best_price_1,ACC2,instagram,instagram_reels,0.129957,7,0,,
+120208468856910151,best_price_1,ACC2,instagram,instagram_stories,0.709768,25,0,,
+120208470456720151,best_price_2,ACC2,facebook,facebook_reels,0.159927,10,0,,
+120208470456720151,best_price_2,ACC2,facebook,facebook_stories,0.019991,1,0,,
+120208470456720151,best_price_2,ACC2,facebook,feed,19.351148,711,25,7,3
+120208470456720151,best_price_2,ACC2,facebook,marketplace,0.319854,32,0,,
+120208470456720151,best_price_2,ACC2,facebook,right_hand_column,0,1,0,,
+120208470456720151,best_price_2,ACC2,facebook,search,0.229895,50,0,,
+120208470456720151,best_price_2,ACC2,facebook,video_feeds,0.369831,22,0,,
+120208470456720151,best_price_2,ACC2,instagram,feed,1.079506,33,0,,
+120208470456720151,best_price_2,ACC2,instagram,instagram_explore,0.039982,1,0,,
+120208470456720151,best_price_2,ACC2,instagram,instagram_reels,0.009995,3,0,,
+120208470456720151,best_price_2,ACC2,instagram,instagram_stories,0.279872,11,1,1,1
+120208470462150151,best_price_3,ACC2,audience_network,an_classic,0.1,1,0,,
+120208470462150151,best_price_3,ACC2,facebook,facebook_reels,0.21,4,0,,
+120208470462150151,best_price_3,ACC2,facebook,facebook_reels_overlay,0.01,1,0,,
+120208470462150151,best_price_3,ACC2,facebook,facebook_stories,0.03,1,0,,
+120208470462150151,best_price_3,ACC2,facebook,feed,7.62,369,10,3,4
+120208470462150151,best_price_3,ACC2,facebook,marketplace,0.01,2,0,,
+120208470462150151,best_price_3,ACC2,facebook,right_hand_column,0,2,0,,
+120208470462150151,best_price_3,ACC2,facebook,search,0.03,2,2,1,1
+120208470462150151,best_price_3,ACC2,facebook,video_feeds,0.03,5,0,,
+120208470462150151,best_price_3,ACC2,instagram,feed,0.34,11,0,,
+120208470462150151,best_price_3,ACC2,instagram,instagram_profile_feed,0.01,1,0,,
+120208470462150151,best_price_3,ACC2,instagram,instagram_stories,0.02,2,0,,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,facebook,facebook_reels,117.338544,8257,47,19,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,facebook,facebook_reels_overlay,0.449879,70,0,,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,facebook,facebook_stories,85.037203,3348,22,21,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,facebook,feed,894.260267,48020,691,224,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,facebook,marketplace,29.082204,2165,14,13,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,facebook,search,3.3591,467,0,,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,facebook,video_feeds,4.968668,252,2,,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,instagram,feed,265.748758,12093,55,39,1
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,instagram,instagram_explore,3.079175,274,3,2,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,instagram,instagram_explore_grid_home,0.389895,83,0,,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,instagram,instagram_profile_feed,0.539855,34,0,,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,instagram,instagram_reels,76.999358,4349,25,22,
+120208570328700151,SOLUTION AWARE - IMAGE - BEFORE AFTER - STICKERS - IT 2 - GRANT - LEARN,ACC2,instagram,instagram_stories,533.077093,31546,238,198,1
+120208701988950151,best_price_1,ACC2,facebook,facebook_reels,0.37,18,0,,
+120208701988950151,best_price_1,ACC2,facebook,facebook_reels_overlay,0,1,0,,
+120208701988950151,best_price_1,ACC2,facebook,facebook_stories,0.24,4,0,,
+120208701988950151,best_price_1,ACC2,facebook,feed,33.66,1287,34,10,8
+120208701988950151,best_price_1,ACC2,facebook,marketplace,1.02,32,0,,
+120208701988950151,best_price_1,ACC2,facebook,right_hand_column,0,1,0,,
+120208701988950151,best_price_1,ACC2,facebook,search,0.02,15,1,1,
+120208701988950151,best_price_1,ACC2,facebook,video_feeds,0.22,13,0,,
+120208701988950151,best_price_1,ACC2,instagram,feed,2.7,77,2,1,2
+120208701988950151,best_price_1,ACC2,instagram,instagram_explore,0,1,0,,
+120208701988950151,best_price_1,ACC2,instagram,instagram_profile_feed,0.01,1,0,,
+120208701988950151,best_price_1,ACC2,instagram,instagram_reels,0.12,6,0,,
+120208701988950151,best_price_1,ACC2,instagram,instagram_reels_overlay,0,1,0,,
+120208701988950151,best_price_1,ACC2,instagram,instagram_search,0.01,1,0,,
+120208701988950151,best_price_1,ACC2,instagram,instagram_stories,1.34,27,1,,
+120208702154730151,best_price_4,ACC2,audience_network,an_classic,0.59,27,2,2,
+120208702154730151,best_price_4,ACC2,facebook,facebook_reels,2.4,76,0,,
+120208702154730151,best_price_4,ACC2,facebook,facebook_reels_overlay,0.02,2,0,,
+120208702154730151,best_price_4,ACC2,facebook,facebook_stories,0.22,16,0,,
+120208702154730151,best_price_4,ACC2,facebook,feed,37.5,1454,33,14,8
+120202858618940277,before_after4_1_dec_7,ACC3,audience_network,an_classic,12.537452,1462,11,11,8
+120202858618940277,before_after4_1_dec_7,ACC3,facebook,facebook_reels,36.472588,9286,17,7,2
+120202858618940277,before_after4_1_dec_7,ACC3,facebook,facebook_reels_overlay,0.58988,131,0,,
+120202858618940277,before_after4_1_dec_7,ACC3,facebook,facebook_stories,32.263443,3564,12,12,6
+120202858618940277,before_after4_1_dec_7,ACC3,facebook,feed,4433.529009,669774,5167,1705,1088
+120202858618940277,before_after4_1_dec_7,ACC3,facebook,instream_video,3.279334,833,0,,
+120202858618940277,before_after4_1_dec_7,ACC3,facebook,marketplace,115.176594,25289,58,56,26
+120202858618940277,before_after4_1_dec_7,ACC3,facebook,right_hand_column,0.4899,541,0,,
+120202858618940277,before_after4_1_dec_7,ACC3,facebook,search,35.652755,10711,23,18,5
+120202858618940277,before_after4_1_dec_7,ACC3,facebook,video_feeds,66.206545,15548,61,45,25
+120202858618940277,before_after4_1_dec_7,ACC3,instagram,feed,645.888741,116227,133,80,39
+120202858618940277,before_after4_1_dec_7,ACC3,instagram,instagram_explore,55.45873,27960,24,14,10
+120202858618940277,before_after4_1_dec_7,ACC3,instagram,instagram_explore_grid_home,6.258728,5980,7,2,
+120202858618940277,before_after4_1_dec_7,ACC3,instagram,instagram_profile_feed,2.779435,1721,0,,
+120202858618940277,before_after4_1_dec_7,ACC3,instagram,instagram_reels,26.174681,12021,25,17,3
+120202858618940277,before_after4_1_dec_7,ACC3,instagram,instagram_reels_overlay,0.629872,988,0,,
+120202858618940277,before_after4_1_dec_7,ACC3,instagram,instagram_search,0.199959,107,0,,
+120202858618940277,before_after4_1_dec_7,ACC3,instagram,instagram_stories,234.342376,45386,116,106,42
+120202858618940277,before_after4_1_dec_7,ACC3,messenger,messenger_stories,0.109978,10,0,,
+120204277395160277,Join9_1_dec_21,ACC3,audience_network,an_classic,0.16,21,0,,
+120204277395160277,Join9_1_dec_21,ACC3,audience_network,rewarded_video,2.28,391,3,3,1
+120204277395160277,Join9_1_dec_21,ACC3,facebook,facebook_reels,1.26,203,1,,
+120204277395160277,Join9_1_dec_21,ACC3,facebook,facebook_stories,0.01,2,0,,
+120204277395160277,Join9_1_dec_21,ACC3,facebook,feed,2.17,211,1,,
+120204277395160277,Join9_1_dec_21,ACC3,facebook,instream_video,0.14,43,0,,
+120204277395160277,Join9_1_dec_21,ACC3,facebook,marketplace,1.34,243,2,2,
+120204277395160277,Join9_1_dec_21,ACC3,facebook,search,0.44,36,0,,
+120204277395160277,Join9_1_dec_21,ACC3,facebook,video_feeds,0.24,25,0,,
+120204277395160277,Join9_1_dec_21,ACC3,instagram,feed,4.17,284,1,1,1
+120204277395160277,Join9_1_dec_21,ACC3,instagram,instagram_explore,0.02,14,0,,
+120204277395160277,Join9_1_dec_21,ACC3,instagram,instagram_explore_grid_home,0.04,15,0,,
+120204277395160277,Join9_1_dec_21,ACC3,instagram,instagram_profile_feed,0,14,0,,
+120204277395160277,Join9_1_dec_21,ACC3,instagram,instagram_reels,1.33,74,0,,
+120204277395160277,Join9_1_dec_21,ACC3,instagram,instagram_search,0,2,0,,
+120204277395160277,Join9_1_dec_21,ACC3,instagram,instagram_stories,0.72,73,1,1,1
+120204277451380277,Join9_4_dec_21,ACC3,audience_network,an_classic,0.719847,55,4,4,1
+120204277451380277,Join9_4_dec_21,ACC3,audience_network,rewarded_video,3.089342,210,1,1,1
+120204277451380277,Join9_4_dec_21,ACC3,facebook,facebook_reels,25.184635,4786,22,11,5
+120204277451380277,Join9_4_dec_21,ACC3,facebook,facebook_reels_overlay,0.069985,10,0,,
+120204277451380277,Join9_4_dec_21,ACC3,facebook,facebook_stories,3.699212,192,3,3,1
+120204277451380277,Join9_4_dec_21,ACC3,facebook,feed,81.022741,9084,58,28,11
+120204277451380277,Join9_4_dec_21,ACC3,facebook,instream_video,1.579664,416,0,,
+120204277451380277,Join9_4_dec_21,ACC3,facebook,marketplace,3.04935,780,1,1,
+120204277451380277,Join9_4_dec_21,ACC3,facebook,search,1.199744,171,0,,
+120204277451380277,Join9_4_dec_21,ACC3,facebook,video_feeds,3.339289,623,2,,
+120204277451380277,Join9_4_dec_21,ACC3,instagram,feed,45.570293,4998,16,12,6
+120204277451380277,Join9_4_dec_21,ACC3,instagram,instagram_explore,0.479898,151,0,,
+120204277451380277,Join9_4_dec_21,ACC3,instagram,instagram_explore_grid_home,0.039991,15,0,,
+120204277451380277,Join9_4_dec_21,ACC3,instagram,instagram_profile_feed,0.079983,24,0,,
+120204277451380277,Join9_4_dec_21,ACC3,instagram,instagram_reels,9.278024,1328,4,1,
+120204277451380277,Join9_4_dec_21,ACC3,instagram,instagram_search,0,1,0,,
+120204277451380277,Join9_4_dec_21,ACC3,instagram,instagram_stories,9.378002,905,5,5,3
+120204367757230277,Join8_2_dec_23,ACC3,audience_network,an_classic,0.41,63,1,1,1
+120204367757230277,Join8_2_dec_23,ACC3,audience_network,rewarded_video,3.29,380,8,8,2
+120204367757230277,Join8_2_dec_23,ACC3,facebook,facebook_reels,2.7,357,0,,
+120204367757230277,Join8_2_dec_23,ACC3,facebook,facebook_stories,0.49,26,0,,
+120204367757230277,Join8_2_dec_23,ACC3,facebook,feed,9.33,746,11,6,5
+120204367757230277,Join8_2_dec_23,ACC3,facebook,instream_video,0.21,43,0,,
+120204367757230277,Join8_2_dec_23,ACC3,facebook,marketplace,0.95,269,0,,
+120204367757230277,Join8_2_dec_23,ACC3,facebook,search,0.36,81,0,,
+120204367757230277,Join8_2_dec_23,ACC3,facebook,video_feeds,0.38,49,0,,
+120204367757230277,Join8_2_dec_23,ACC3,instagram,feed,6.31,417,0,,
+120204367757230277,Join8_2_dec_23,ACC3,instagram,instagram_explore,0.09,29,0,,
+120204367757230277,Join8_2_dec_23,ACC3,instagram,instagram_explore_grid_home,0,4,0,,
+120204367757230277,Join8_2_dec_23,ACC3,instagram,instagram_profile_feed,0.12,11,0,,
+120204367757230277,Join8_2_dec_23,ACC3,instagram,instagram_reels,0.94,133,2,,
+120204367757230277,Join8_2_dec_23,ACC3,instagram,instagram_stories,0.51,48,1,1,
+120204415413280277,before_after7_7_dec_26,ACC3,audience_network,an_classic,4.139233,842,4,4,3
+120204415413280277,before_after7_7_dec_26,ACC3,facebook,facebook_reels,28.434732,7604,10,4,2
+120204415413280277,before_after7_7_dec_26,ACC3,facebook,facebook_reels_overlay,0.579893,115,0,,
+120204415413280277,before_after7_7_dec_26,ACC3,facebook,facebook_stories,38.062948,3869,14,13,5
+120204415413280277,before_after7_7_dec_26,ACC3,facebook,feed,3210.145275,515902,2737,1179,787
+120204415413280277,before_after7_7_dec_26,ACC3,facebook,instream_video,7.528605,1827,1,1,
+120204415413280277,before_after7_7_dec_26,ACC3,facebook,marketplace,59.438988,14510,35,31,11
+120204415413280277,before_after7_7_dec_26,ACC3,facebook,right_hand_column,0.189965,315,0,,
+120204415413280277,before_after7_7_dec_26,ACC3,facebook,search,16.666912,4919,6,6,2
+120204415413280277,before_after7_7_dec_26,ACC3,facebook,video_feeds,28.744675,6481,14,12,7
+120204415413280277,before_after7_7_dec_26,ACC3,instagram,feed,230.847232,28655,27,8,5
+120204415413280277,before_after7_7_dec_26,ACC3,instagram,instagram_explore,11.157933,5973,3,2,1
+120204415413280277,before_after7_7_dec_26,ACC3,instagram,instagram_explore_grid_home,1.209776,1478,3,2,2
+120204415413280277,before_after7_7_dec_26,ACC3,instagram,instagram_profile_feed,2.169598,897,1,1,
+120204415413280277,before_after7_7_dec_26,ACC3,instagram,instagram_reels,16.796888,6472,7,5,2
+120204415413280277,before_after7_7_dec_26,ACC3,instagram,instagram_reels_overlay,0.26995,437,3,3,3
+120204415413280277,before_after7_7_dec_26,ACC3,instagram,instagram_search,0.059989,24,0,,
+120204415413280277,before_after7_7_dec_26,ACC3,instagram,instagram_stories,67.937414,12805,32,31,14
+120204415413280277,before_after7_7_dec_26,ACC3,messenger,messenger_stories,0.029994,8,0,,
+120204458813000277,Join9_4_dec_28,ACC3,audience_network,rewarded_video,0.05,4,0,,
+120204458813000277,Join9_4_dec_28,ACC3,facebook,facebook_reels,3.43,462,0,,
+120204458813000277,Join9_4_dec_28,ACC3,facebook,facebook_reels_overlay,0,2,0,,
+120204458813000277,Join9_4_dec_28,ACC3,facebook,facebook_stories,0.02,2,0,,
+120204458813000277,Join9_4_dec_28,ACC3,facebook,feed,28.74,1715,17,10,10
+120204458813000277,Join9_4_dec_28,ACC3,facebook,instream_video,1.37,305,1,1,1
+120204458813000277,Join9_4_dec_28,ACC3,facebook,marketplace,3.26,669,1,1,
+120204458813000277,Join9_4_dec_28,ACC3,facebook,search,2.79,312,2,2,2
+120204458813000277,Join9_4_dec_28,ACC3,facebook,video_feeds,1.1,118,3,1,
+120204458813000277,Join9_4_dec_28,ACC3,instagram,feed,15.83,1652,4,4,3
+120204458813000277,Join9_4_dec_28,ACC3,instagram,instagram_explore,0.15,91,0,,
+120204458813000277,Join9_4_dec_28,ACC3,instagram,instagram_explore_grid_home,0.02,16,0,,
+120204458813000277,Join9_4_dec_28,ACC3,instagram,instagram_profile_feed,0.04,22,0,,
+120204458813000277,Join9_4_dec_28,ACC3,instagram,instagram_reels,5.84,465,1,1,
+120204458813000277,Join9_4_dec_28,ACC3,instagram,instagram_search,0.01,3,0,,
+120204458813000277,Join9_4_dec_28,ACC3,instagram,instagram_stories,4.91,376,2,2,
+120204458827530277,before_after7_3_dec_28,ACC3,facebook,facebook_reels,1.328982,398,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,facebook,facebook_reels_overlay,0,1,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,facebook,facebook_stories,1.898545,146,1,1,
+120204458827530277,before_after7_3_dec_28,ACC3,facebook,feed,46.264544,6077,27,15,10
+120204458827530277,before_after7_3_dec_28,ACC3,facebook,instream_video,0.16987,46,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,facebook,marketplace,5.196018,1214,5,4,1
+120204458827530277,before_after7_3_dec_28,ACC3,facebook,right_hand_column,0.029977,22,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,facebook,search,0.63951,325,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,facebook,video_feeds,0.93928,209,1,1,
+120204458827530277,before_after7_3_dec_28,ACC3,instagram,feed,23.661866,2397,5,1,3
+120204458827530277,before_after7_3_dec_28,ACC3,instagram,instagram_explore,0.839357,448,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,instagram,instagram_explore_grid_home,0.109916,172,1,1,
+120204458827530277,before_after7_3_dec_28,ACC3,instagram,instagram_profile_feed,0.029977,57,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,instagram,instagram_reels,1.368951,707,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,instagram,instagram_reels_overlay,0.019985,35,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,instagram,instagram_search,0,1,0,,
+120204458827530277,before_after7_3_dec_28,ACC3,instagram,instagram_stories,8.843223,1998,1,1,2
+120204458827530277,before_after7_3_dec_28,ACC3,messenger,messenger_stories,0,1,0,,
+120204458835570277,before_after7_4_dec_28,ACC3,facebook,feed,0,0,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,audience_network,an_classic,0.03,5,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,facebook,facebook_reels,0.34,84,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,facebook,facebook_reels_overlay,0.01,1,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,facebook,facebook_stories,0.33,23,1,1,1
+120204458856000277,before_after7_3_dec_28,ACC3,facebook,feed,6.67,792,1,1,
+120204458856000277,before_after7_3_dec_28,ACC3,facebook,instream_video,0.02,11,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,facebook,marketplace,1.8,334,1,1,1
+120204458856000277,before_after7_3_dec_28,ACC3,facebook,right_hand_column,0,16,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,facebook,search,0.15,62,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,facebook,video_feeds,0.1,26,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,instagram,feed,3.74,299,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,instagram,instagram_explore,0.15,55,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,instagram,instagram_explore_grid_home,0.02,19,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,instagram,instagram_profile_feed,0.01,4,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,instagram,instagram_reels,0.34,144,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,instagram,instagram_reels_overlay,0,6,0,,
+120204458856000277,before_after7_3_dec_28,ACC3,instagram,instagram_stories,1.33,209,0,,
+120204485216420277,before_after_vid1_1_dec_29,ACC3,audience_network,an_classic,0.509903,46,0,,
+120204485216420277,before_after_vid1_1_dec_29,ACC3,audience_network,rewarded_video,0.429918,27,0,,
+120204485216420277,before_after_vid1_1_dec_29,ACC3,facebook,facebook_reels,11.367828,2934,4,3,2
+120204485216420277,before_after_vid1_1_dec_29,ACC3,facebook,facebook_reels_overlay,0.329937,41,0,,
+120204485216420277,before_after_vid1_1_dec_29,ACC3,facebook,facebook_stories,11.417818,986,5,5,3
+120204485216420277,before_after_vid1_1_dec_29,ACC3,facebook,feed,465.800999,63164,464,248,203
+120204485216420277,before_after_vid1_1_dec_29,ACC3,facebook,instream_video,5.149016,450,1,1,
+120204485216420277,before_after_vid1_1_dec_29,ACC3,facebook,marketplace,18.936382,3008,9,7,8
+120204485216420277,before_after_vid1_1_dec_29,ACC3,facebook,search,10.897918,2147,9,8,3
+120204485216420277,before_after_vid1_1_dec_29,ACC3,facebook,video_feeds,15.537031,4317,13,7,2
+120204485216420277,before_after_vid1_1_dec_29,ACC3,instagram,feed,355.742028,50360,99,74,49
+120204485216420277,before_after_vid1_1_dec_29,ACC3,instagram,instagram_explore,11.727759,4860,7,7,3
+120204485216420277,before_after_vid1_1_dec_29,ACC3,instagram,instagram_explore_grid_home,1.109788,1129,1,1,1
+120204485216420277,before_after_vid1_1_dec_29,ACC3,instagram,instagram_profile_feed,2.689486,1001,1,1,
+120204485216420277,before_after_vid1_1_dec_29,ACC3,instagram,instagram_reels,26.145004,7859,5,3,4
+120204485216420277,before_after_vid1_1_dec_29,ACC3,instagram,instagram_search,0.029994,20,0,,
+120204485216420277,before_after_vid1_1_dec_29,ACC3,instagram,instagram_stories,56.579189,9277,23,20,20
+120204485216420277,before_after_vid1_1_dec_29,ACC3,messenger,messenger_stories,0,1,0,,
+120204485233440277,before_after_vid1_3_dec_29,ACC3,audience_network,an_classic,11.268159,1195,10,10,4
+120204485233440277,before_after_vid1_3_dec_29,ACC3,audience_network,rewarded_video,21.066558,1465,25,25,13
+120204485233440277,before_after_vid1_3_dec_29,ACC3,facebook,facebook_reels,254.878355,55660,158,71,48
+120204485233440277,before_after_vid1_3_dec_29,ACC3,facebook,facebook_reels_overlay,4.499265,657,4,2,3
+120204485233440277,before_after_vid1_3_dec_29,ACC3,facebook,facebook_stories,172.311846,11426,77,75,29
+120204485233440277,before_after_vid1_3_dec_29,ACC3,facebook,feed,2820.629136,371164,3402,1367,1127
+120204485233440277,before_after_vid1_3_dec_29,ACC3,facebook,instream_video,21.836432,2801,27,26,9
+120204485233440277,before_after_vid1_3_dec_29,ACC3,facebook,marketplace,48.422088,7702,16,16,5
+120204485233440277,before_after_vid1_3_dec_29,ACC3,facebook,search,9.678419,1718,3,2,
+120204485233440277,before_after_vid1_3_dec_29,ACC3,facebook,video_feeds,83.396374,17596,90,61,36
+120204485233440277,before_after_vid1_3_dec_29,ACC3,instagram,feed,2109.335355,249452,635,461,330
+120204485233440277,before_after_vid1_3_dec_29,ACC3,instagram,instagram_explore,45.252606,17484,21,7,5
+120204485233440277,before_after_vid1_3_dec_29,ACC3,instagram,instagram_explore_grid_home,3.289463,3196,4,3,
+120204485233440277,before_after_vid1_3_dec_29,ACC3,instagram,instagram_profile_feed,11.358144,3602,3,1,1
+120204485233440277,before_after_vid1_3_dec_29,ACC3,instagram,instagram_reels,155.914525,33839,57,46,30
+120204485233440277,before_after_vid1_3_dec_29,ACC3,instagram,instagram_search,0.279954,106,0,,
+120204485233440277,before_after_vid1_3_dec_29,ACC3,instagram,instagram_stories,897.723321,137591,607,546,307
+120204485233440277,before_after_vid1_3_dec_29,ACC3,messenger,messenger_stories,0,1,0,,
+120204485244320277,before_after_vid1_4_dec_29,ACC3,audience_network,an_classic,2.769698,298,4,4,2
+120204485244320277,before_after_vid1_4_dec_29,ACC3,audience_network,rewarded_video,0.879904,64,1,1,
+120204485244320277,before_after_vid1_4_dec_29,ACC3,facebook,facebook_reels,24.287349,5449,6,1,
+120204485244320277,before_after_vid1_4_dec_29,ACC3,facebook,facebook_reels_overlay,0.189979,43,0,,
+120204485244320277,before_after_vid1_4_dec_29,ACC3,facebook,facebook_stories,11.418754,1224,8,8,4
+120204485244320277,before_after_vid1_4_dec_29,ACC3,facebook,feed,871.494886,103579,796,426,349
+120204485244320277,before_after_vid1_4_dec_29,ACC3,facebook,instream_video,3.439625,697,1,1,1
+120204485244320277,before_after_vid1_4_dec_29,ACC3,facebook,marketplace,15.588299,2601,2,1,
+120204485244320277,before_after_vid1_4_dec_29,ACC3,facebook,search,2.739701,413,0,,
+120204485244320277,before_after_vid1_4_dec_29,ACC3,facebook,video_feeds,21.377667,4960,19,15,10
+120204485244320277,before_after_vid1_4_dec_29,ACC3,instagram,feed,649.499114,71373,152,117,103
+120204485244320277,before_after_vid1_4_dec_29,ACC3,instagram,instagram_explore,10.588844,4031,3,,
+120204485244320277,before_after_vid1_4_dec_29,ACC3,instagram,instagram_explore_grid_home,1.259863,905,1,1,1
+120204485244320277,before_after_vid1_4_dec_29,ACC3,instagram,instagram_profile_feed,5.619387,1327,1,1,2
+120204485244320277,before_after_vid1_4_dec_29,ACC3,instagram,instagram_reels,61.323307,14415,26,20,21
+120204485244320277,before_after_vid1_4_dec_29,ACC3,instagram,instagram_search,0.049995,18,0,,
+120204485244320277,before_after_vid1_4_dec_29,ACC3,instagram,instagram_stories,149.983631,22900,56,54,32
+120204485244320277,before_after_vid1_4_dec_29,ACC3,messenger,messenger_stories,0.019998,2,0,,
+120204485264240277,before_after_vid1_5_dec_29,ACC3,audience_network,an_classic,4.269218,401,5,5,3
+120204485264240277,before_after_vid1_5_dec_29,ACC3,audience_network,rewarded_video,2.679509,265,3,3,1
+120204485264240277,before_after_vid1_5_dec_29,ACC3,facebook,facebook_reels,39.562754,9789,20,12,8
+120204485264240277,before_after_vid1_5_dec_29,ACC3,facebook,facebook_reels_overlay,0.449918,82,1,,2
+120204485264240277,before_after_vid1_5_dec_29,ACC3,facebook,facebook_stories,42.712177,3404,19,18,8
+120204485264240277,before_after_vid1_5_dec_29,ACC3,facebook,feed,709.680022,99652,725,256,226
+120204485264240277,before_after_vid1_5_dec_29,ACC3,facebook,instream_video,14.117414,1818,5,5,3
+120204485264240277,before_after_vid1_5_dec_29,ACC3,facebook,marketplace,14.877275,3226,5,5,
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,audience_network,an_classic,0.27,19,0,,
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,audience_network,rewarded_video,0.96,120,2,2,2
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,facebook,facebook_reels,61.29,9772,30,13,8
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,facebook,facebook_reels_overlay,1.14,12,0,,
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,facebook,facebook_stories,8.86,378,4,3,2
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,facebook,feed,73.49,6211,68,28,20
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,facebook,instream_video,1.75,205,1,1,1
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,facebook,marketplace,7.54,1745,9,9,4
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,facebook,search,1.53,147,0,,
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,facebook,video_feeds,7.89,990,10,7,3
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,instagram,feed,22.22,1520,4,2,1
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,instagram,instagram_explore,0.18,82,0,,
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,instagram,instagram_explore_grid_home,0.06,21,0,,
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,instagram,instagram_profile_feed,0.03,22,0,,
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,instagram,instagram_reels,10.88,1188,3,1,2
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,instagram,instagram_stories,5.41,666,1,1,
+120202259693530461,SOLUTION AWARE - VIDEO - TESTIMONIAL - UGC - IT 1 - LEARN,ACC4,messenger,messenger_stories,0.01,1,0,,
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,audience_network,an_classic,0.039982,7,0,,
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,facebook,biz_disco_feed,0.179921,15,0,,
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,facebook,feed,152.013097,11559,124,84,65
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,facebook,marketplace,273.42966,55870,220,202,153
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,facebook,search,2.318979,244,0,,
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,facebook,video_feeds,0.329855,20,0,,
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,instagram,feed,334.102957,23549,30,14,9
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_explore,1.569309,380,2,1,2
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_profile_feed,1.259446,360,1,1,
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_search,0.129943,58,0,,
+120202261297820461,PROBLEM AWARE - CAROUSEL - BEFORE AFTER -  - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_stories,7.15685,729,1,1,2
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,audience_network,an_classic,3.328928,384,4,4,1
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,facebook_reels,26.671408,4613,13,8,3
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,facebook_reels_overlay,0.429862,107,0,,
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,facebook_stories,43.895859,3059,19,17,7
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,feed,2099.453653,183846,1272,522,387
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,instream_video,4.258628,780,3,2,2
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,marketplace,48.084509,8631,23,20,12
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,right_hand_column,0.3099,378,0,,
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,search,23.842319,3044,6,6,5
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,video_feeds,39.697211,4955,26,19,8
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,feed,2034.404609,197222,413,300,238
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_explore,44.085798,15447,21,12,9
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_explore_grid_home,4.008709,2757,4,2,3
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_profile_feed,5.288296,1407,2,2,1
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_reels,43.635943,8748,14,9,5
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_reels_overlay,0.55982,1052,2,2,1
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_search,0.129958,46,0,,
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_stories,203.034592,24552,68,60,34
+120202264667240461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,messenger,messenger_stories,0,1,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,audience_network,an_classic,1.369521,94,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,facebook,facebook_reels,16.434248,2778,11,3,2
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,facebook,facebook_reels_overlay,0.109962,22,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,facebook,facebook_stories,10.036487,521,6,6,2
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,facebook,feed,386.194838,30137,166,66,38
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,facebook,instream_video,1.609437,382,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,facebook,marketplace,13.735193,4820,3,3,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,facebook,right_hand_column,0.329885,847,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,facebook,search,1.049633,207,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,facebook,video_feeds,4.05858,546,4,2,1
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,instagram,feed,53.241366,4665,8,5,3
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,instagram,instagram_explore,1.639426,567,3,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,instagram,instagram_explore_grid_home,0.219923,214,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,instagram,instagram_profile_feed,0.159944,53,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,instagram,instagram_reels,2.789024,522,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,instagram,instagram_reels_overlay,0.039986,73,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,instagram,instagram_search,0.009997,6,0,,
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,instagram,instagram_stories,21.272555,2378,7,7,2
+120202264849670461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 2 - GRANT - LEARN,ACC4,messenger,messenger_stories,0.009997,1,0,,
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,audience_network,an_classic,4.128725,413,2,2,1
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,facebook,facebook_reels,32.909834,7215,21,9,5
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,facebook,facebook_reels_overlay,0.899722,142,0,,
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,facebook,facebook_stories,34.169445,2700,15,14,6
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,facebook,feed,1928.044407,183108,1120,472,342
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,facebook,instream_video,4.948471,1283,5,5,1
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,facebook,marketplace,68.668788,13770,26,26,14
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,facebook,right_hand_column,0.649799,1236,1,1,1
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,facebook,search,35.009185,2992,5,4,2
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,facebook,video_feeds,49.07484,7776,36,26,14
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,instagram,feed,389.199772,39926,61,44,28
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,instagram,instagram_explore,9.217153,3072,2,2,
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,instagram,instagram_explore_grid_home,1.869423,1290,1,,
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,instagram,instagram_profile_feed,1.209626,346,0,,
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,instagram,instagram_reels,9.457079,2605,4,3,
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,instagram,instagram_reels_overlay,0.209935,313,1,1,
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,instagram,instagram_search,0,6,0,,
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,instagram,instagram_stories,52.453796,6859,19,17,9
+120202264951050461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 3 - GRANT - LEARN,ACC4,messenger,messenger_stories,0,2,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,audience_network,an_classic,0,1,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,facebook,facebook_reels,2.859458,345,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,facebook,facebook_reels_overlay,0,4,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,facebook,facebook_stories,1.119788,100,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,facebook,feed,68.986922,5547,24,10,8
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,facebook,instream_video,0.269949,77,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,facebook,marketplace,2.509524,715,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,facebook,right_hand_column,0.029994,34,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,facebook,search,0.609884,121,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,facebook,video_feeds,1.799659,259,1,1,1
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,instagram,feed,55.099555,4034,11,8,5
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,instagram,instagram_explore,1.009809,392,1,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,instagram,instagram_explore_grid_home,0.199962,178,1,1,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,instagram,instagram_profile_feed,0.139973,47,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,instagram,instagram_reels,4.869077,852,3,3,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,instagram,instagram_reels_overlay,0.029994,46,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,instagram,instagram_search,0.009998,2,0,,
+120202265007640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 4 - GRANT - LEARN,ACC4,instagram,instagram_stories,18.706454,1929,1,1,
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,audience_network,an_classic,13.974237,1799,16,17,7
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,facebook_reels,96.230312,19844,41,20,16
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,facebook_reels_overlay,1.919208,420,3,3,1
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,facebook_stories,219.299555,18728,85,84,45
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,feed,4925.308662,602015,3501,1742,1323
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,instream_video,22.96053,4748,12,11,3
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,marketplace,99.259063,22785,29,28,16
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,right_hand_column,1.179514,1214,0,,
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,search,14.0642,3538,6,6,4
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,facebook,video_feeds,88.213618,16852,70,53,27
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,feed,3003.001476,331188,665,431,357
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_explore,68.681674,27297,44,19,11
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_explore_grid_home,6.097485,5373,5,1,4
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_profile_feed,22.150864,6728,12,7,6
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_reels,153.086863,34211,62,44,24
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_reels_overlay,1.679307,2064,3,3,
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_search,0.239901,98,0,,
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,instagram,instagram_stories,742.593733,120563,374,347,209
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,messenger,messenger_stories,0.489798,40,0,,
+120202265084900461,SOLUTION AWARE - IMAGE - BEFORE AFTER - MAP - IT 1 - GRANT - LEARN,ACC4,unknown,unknown,0,0,0,,3
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,audience_network,an_classic,0.01,1,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,facebook,facebook_reels,0.1,21,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,facebook,facebook_stories,0.11,18,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,facebook,feed,1.75,296,2,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,facebook,marketplace,0.9,465,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,facebook,right_hand_column,0.02,88,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,facebook,search,0.5,500,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,facebook,video_feeds,0.03,9,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,instagram,feed,1.46,201,1,1,1
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,instagram,instagram_explore,0.05,16,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,instagram,instagram_explore_grid_home,0.02,15,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,instagram,instagram_profile_feed,0.02,47,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,instagram,instagram_reels,0.05,20,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,instagram,instagram_reels_overlay,0,12,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,instagram,instagram_search,0,1,0,,
+120202267443560461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 1 - GRANT ENDS - LEARN,ACC4,instagram,instagram_stories,0.26,45,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,facebook,facebook_reels,0,2,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,facebook,facebook_stories,0,1,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,facebook,feed,0.211944,46,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,facebook,marketplace,0.464259,944,1,1,1
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,facebook,right_hand_column,0.04037,69,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,facebook,search,0.322963,306,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,instagram,feed,0.010093,2,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,instagram,instagram_explore_grid_home,0,1,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,instagram,instagram_profile_feed,0,5,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,instagram,instagram_reels,0,1,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,instagram,instagram_reels_overlay,0,4,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,instagram,instagram_search,0,2,0,,
+120202267728710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 2 - GRANT ENDS - LEARN,ACC4,instagram,instagram_stories,0.04037,5,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,facebook,facebook_reels,0,1,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,facebook,feed,0.36,73,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,facebook,instream_video,0,1,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,facebook,marketplace,0.09,41,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,facebook,right_hand_column,0.01,15,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,facebook,search,0.06,43,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,instagram,feed,0.07,6,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,instagram,instagram_explore_grid_home,0,2,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,instagram,instagram_profile_feed,0,3,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,instagram,instagram_reels_overlay,0,1,0,,
+120202267958740461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 3 - GRANT ENDS - LEARN,ACC4,instagram,instagram_search,0,1,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,facebook,facebook_reels,0.02,6,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,facebook,facebook_stories,0.03,5,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,facebook,feed,0.35,100,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,facebook,marketplace,0.78,1241,1,1,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,facebook,right_hand_column,0.01,27,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,facebook,search,0.28,97,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,facebook,video_feeds,0.02,4,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,instagram,feed,0.05,16,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,instagram,instagram_explore,0,1,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,instagram,instagram_explore_grid_home,0,3,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,instagram,instagram_profile_feed,0.01,36,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,instagram,instagram_reels,0,1,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,instagram,instagram_reels_overlay,0,8,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,instagram,instagram_search,0,1,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,instagram,instagram_stories,0.06,6,0,,
+120202267970710461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 4 - GRANT ENDS - LEARN,ACC4,messenger,messenger_stories,0,1,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,facebook,facebook_reels,0,2,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,facebook,feed,0.27,62,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,facebook,marketplace,0.41,584,1,1,1
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,facebook,right_hand_column,0.02,25,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,facebook,search,0.14,103,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,facebook,video_feeds,0,1,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,instagram,feed,0,6,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,instagram,instagram_explore_grid_home,0,2,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,instagram,instagram_profile_feed,0.01,8,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,instagram,instagram_reels_overlay,0,3,0,,
+120202268000640461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 5 - GRANT ENDS - LEARN,ACC4,instagram,instagram_stories,0.05,3,0,,
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,audience_network,an_classic,11.686024,1145,13,14,4
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,facebook,facebook_reels,54.211554,8290,30,13,8
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,facebook,facebook_reels_overlay,0.179939,44,0,,
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,facebook,facebook_stories,167.363053,14654,71,70,33
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,facebook,feed,2058.029735,194803,1423,563,445
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,facebook,instream_video,2.339204,449,2,2,1
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,facebook,marketplace,41.885748,8935,23,22,17
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,facebook,right_hand_column,0.799728,1331,0,,
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,facebook,search,27.470653,8863,15,12,9
+120202268039630461,SOLUTION AWARE - IMAGE - BEFORE AFTER - Grant Ends - IT 6 - GRANT ENDS - LEARN,ACC4,facebook,video_feeds,31.099418,5335,21,14,7
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,audience_network,an_classic,36.927741,3283,46,47,19
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,audience_network,rewarded_video,208.943544,13326,280,282,95
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,facebook,facebook_reels,14041.810954,2136887,7467,3173,2363
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,facebook,facebook_reels_overlay,78.630361,8099,70,16,14
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,facebook,facebook_stories,855.96481,48107,260,252,122
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,facebook,feed,2624.982774,214022,1801,738,547
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,facebook,instream_video,180.98497,10578,112,112,61
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,facebook,marketplace,224.579524,33755,129,122,46
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,facebook,search,25.335894,3953,16,13,6
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,facebook,video_feeds,860.779731,84647,623,426,243
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,instagram,feed,2243.963366,137134,441,330,203
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,instagram,instagram_explore,48.769844,13260,23,11,6
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,instagram,instagram_explore_grid_home,4.975085,2894,6,3,1
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,instagram,instagram_profile_feed,7.697867,2237,1,,
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,instagram,instagram_reels,2337.518982,348446,644,364,259
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,instagram,instagram_search,1.261289,323,0,,
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,instagram,instagram_stories,1363.253267,144375,542,510,281
+120203230701400238,quiz_ugc_1_4,ACC5_Traffic,messenger,messenger_stories,0,2,0,,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,audience_network,an_classic,1.910934,119,1,1,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,audience_network,rewarded_video,14.917293,626,10,11,3
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,facebook,facebook_reels,38.398774,4613,13,3,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,facebook,facebook_reels_overlay,0.060029,30,0,,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,facebook,facebook_stories,5.872871,229,1,1,1
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,facebook,feed,157.907204,11881,68,38,19
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,facebook,instream_video,1.660812,348,0,,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,facebook,marketplace,9.054427,2007,4,4,1
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,facebook,search,5.152519,445,1,1,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,facebook,video_feeds,8.884344,896,3,2,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,instagram,feed,89.373696,6072,12,11,6
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,instagram,instagram_explore,0.88043,221,0,,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,instagram,instagram_explore_grid_home,0.070034,61,0,,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,instagram,instagram_profile_feed,0.190093,31,0,,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,instagram,instagram_reels,19.159367,2416,3,1,1
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,instagram,instagram_search,0.010005,5,0,,
+120203504621120238,Join9_4_dec_18,ACC5_Traffic,instagram,instagram_stories,14.657166,1398,4,3,1
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,audience_network,an_classic,0.37,38,1,1,
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,audience_network,rewarded_video,2.38,332,1,1,
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,facebook,facebook_reels,12.99,2443,7,1,1
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,facebook,facebook_reels_overlay,0.08,3,0,,
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,facebook,facebook_stories,3.22,131,0,,
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,facebook,feed,25.48,3225,14,8,4
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,facebook,instream_video,0.74,62,0,,
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,facebook,marketplace,0.72,216,2,2,
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,facebook,search,0.48,41,0,,
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,facebook,video_feeds,1.69,219,2,1,1
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,instagram,feed,28.15,2374,3,3,2
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,instagram,instagram_explore,0.34,187,0,,
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,instagram,instagram_explore_grid_home,0.03,24,0,,
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,instagram,instagram_reels,7.84,1560,3,2,2
+120204255627540238,Join9_1_dec_28,ACC5_Traffic,instagram,instagram_stories,6.45,745,2,2,2
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,audience_network,an_classic,0.119888,26,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,biz_disco_feed,0.019981,5,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,facebook_reels,0.879181,311,1,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,facebook_reels_overlay,0.009991,4,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,facebook_stories,0.469562,66,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,feed,25.696048,4309,9,7,5
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,instream_video,0.119888,23,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,marketplace,1.428668,499,2,2,1
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,right_hand_column,0,2,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,search,1.01905,377,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,facebook,video_feeds,0.339683,88,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,instagram,feed,31.210908,3039,4,1,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,instagram,instagram_explore,0.339683,291,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,instagram,instagram_explore_grid_home,0.089916,118,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,instagram,instagram_reels,0.769283,368,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,instagram,instagram_stories,1.848277,342,0,,
+120204255634470238,before_after7_9_dec_28,ACC5_Traffic,messenger,messenger_stories,0.009991,1,0,,
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,audience_network,an_classic,3.769145,350,4,4,1
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,audience_network,rewarded_video,1.589639,228,4,4,3
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,facebook,biz_disco_feed,0.009998,2,0,,
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,facebook,facebook_reels,23.014778,6176,13,5,4
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,facebook,facebook_reels_overlay,0.589866,85,2,2,1
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,facebook,facebook_stories,34.002285,3775,24,23,12
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,facebook,feed,290.534075,53055,314,189,156
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,facebook,instream_video,3.849127,415,1,1,
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,facebook,marketplace,14.446722,2456,5,5,3
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,facebook,search,8.348106,413,0,,
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,facebook,video_feeds,10.737564,2601,13,9,7
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,instagram,feed,308.020108,35891,70,44,29
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,instagram,instagram_explore,7.058398,3234,4,4,1
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,instagram,instagram_explore_grid_home,1.039764,778,3,2,2
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,instagram,instagram_reels,26.683945,7843,7,3,2
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,instagram,instagram_stories,59.536491,10154,22,21,9
+120204281344840238,before_after_vid1_1_dec_29,ACC5_Traffic,messenger,messenger_stories,0.039991,1,0,,
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,audience_network,an_classic,4.85093,482,2,2,
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,audience_network,rewarded_video,2.746188,181,0,,
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,facebook,facebook_reels,39.208341,9344,15,12,6
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,facebook,facebook_reels_overlay,0.691558,141,0,,
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,facebook,facebook_stories,32.733753,3786,11,11,4
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,facebook,feed,1252.542137,164829,1054,437,309
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,facebook,instream_video,4.259597,1069,1,1,
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,facebook,marketplace,19.634238,4893,3,3,1
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,facebook,search,6.825378,1230,6,5,4
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,facebook,video_feeds,19.223313,4215,21,14,8
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,instagram,feed,707.343736,73554,139,98,71
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,instagram,instagram_explore,6.143843,2802,3,1,1
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,instagram,instagram_explore_grid_home,1.142574,1065,2,1,
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,instagram,instagram_profile_feed,3.447768,958,1,,
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,instagram,instagram_reels,21.338077,5410,9,8,4
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,instagram,instagram_search,0.100226,38,0,,
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,instagram,instagram_stories,39.178274,6833,16,14,2
+120204281415260238,before_after_vid1_4_dec_29,ACC5_Traffic,messenger,messenger_stories,0.030068,2,0,,
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,audience_network,an_classic,9.885636,1327,16,16,6
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,audience_network,rewarded_video,1.834758,265,1,1,
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,facebook,biz_disco_feed,0.020052,8,0,,
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,facebook,facebook_reels,38.088773,10636,22,6,2
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,facebook,facebook_reels_overlay,0.340884,94,0,,
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,facebook,facebook_stories,23.591178,2852,8,8,5
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,facebook,feed,933.079701,116470,685,364,271
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,facebook,instream_video,4.792428,1012,2,2,1
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,facebook,marketplace,39.943583,8566,11,11,9
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,facebook,search,10.938366,1349,0,,
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,facebook,video_feeds,17.24472,3784,15,10,5
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,instagram,feed,505.74151,48167,83,48,31
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,instagram,instagram_explore,6.807654,3468,7,3,2
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,instagram,instagram_explore_grid_home,3.468996,2749,3,1,1
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,instagram,instagram_reels,41.046443,11431,13,6,7
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,instagram,instagram_stories,48.315293,8129,11,9,6
+120204380848610238,before_after_vid1_2_jan_3,ACC5_Traffic,messenger,messenger_stories,0.010026,3,0,,
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,audience_network,an_classic,25.35665,2779,41,41,13
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,audience_network,rewarded_video,68.826625,6687,126,126,36
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,facebook,biz_disco_feed,0.040074,16,0,,
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,facebook,facebook_reels,206.820503,44572,103,42,26
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,facebook,facebook_reels_overlay,4.177686,674,2,2,1
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,facebook,facebook_stories,201.08996,14178,67,66,37
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,facebook,feed,2584.965747,359056,2596,1078,867
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,facebook,instream_video,24.194512,2998,20,21,8
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,facebook,marketplace,52.336287,10667,13,11,5
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,facebook,search,18.624264,2371,11,9,5
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,facebook,video_feeds,63.707207,12845,45,25,14
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,instagram,feed,1822.653266,195998,395,263,182
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,instagram,instagram_explore,59.319134,19712,26,14,10
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,instagram,instagram_explore_grid_home,8.706017,6526,14,6,
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,instagram,instagram_reels,113.82942,27111,26,14,12
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,instagram,instagram_stories,691.722612,98100,336,289,186
+120204380916870238,before_after_vid1_3_jan_3,ACC5_Traffic,messenger,messenger_stories,0.020037,2,0,,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,audience_network,an_classic,0.269911,36,0,,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,audience_network,rewarded_video,0.05998,3,0,,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,facebook,facebook_reels,3.868731,1002,0,,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,facebook,facebook_reels_overlay,0.049984,12,0,,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,facebook,facebook_stories,2.599147,372,1,1,1
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,facebook,feed,149.910815,25361,134,76,63
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,facebook,instream_video,0.379875,71,0,,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,facebook,marketplace,0.649787,214,0,,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,facebook,search,0.259915,46,1,1,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,facebook,video_feeds,2.269255,544,1,1,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,instagram,feed,151.310356,16316,23,16,12
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,instagram,instagram_explore,0.909702,339,0,,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,instagram,instagram_explore_grid_home,0.099967,112,1,1,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,instagram,instagram_reels,4.398557,1260,1,1,
+120204381418110238,before_after_vid1_4_jan_3,ACC5_Traffic,instagram,instagram_stories,18.234018,3342,8,6,3
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,audience_network,an_classic,0.369793,63,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,audience_network,rewarded_video,0.739587,47,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,facebook,facebook_reels,4.717364,1063,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,facebook,facebook_reels_overlay,0.029983,4,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,facebook,facebook_stories,3.727917,301,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,facebook,feed,92.468335,13397,70,35,19
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,facebook,instream_video,0.259855,30,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,facebook,marketplace,0.439754,158,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,facebook,search,0.24986,62,1,1,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,facebook,video_feeds,1.19933,263,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,instagram,feed,29.413566,3060,4,2,1
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,instagram,instagram_explore,0.299832,127,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,instagram,instagram_explore_grid_home,0.019989,16,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,instagram,instagram_profile_feed,0.039978,15,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,instagram,instagram_reels,1.399218,328,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,instagram,instagram_search,0,2,0,,
+120204381451700238,before_after_vid1_5_jan_3,ACC5_Traffic,instagram,instagram_stories,7.805639,1449,5,5,2
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,audience_network,an_classic,12.01755,1492,19,19,7
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,audience_network,rewarded_video,8.692695,1221,15,15,5
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,facebook,biz_disco_feed,0.070102,19,0,,
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,facebook,facebook_reels,99.064675,20979,43,17,9
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,facebook,facebook_reels_overlay,1.922808,279,0,,
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,facebook,facebook_stories,86.446246,7759,44,42,27
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,facebook,feed,1565.075644,203614,1237,579,447
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,facebook,instream_video,15.542699,2430,13,13,6
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,facebook,marketplace,54.239211,11047,19,17,14
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,facebook,search,21.52143,1823,6,3,3
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,facebook,video_feeds,38.255869,8044,23,14,9
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,instagram,feed,1067.989697,103894,228,151,95
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,instagram,instagram_explore,10.895912,4956,4,1,1
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,instagram,instagram_explore_grid_home,5.007313,3648,9,3,1
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,instagram,instagram_reels,30.734885,7569,8,6,2
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,instagram,instagram_stories,111.783249,18925,54,50,23
+120204452878840238,before_after_vid1_5_jan_6,ACC5_Traffic,messenger,messenger_stories,0.010015,3,0,,
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,audience_network,an_classic,13.995898,1106,12,12,
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,audience_network,rewarded_video,7.493158,598,6,6,2
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,facebook,facebook_reels,98.97171,18373,28,13,4
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,facebook,facebook_reels_overlay,2.591092,381,3,1,2
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,facebook,facebook_stories,137.698031,9959,58,55,25
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,facebook,feed,2203.518638,256884,1565,718,502
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,facebook,instream_video,7.002951,1565,3,3,1
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,facebook,marketplace,108.355665,18542,36,33,20
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,facebook,search,12.605312,1640,4,2,1
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,facebook,video_feeds,36.445359,6016,28,20,16
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,instagram,feed,667.051118,61566,111,82,53
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,instagram,instagram_explore,7.21304,2601,3,2,1
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,instagram,instagram_explore_grid_home,1.47062,964,1,1,1
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,instagram,instagram_profile_feed,2.531067,801,0,,
+120204452887320238,before_after_vid1_1_jan_6,ACC5_Traffic,instagram,instagram_reels,52.081949,8070,22,13,9
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,audience_network,an_classic,0.4,17,1,1,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,facebook,facebook_reels,2.6,276,1,,1
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,facebook,facebook_reels_overlay,0,8,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,facebook,facebook_stories,1.25,52,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,facebook,feed,109.9,9191,51,30,18
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,facebook,instream_video,0.05,8,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,facebook,marketplace,5.7,655,1,1,1
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,facebook,right_hand_column,0.26,892,1,1,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,facebook,search,0.4,47,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,facebook,video_feeds,0.75,56,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,instagram,feed,62.35,6842,10,6,3
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,instagram,instagram_explore,1.5,378,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,instagram,instagram_explore_grid_home,0.09,134,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,instagram,instagram_profile_feed,0.39,105,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,instagram,instagram_reels,4.43,822,1,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,instagram,instagram_search,0.05,23,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,instagram,instagram_stories,3.73,330,0,,
+120206999532260436,IMAGE - BA2 - Loan - IT 1,ACC6,messenger,messenger_stories,0.25,32,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,audience_network,an_classic,1.1089,27,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,facebook,facebook_reels,2.037978,220,2,1,1
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,facebook,facebook_reels_overlay,0.01998,4,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,facebook,facebook_stories,1.888127,74,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,facebook,feed,51.878538,3506,9,5,3
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,facebook,instream_video,0.01998,3,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,facebook,marketplace,9.93015,928,1,1,1
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,facebook,right_hand_column,2.117899,8828,1,1,1
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,facebook,search,1.958058,567,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,facebook,video_feeds,0.189812,22,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,instagram,feed,6.073975,572,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,instagram,instagram_explore,0.139861,34,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,instagram,instagram_explore_grid_home,0.01998,44,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,instagram,instagram_profile_feed,0.03996,13,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,instagram,instagram_reels,7.562498,1082,1,1,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,instagram,instagram_search,0.089911,55,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,instagram,instagram_stories,15.055066,1351,4,4,4
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,messenger,messenger_inbox,0.00999,1,0,,
+120207006083440436,IMAGE - BA2 - Loan - IT 2,ACC6,messenger,messenger_stories,0.669336,90,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,audience_network,an_classic,0.749105,53,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,facebook,facebook_reels,0.97883,95,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,facebook,facebook_reels_overlay,0.019976,2,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,facebook,facebook_stories,0.749105,35,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,facebook,feed,44.836426,3056,10,5,4
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,facebook,instream_video,0.009988,6,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,facebook,marketplace,2.277279,458,1,1,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,facebook,right_hand_column,0.119857,855,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,facebook,search,0.35957,53,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,facebook,video_feeds,0.229726,27,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,instagram,feed,12.884604,1163,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,instagram,instagram_explore,0.299642,72,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,instagram,instagram_explore_grid_home,0.079905,86,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,instagram,instagram_profile_feed,0.169797,39,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,instagram,instagram_reels,8.030405,1177,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,instagram,instagram_search,0.019976,12,0,,
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,instagram,instagram_stories,11.646084,977,2,2,1
+120207006113450436,IMAGE - BA2 - Loan - IT 3,ACC6,messenger,messenger_stories,0.229726,28,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,audience_network,an_classic,0.379891,7,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,facebook,facebook_reels,4.428735,378,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,facebook,facebook_reels_overlay,0.06998,19,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,facebook,facebook_stories,6.698087,159,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,facebook,feed,46.496718,3067,11,8,4
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,facebook,instream_video,0.029991,9,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,facebook,marketplace,3.00914,668,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,facebook,right_hand_column,0.269923,1160,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,facebook,search,0.509854,58,3,3,3
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,facebook,video_feeds,0.639817,63,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,instagram,feed,18.824623,1536,2,1,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,instagram,instagram_explore,0.479863,123,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,instagram,instagram_explore_grid_home,0.06998,65,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,instagram,instagram_profile_feed,0.339903,49,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,instagram,instagram_reels,9.827193,1311,1,1,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,instagram,instagram_search,0.079977,25,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,instagram,instagram_stories,12.476436,938,5,4,4
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,messenger,messenger_inbox,0,1,0,,
+120207006148890436,IMAGE - BA3 - Loan - IT 1,ACC6,messenger,messenger_stories,0.389889,65,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,audience_network,an_classic,0.25995,25,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,facebook,facebook_reels,5.348979,458,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,facebook,facebook_reels_overlay,0.04999,24,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,facebook,facebook_stories,3.839268,157,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,facebook,feed,36.503036,2326,5,2,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,facebook,instream_video,0.039992,16,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,facebook,marketplace,3.03942,715,1,1,1
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,facebook,right_hand_column,1.799657,9123,5,5,4
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,facebook,search,0.649876,80,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,facebook,video_feeds,0.549895,53,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,instagram,feed,16.716811,1290,1,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,instagram,instagram_explore,0.589887,123,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,instagram,instagram_explore_grid_home,0.129975,147,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,instagram,instagram_profile_feed,0.199962,33,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,instagram,instagram_reels,20.926008,3565,6,2,1
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,instagram,instagram_search,0.959817,665,0,,
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,instagram,instagram_stories,11.607785,1038,2,1,1
+120207006148900436,IMAGE - BA3 - Loan - IT 3,ACC6,messenger,messenger_stories,1.619691,284,2,2,2
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,audience_network,an_classic,2.3686,58,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,facebook,facebook_reels,5.276881,512,1,1,2
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,facebook,facebook_reels_overlay,0.099941,10,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,facebook,facebook_stories,2.97824,105,2,2,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,facebook,feed,91.825733,6656,20,9,6
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,facebook,instream_video,0.119929,19,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,facebook,marketplace,9.074637,1467,6,5,2
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,facebook,right_hand_column,1.189297,4426,2,2,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,facebook,search,1.92886,223,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,facebook,video_feeds,0.729569,81,2,1,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,instagram,feed,15.211011,1410,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,instagram,instagram_explore,0.329805,147,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,instagram,instagram_explore_grid_home,0.229864,279,1,1,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,instagram,instagram_profile_feed,0.309817,49,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,instagram,instagram_reels,8.345068,1214,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,instagram,instagram_search,0.029982,29,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,instagram,instagram_stories,11.982918,1060,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,messenger,messenger_inbox,0,3,0,,
+120207006148910436,IMAGE - BA3 - Loan - IT 2,ACC6,messenger,messenger_stories,0.259846,44,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,audience_network,an_classic,2.898072,29,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,facebook,facebook_reels,1.90873,157,1,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,facebook,facebook_reels_overlay,0.05996,16,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,facebook,facebook_stories,0.439707,17,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,facebook,feed,207.901676,14182,98,50,39
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,facebook,instream_video,0.019987,10,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,facebook,marketplace,0.989342,191,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,facebook,right_hand_column,0.199867,412,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,facebook,search,0.219854,23,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,facebook,video_feeds,0.459694,51,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,instagram,feed,78.547739,5382,12,7,5
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,instagram,instagram_explore,1.329116,201,1,1,1
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,instagram,instagram_explore_grid_home,0.02998,20,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,instagram,instagram_profile_feed,0.299801,41,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,instagram,instagram_reels,11.692221,1026,2,1,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,instagram,instagram_search,0,10,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,instagram,instagram_stories,8.634255,331,0,,
+120207006235700436,IMAGE - Hyp52 - GPT Loan - IT 1,ACC6,messenger,messenger_stories,0,1,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,audience_network,an_classic,0.239931,5,1,1,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,facebook,facebook_reels,0.639817,47,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,facebook,facebook_reels_overlay,0,5,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,facebook,facebook_stories,0.229934,9,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,facebook,feed,45.047131,2627,10,5,5
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,facebook,instream_video,0.039989,9,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,facebook,marketplace,0.83976,180,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,facebook,right_hand_column,0.06998,267,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,facebook,search,0.13996,11,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,facebook,video_feeds,0.469866,34,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,instagram,feed,17.165096,1188,4,3,2
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,instagram,instagram_explore,0.309911,62,1,1,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,instagram,instagram_explore_grid_home,0.039989,24,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,instagram,instagram_profile_feed,0.049986,9,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,instagram,instagram_reels,2.499286,251,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,instagram,instagram_search,0,5,0,,
+120207006285360436,IMAGE - Hyp52 - GPT Loan - IT 1 - Copy,ACC6,instagram,instagram_stories,2.229363,146,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,audience_network,an_classic,0.2399,23,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,facebook,facebook_reels,3.938354,339,1,1,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,facebook,facebook_reels_overlay,0.009996,7,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,facebook,facebook_stories,1.489378,61,1,1,2
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,facebook,feed,139.191825,11696,55,24,20
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,facebook,instream_video,0.089962,13,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,facebook,marketplace,7.716775,1145,3,3,1
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,facebook,right_hand_column,0.90962,2460,2,2,1
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,facebook,search,0.469804,42,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,facebook,video_feeds,1.169511,74,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,instagram,feed,25.419376,2756,4,1,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,instagram,instagram_explore,1.229486,295,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,instagram,instagram_explore_grid_home,0.099958,109,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,instagram,instagram_profile_feed,0.349854,46,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,instagram,instagram_reels,4.668049,720,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,instagram,instagram_search,0.029987,11,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,instagram,instagram_stories,4.238229,404,1,1,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,messenger,messenger_inbox,0.019992,2,0,,
+120207006306990436,IMAGE - BA2 - Loan - IT 7,ACC6,messenger,messenger_stories,0.129946,30,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,audience_network,an_classic,0.029989,8,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,facebook,facebook_reels,2.479059,152,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,facebook,facebook_reels_overlay,0.069973,14,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,facebook,facebook_stories,0.949639,40,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,facebook,feed,101.231564,7569,30,19,12
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,facebook,instream_video,0.009996,8,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,facebook,marketplace,3.368721,439,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,facebook,right_hand_column,0.089966,342,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,facebook,search,0.36986,62,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,facebook,video_feeds,0.719727,44,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,instagram,feed,15.913958,1669,2,1,1
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,instagram,instagram_explore,0.229913,82,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,instagram,instagram_explore_grid_home,0.139947,97,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,instagram,instagram_profile_feed,0.129951,28,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,instagram,instagram_reels,2.688979,345,2,1,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,instagram,instagram_search,0.009996,5,0,,
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,instagram,instagram_stories,3.228774,272,2,2,1
+120207006307000436,IMAGE - BA2 - Loan - IT 6,ACC6,messenger,messenger_stories,0.029989,5,0,,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,audience_network,an_classic,0.469822,34,0,,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,facebook,facebook_reels,4.948124,444,0,,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,facebook,facebook_reels_overlay,0.07997,19,0,,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,facebook,facebook_stories,5.268003,247,1,1,1
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,facebook,feed,120.684252,7674,39,20,13
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,facebook,instream_video,0.029989,17,0,,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,facebook,marketplace,13.334945,672,2,2,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,facebook,right_hand_column,1.309504,5019,4,4,3
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,facebook,search,1.789322,270,1,1,1
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,facebook,video_feeds,0.999621,77,2,1,1
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,instagram,feed,24.900561,2120,3,1,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,instagram,instagram_explore,0.57978,137,0,,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,instagram,instagram_explore_grid_home,0.119955,95,0,,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,instagram,instagram_profile_feed,0.269898,23,0,,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,instagram,instagram_reels,19.762509,3671,3,2,2
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,instagram,instagram_search,0.189928,127,0,,
+120207006307010436,IMAGE - BA3 - Loan - IT 6,ACC6,instagram,instagram_stories,14.884358,1880,2,2,2
+120201646174610330,before_after6_vid_dec_4,ACC7,audience_network,an_classic,14.777782,1411,21,21,4
+120201646174610330,before_after6_vid_dec_4,ACC7,audience_network,rewarded_video,5.239213,424,9,9,3
+120201646174610330,before_after6_vid_dec_4,ACC7,facebook,facebook_reels,223.526444,49499,106,52,36
+120201646174610330,before_after6_vid_dec_4,ACC7,facebook,facebook_reels_overlay,2.609608,406,0,,
+120201646174610330,before_after6_vid_dec_4,ACC7,facebook,facebook_stories,156.356528,15711,77,73,40
+120201646174610330,before_after6_vid_dec_4,ACC7,facebook,feed,2876.998108,328225,2861,1419,1195
+120201646174610330,before_after6_vid_dec_4,ACC7,facebook,instream_video,12.718091,2053,7,6,3
+120201646174610330,before_after6_vid_dec_4,ACC7,facebook,marketplace,192.351124,31661,66,59,31
+120201646174610330,before_after6_vid_dec_4,ACC7,facebook,search,53.292,8340,19,14,9
+120201646174610330,before_after6_vid_dec_4,ACC7,facebook,video_feeds,116.762472,27463,117,81,53
+120201646174610330,before_after6_vid_dec_4,ACC7,instagram,feed,1849.512353,236796,441,278,169
+120201646174610330,before_after6_vid_dec_4,ACC7,instagram,instagram_explore,34.144874,14919,20,8,5
+120201646174610330,before_after6_vid_dec_4,ACC7,instagram,instagram_explore_grid_home,16.537517,13335,22,12,10
+120201646174610330,before_after6_vid_dec_4,ACC7,instagram,instagram_profile_feed,28.535716,10236,9,3,2
+120201646174610330,before_after6_vid_dec_4,ACC7,instagram,instagram_reels,53.591955,16503,20,9,8
+120201646174610330,before_after6_vid_dec_4,ACC7,instagram,instagram_search,1.59976,626,1,,
+120201646174610330,before_after6_vid_dec_4,ACC7,instagram,instagram_stories,156.816459,32228,68,65,15
+120201646174610330,before_after6_vid_dec_4,ACC7,messenger,messenger_stories,0.029996,5,0,,
+120202808047940330,window_1_dec_15,ACC7,audience_network,an_classic,1.089533,163,1,1,
+120202808047940330,window_1_dec_15,ACC7,facebook,facebook_reels,6.627157,904,0,,
+120202808047940330,window_1_dec_15,ACC7,facebook,facebook_reels_overlay,0.079966,26,0,,
+120202808047940330,window_1_dec_15,ACC7,facebook,facebook_stories,6.297298,279,2,2,
+120202808047940330,window_1_dec_15,ACC7,facebook,feed,634.137958,53629,283,133,89
+120202808047940330,window_1_dec_15,ACC7,facebook,instream_video,4.628015,832,7,7,5
+120202808047940330,window_1_dec_15,ACC7,facebook,marketplace,34.145352,8240,7,7,6
+120202808047940330,window_1_dec_15,ACC7,facebook,right_hand_column,0.339854,546,1,1,
+120202808047940330,window_1_dec_15,ACC7,facebook,search,17.222612,2969,9,9,7
+120202808047940330,window_1_dec_15,ACC7,facebook,video_feeds,11.085244,1329,4,4,3
+120202808047940330,window_1_dec_15,ACC7,instagram,feed,106.794186,8180,10,5,4
+120202808047940330,window_1_dec_15,ACC7,instagram,instagram_explore,2.978722,1107,2,,
+120202808047940330,window_1_dec_15,ACC7,instagram,instagram_explore_grid_home,0.619734,513,0,,
+120202808047940330,window_1_dec_15,ACC7,instagram,instagram_profile_feed,0.299871,101,0,,
+120202808047940330,window_1_dec_15,ACC7,instagram,instagram_reels,2.628872,608,1,1,1
+120202808047940330,window_1_dec_15,ACC7,instagram,instagram_reels_overlay,0.13994,149,0,,
+120202808047940330,window_1_dec_15,ACC7,instagram,instagram_search,0.029987,11,0,,
+120202808047940330,window_1_dec_15,ACC7,instagram,instagram_stories,10.005708,1281,2,2,
+120202808047940330,window_1_dec_15,ACC7,messenger,messenger_stories,0.019991,3,0,,
+120203461908470330,Join9_4_dec_21,ACC7,audience_network,an_classic,0.02,2,0,,
+120203461908470330,Join9_4_dec_21,ACC7,audience_network,rewarded_video,0.61,58,1,1,1
+120203461908470330,Join9_4_dec_21,ACC7,facebook,facebook_reels,8.8,1305,4,3,2
+120203461908470330,Join9_4_dec_21,ACC7,facebook,facebook_stories,0.54,31,1,1,1
+120203461908470330,Join9_4_dec_21,ACC7,facebook,feed,19.86,1116,9,4,2
+120203461908470330,Join9_4_dec_21,ACC7,facebook,instream_video,1.06,254,1,1,
+120203461908470330,Join9_4_dec_21,ACC7,facebook,marketplace,3.27,728,1,1,
+120203461908470330,Join9_4_dec_21,ACC7,facebook,search,1.66,91,0,,
+120203461908470330,Join9_4_dec_21,ACC7,facebook,video_feeds,1.11,93,2,1,1
+120203461908470330,Join9_4_dec_21,ACC7,instagram,feed,9.23,1001,2,2,1
+120203461908470330,Join9_4_dec_21,ACC7,instagram,instagram_explore,0.09,29,0,,
+120203461908470330,Join9_4_dec_21,ACC7,instagram,instagram_explore_grid_home,0.03,9,1,1,
+120203461908470330,Join9_4_dec_21,ACC7,instagram,instagram_profile_feed,0,10,0,,
+120203461908470330,Join9_4_dec_21,ACC7,instagram,instagram_reels,3.56,519,0,,
+120203461908470330,Join9_4_dec_21,ACC7,instagram,instagram_stories,3.31,296,2,2,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,audience_network,an_classic,0.639758,27,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,facebook,facebook_reels,2.66899,337,1,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,facebook,facebook_reels_overlay,0,6,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,facebook,facebook_stories,3.018857,118,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,facebook,feed,28.369263,1971,5,1,1
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,facebook,instream_video,0,1,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,facebook,marketplace,1.069595,131,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,facebook,right_hand_column,0,5,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,facebook,search,0.839682,162,1,1,1
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,facebook,video_feeds,0.019992,6,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,instagram,feed,6.627492,422,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,instagram,instagram_explore,0.049981,10,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,instagram,instagram_explore_grid_home,0,11,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,instagram,instagram_profile_feed,0,5,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,instagram,instagram_reels,1.759334,210,0,,
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,instagram,instagram_stories,60.627055,5538,24,24,20
+120208951134100330,IMAGE - BA2 - EcoGrant - IT 1,ACC7,messenger,messenger_stories,0,3,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,audience_network,an_classic,0.509813,61,1,1,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,facebook,facebook_reels,8.167007,779,1,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,facebook,facebook_reels_overlay,0.119956,40,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,facebook,facebook_stories,10.346208,387,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,facebook,feed,728.842879,46011,208,89,77
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,facebook,instream_video,0.029989,12,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,facebook,marketplace,10.786047,1234,5,4,4
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,facebook,right_hand_column,0.029989,142,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,facebook,search,4.128487,827,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,facebook,video_feeds,5.168106,379,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,instagram,feed,64.226461,3294,7,4,1
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,instagram,instagram_explore,1.349505,204,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,instagram,instagram_explore_grid_home,0.079971,93,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,instagram,instagram_profile_feed,0.379861,83,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,instagram,instagram_reels,2.968912,224,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,instagram,instagram_search,0.019993,6,0,,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,instagram,instagram_stories,8.67682,418,1,1,
+120208951233180330,IMAGE - BA2 - EcoGrant - IT 2,ACC7,messenger,messenger_stories,0.009996,3,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,audience_network,an_classic,0.509954,32,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,facebook,facebook_reels,7.489331,496,3,2,1
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,facebook,facebook_reels_overlay,0.059995,17,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,facebook,facebook_stories,5.529506,142,3,3,1
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,facebook,feed,145.357011,7804,32,22,18
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,facebook,instream_video,0.019998,5,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,facebook,marketplace,2.949736,217,1,1,1
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,facebook,right_hand_column,0.029997,29,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,facebook,search,1.389876,358,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,facebook,video_feeds,1.159896,64,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,instagram,feed,46.185873,1738,1,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,instagram,instagram_explore,0.33997,57,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,instagram,instagram_explore_grid_home,0.169985,19,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,instagram,instagram_profile_feed,0.099991,9,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,instagram,instagram_reels,3.3597,289,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,instagram,instagram_search,0.009999,9,0,,
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,instagram,instagram_stories,9.129184,490,1,1,1
+120208951241140330,IMAGE - BA2 - EcoGrant - IT 3,ACC7,messenger,messenger_stories,0.019998,8,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,audience_network,an_classic,0,5,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,facebook,facebook_reels,2.17757,163,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,facebook,facebook_reels_overlay,0.009989,2,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,facebook,facebook_stories,3.046601,95,1,1,1
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,facebook,feed,18.239649,707,2,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,facebook,instream_video,0.029967,1,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,facebook,marketplace,1.178685,81,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,facebook,right_hand_column,0,5,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,facebook,search,1.158707,159,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,facebook,video_feeds,0.229744,25,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,instagram,feed,2.856812,142,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,instagram,instagram_explore,0.019978,10,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,instagram,instagram_explore_grid_home,0,2,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,instagram,instagram_reels,3.945598,133,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,instagram,instagram_stories,2.936723,180,0,,
+120208951283940330,IMAGE - BA3 - EcoGrant - IT 1,ACC7,messenger,messenger_stories,0.019978,2,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,audience_network,an_classic,0,2,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,facebook,facebook_reels,10.704163,664,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,facebook,facebook_reels_overlay,0.009995,3,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,facebook,facebook_stories,12.613122,339,1,1,1
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,facebook,feed,57.918416,2851,12,11,9
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,facebook,instream_video,0.009995,2,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,facebook,marketplace,0.739597,96,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,facebook,right_hand_column,0.019989,40,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,facebook,search,0.959477,108,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,facebook,video_feeds,1.459204,86,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,instagram,feed,53.630754,2709,5,1,1
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,instagram,instagram_explore,0.579684,109,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,instagram,instagram_explore_grid_home,0.039978,26,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,instagram,instagram_profile_feed,0.169907,30,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,instagram,instagram_reels,2.388697,215,1,1,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,instagram,instagram_search,0.039978,3,0,,
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,instagram,instagram_stories,23.717067,1438,7,7,5
+120208951317740330,IMAGE - BA3 - EcoGrant - IT 2,ACC7,messenger,messenger_stories,0.039978,6,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,audience_network,an_classic,0.179866,12,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,facebook,facebook_reels,6.375251,333,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,facebook,facebook_reels_overlay,0.049963,8,1,1,1
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,facebook,facebook_stories,12.59062,317,1,1,1
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,facebook,feed,59.865401,2532,13,10,8
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,facebook,marketplace,0.589561,59,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,facebook,right_hand_column,0,4,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,facebook,search,2.278303,283,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,facebook,video_feeds,0.679494,50,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,instagram,feed,58.886131,2259,3,2,1
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,instagram,instagram_explore,0.609546,46,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,instagram,instagram_explore_grid_home,0.019985,22,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,instagram,instagram_profile_feed,0.139896,23,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,instagram,instagram_reels,7.454447,242,0,,
+120208951327520330,IMAGE - BA3 - EcoGrant - IT 3,ACC7,instagram,instagram_stories,24.781538,1418,4,4,3
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,audience_network,an_classic,0,2,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,audience_network,rewarded_video,0.04,3,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,facebook,facebook_reels,1.53,150,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,facebook,facebook_reels_overlay,0.09,12,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,facebook,facebook_stories,1.53,51,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,facebook,feed,127.17,5645,45,35,27
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,facebook,instream_video,0.13,4,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,facebook,marketplace,3.13,174,1,1,1
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,facebook,search,0.52,59,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,facebook,video_feeds,1.34,99,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,instagram,feed,37.05,898,3,3,3
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,instagram,instagram_explore,0.05,12,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,instagram,instagram_profile_feed,0.07,8,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,instagram,instagram_reels,0.27,7,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,instagram,instagram_search,0.02,3,0,,
+120208951341830330,VIDEO - BF - EcoGrant - IT 1,ACC7,instagram,instagram_stories,0.35,24,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,audience_network,an_classic,0.21,12,1,1,1
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,audience_network,rewarded_video,0.96,26,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,facebook,facebook_reels,0.76,59,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,facebook,facebook_reels_overlay,0.03,4,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,facebook,facebook_stories,0.34,13,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,facebook,feed,28.08,1214,4,4,3
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,facebook,marketplace,0.33,10,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,facebook,search,0.29,28,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,facebook,video_feeds,0.18,20,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,instagram,feed,3.7,112,1,1,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,instagram,instagram_explore,0.02,1,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,instagram,instagram_profile_feed,0.01,1,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,instagram,instagram_reels,0.06,3,0,,
+120208951358500330,VIDEO - BF - EcoGrant - IT 3,ACC7,instagram,instagram_stories,0.37,16,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,audience_network,an_classic,0.05,6,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,audience_network,rewarded_video,0.51,27,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,facebook,facebook_reels,0.97,97,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,facebook,facebook_reels_overlay,0.23,31,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,facebook,facebook_stories,2.92,62,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,facebook,feed,146.79,8376,88,75,64
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,facebook,instream_video,0.03,4,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,facebook,marketplace,4.69,224,1,1,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,facebook,search,0.54,41,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,facebook,video_feeds,1.88,198,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,instagram,feed,7.21,140,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,instagram,instagram_explore,0,1,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,instagram,instagram_profile_feed,0,1,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,instagram,instagram_reels,0.04,4,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,instagram,instagram_search,0.01,1,0,,
+120208951364430330,VIDEO - BF - EcoGrant - IT 5,ACC7,instagram,instagram_stories,0.81,32,0,,
+120204498540320251,Join9_4_dec_26,ACC8,audience_network,an_classic,2.649651,90,0,,
+120204498540320251,Join9_4_dec_26,ACC8,audience_network,rewarded_video,22.537033,1204,25,25,9
+120204498540320251,Join9_4_dec_26,ACC8,facebook,facebook_reels,35.105378,4646,18,8,6
+120204498540320251,Join9_4_dec_26,ACC8,facebook,facebook_reels_overlay,0.459939,11,0,,
+120204498540320251,Join9_4_dec_26,ACC8,facebook,facebook_stories,5.08933,213,3,2,2
+120204498540320251,Join9_4_dec_26,ACC8,facebook,feed,175.536888,9901,79,41,23
+120204498540320251,Join9_4_dec_26,ACC8,facebook,instream_video,4.819365,974,3,3,2
+120204498540320251,Join9_4_dec_26,ACC8,facebook,marketplace,25.0667,5100,7,7,1
+120204498540320251,Join9_4_dec_26,ACC8,facebook,search,9.128798,513,6,4,1
+120204498540320251,Join9_4_dec_26,ACC8,facebook,video_feeds,9.828706,968,6,5,1
+120204498540320251,Join9_4_dec_26,ACC8,instagram,feed,111.375336,7980,20,16,7
+120204498540320251,Join9_4_dec_26,ACC8,instagram,instagram_explore,1.759768,419,1,,1
+120204498540320251,Join9_4_dec_26,ACC8,instagram,instagram_explore_grid_home,0.259966,95,1,1,
+120204498540320251,Join9_4_dec_26,ACC8,instagram,instagram_profile_feed,0.339955,54,0,,
+120204498540320251,Join9_4_dec_26,ACC8,instagram,instagram_reels,23.456912,2805,5,2,2
+120204498540320251,Join9_4_dec_26,ACC8,instagram,instagram_search,0.029996,12,0,,
+120204498540320251,Join9_4_dec_26,ACC8,instagram,instagram_stories,28.25628,2205,15,13,4
+120204498548590251,before_after7_1_dec_26,ACC8,audience_network,an_classic,48.829231,5124,40,40,25
+120204498548590251,before_after7_1_dec_26,ACC8,facebook,facebook_reels,250.594731,49788,85,54,26
+120204498548590251,before_after7_1_dec_26,ACC8,facebook,facebook_reels_overlay,3.48923,536,0,,
+120204498548590251,before_after7_1_dec_26,ACC8,facebook,facebook_stories,251.884447,17788,97,92,49
+120204498548590251,before_after7_1_dec_26,ACC8,facebook,feed,17766.751529,1833616,11897,4611,3060
+120204498548590251,before_after7_1_dec_26,ACC8,facebook,instream_video,79.472472,16733,26,26,11
+120204498548590251,before_after7_1_dec_26,ACC8,facebook,marketplace,686.578575,154815,227,214,102
+120204498548590251,before_after7_1_dec_26,ACC8,facebook,right_hand_column,1.169742,629,0,,
+120204498548590251,before_after7_1_dec_26,ACC8,facebook,search,276.529011,35524,90,71,35
+120204498548590251,before_after7_1_dec_26,ACC8,facebook,video_feeds,309.171812,57851,201,147,75
+120204498548590251,before_after7_1_dec_26,ACC8,instagram,feed,1745.245085,202853,249,137,95
+120204498548590251,before_after7_1_dec_26,ACC8,instagram,instagram_explore,72.893923,31596,29,14,8
+120204498548590251,before_after7_1_dec_26,ACC8,instagram,instagram_explore_grid_home,18.505919,11649,14,6,2
+120204498548590251,before_after7_1_dec_26,ACC8,instagram,instagram_profile_feed,20.505478,6949,6,5,6
+120204498548590251,before_after7_1_dec_26,ACC8,instagram,instagram_reels,107.056389,32497,32,15,5
+120204498548590251,before_after7_1_dec_26,ACC8,instagram,instagram_reels_overlay,5.648754,4816,1,1,
+120204498548590251,before_after7_1_dec_26,ACC8,instagram,instagram_search,0.76983,337,0,,
+120204498548590251,before_after7_1_dec_26,ACC8,instagram,instagram_stories,435.893863,66589,176,157,68
+120204498548590251,before_after7_1_dec_26,ACC8,messenger,messenger_stories,0.08998,11,0,,
+120204498548590251,before_after7_1_dec_26,ACC8,unknown,unknown,0,0,0,,2
+120204564608670251,before_after7_2_dec_28,ACC8,audience_network,an_classic,1.179355,74,0,,
+120204564608670251,before_after7_2_dec_28,ACC8,facebook,facebook_reels,4.997267,1181,2,1,1
+120204564608670251,before_after7_2_dec_28,ACC8,facebook,facebook_reels_overlay,0.029984,9,0,,
+120204564608670251,before_after7_2_dec_28,ACC8,facebook,facebook_stories,5.626922,366,3,3,2
+120204564608670251,before_after7_2_dec_28,ACC8,facebook,feed,135.805722,14112,55,27,19
+120204564608670251,before_after7_2_dec_28,ACC8,facebook,instream_video,0.369798,82,0,,
+120204564608670251,before_after7_2_dec_28,ACC8,facebook,marketplace,8.015616,2328,7,7,1
+120204564608670251,before_after7_2_dec_28,ACC8,facebook,right_hand_column,0.089951,27,0,,
+120204564608670251,before_after7_2_dec_28,ACC8,facebook,search,3.028344,606,0,,
+120204564608670251,before_after7_2_dec_28,ACC8,facebook,video_feeds,2.828453,399,3,3,1
+120204564608670251,before_after7_2_dec_28,ACC8,instagram,feed,97.956424,10946,9,4,1
+120204564608670251,before_after7_2_dec_28,ACC8,instagram,instagram_explore,1.998907,1526,0,,
+120204564608670251,before_after7_2_dec_28,ACC8,instagram,instagram_explore_grid_home,0.319825,471,2,,2
+120204564608670251,before_after7_2_dec_28,ACC8,instagram,instagram_profile_feed,0.209885,140,0,,
+120204564608670251,before_after7_2_dec_28,ACC8,instagram,instagram_reels,6.516436,2430,5,3,1
+120204564608670251,before_after7_2_dec_28,ACC8,instagram,instagram_reels_overlay,0.089951,124,0,,
+120204564608670251,before_after7_2_dec_28,ACC8,instagram,instagram_search,0.029984,8,0,,
+120204564608670251,before_after7_2_dec_28,ACC8,instagram,instagram_stories,41.727178,9940,23,21,20
+120204564608670251,before_after7_2_dec_28,ACC8,messenger,messenger_stories,0,1,0,,
+120204695503330251,before_after_vid1_1_jan_3,ACC8,audience_network,an_classic,58.634911,4842,67,67,27
+120204695503330251,before_after_vid1_1_jan_3,ACC8,audience_network,rewarded_video,42.948947,2945,55,55,20
+120204695503330251,before_after_vid1_1_jan_3,ACC8,facebook,facebook_reels,203.187711,37120,95,49,32
+120204695503330251,before_after_vid1_1_jan_3,ACC8,facebook,facebook_reels_overlay,5.528577,516,3,1,1
+120204695503330251,before_after_vid1_1_jan_3,ACC8,facebook,facebook_stories,226.751646,16298,138,128,69
+120204695503330251,before_after_vid1_1_jan_3,ACC8,facebook,feed,3793.803681,361481,3373,1582,1224
+120204695503330251,before_after_vid1_1_jan_3,ACC8,facebook,instream_video,44.718492,4820,19,20,11
+120204695503330251,before_after_vid1_1_jan_3,ACC8,facebook,marketplace,447.124934,72403,142,122,85
+120204695503330251,before_after_vid1_1_jan_3,ACC8,facebook,search,59.674643,9333,21,19,10
+120204695503330251,before_after_vid1_1_jan_3,ACC8,facebook,video_feeds,112.910943,22162,91,53,37
+120204695503330251,before_after_vid1_1_jan_3,ACC8,instagram,feed,2744.753649,280058,616,463,334
+120204695503330251,before_after_vid1_1_jan_3,ACC8,instagram,instagram_explore,37.010476,13363,17,8,5
+120204695503330251,before_after_vid1_1_jan_3,ACC8,instagram,instagram_explore_grid_home,8.58779,5781,9,4,2
+120204695503330251,before_after_vid1_1_jan_3,ACC8,instagram,instagram_profile_feed,23.573933,6105,6,4,3
+120204695503330251,before_after_vid1_1_jan_3,ACC8,instagram,instagram_reels,270.92028,56177,96,62,48
+120204695503330251,before_after_vid1_1_jan_3,ACC8,instagram,instagram_search,0.719815,337,1,1,1
+120204695503330251,before_after_vid1_1_jan_3,ACC8,instagram,instagram_stories,506.689606,72033,234,215,107
+120204695503330251,before_after_vid1_1_jan_3,ACC8,messenger,messenger_stories,0.129967,14,0,,
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,audience_network,an_classic,11.748292,818,14,15,4
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,audience_network,rewarded_video,37.634529,2516,64,64,12
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,facebook,facebook_reels,213.418975,32593,75,28,20
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,facebook,facebook_reels_overlay,3.829443,328,6,1,1
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,facebook,facebook_stories,84.997644,4206,39,38,23
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,facebook,feed,346.819582,31394,155,64,50
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,facebook,instream_video,16.187647,2572,9,9,6
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,facebook,marketplace,175.634468,35955,93,89,32
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,facebook,search,11.378346,1701,1,1,1
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,facebook,video_feeds,31.625403,4384,22,12,10
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,instagram,feed,179.5439,12476,22,18,11
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,instagram,instagram_explore,5.149251,1376,0,,
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,instagram,instagram_explore_grid_home,2.12969,827,0,,
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,instagram,instagram_profile_feed,1.349804,391,0,,
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,instagram,instagram_reels,72.049526,8744,14,7,7
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,instagram,instagram_search,0.029996,14,0,,
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,instagram,instagram_stories,182.253506,16931,94,92,63
+120206290667900251,SOLUTION AWARE - VIDEO - DISCOUNT - HANDS w/o Grant - IT 1 - QUOTE,ACC8,messenger,messenger_stories,0.009999,1,0,,
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,audience_network,an_classic,2.079749,115,5,5,3
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,audience_network,rewarded_video,1.529815,68,2,2,2
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,facebook,facebook_reels,15.068181,2351,14,,1
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,facebook,facebook_reels_overlay,0.219973,10,0,,
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,facebook,facebook_stories,9.088903,502,4,4,4
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,facebook,feed,115.096104,9435,67,23,18
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,facebook,instream_video,0.799903,145,0,,
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,facebook,marketplace,5.209371,1071,6,6,4
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,facebook,search,0.589929,59,1,1,1
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,facebook,video_feeds,1.089868,199,1,1,
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,instagram,feed,72.341266,7453,10,7,3
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,instagram,instagram_explore,0.869895,272,0,,
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,instagram,instagram_explore_grid_home,0.269967,141,0,,
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,instagram,instagram_profile_feed,0.239971,48,0,,
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,instagram,instagram_reels,5.509335,957,1,,
+120206290705470251,SOLUTION AWARE - VIDEO - BEFORE AFTER - STICKERS - IT 2 - DISCOUNT - LEARN,ACC8,instagram,instagram_stories,18.477769,2659,5,5,3
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,audience_network,an_classic,578.646987,36058,319,320,130
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,audience_network,rewarded_video,316.541766,18491,219,221,100
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,facebook,facebook_reels,2319.786662,325770,1046,346,282
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,facebook,facebook_reels_overlay,33.121814,3625,52,4,6
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,facebook,facebook_stories,449.508903,22706,128,123,63
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,facebook,feed,27370.055459,2165396,16930,7433,6196
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,facebook,instream_video,195.381711,42230,161,132,81
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,facebook,marketplace,1781.359735,295120,385,336,200
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,facebook,search,479.131582,59124,131,90,47
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,facebook,video_feeds,464.265256,60115,218,145,80
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,instagram,feed,4485.981284,270201,619,478,362
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,instagram,instagram_explore,64.244122,11615,15,7,4
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,instagram,instagram_explore_grid_home,33.34176,9242,19,7,4
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,instagram,instagram_profile_feed,39.820158,7839,9,1,1
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,instagram,instagram_reels,416.786991,53980,83,54,30
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,instagram,instagram_search,5.548629,1659,2,,
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,instagram,instagram_stories,408.668997,25794,104,101,52
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,messenger,messenger_inbox,0.049988,11,0,,
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,messenger,messenger_stories,7.298196,423,3,3,1
+120206337294720251,PRODUCT AWARE - VIDEO - BEFORE AFTER - Installation - IT 1 - DISCOUNT - LEARN,ACC8,unknown,unknown,0,0,0,,4
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,audience_network,an_classic,74.689159,4138,73,73,34
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,facebook,facebook_reels,344.827611,50607,152,62,45
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,facebook,facebook_reels_overlay,2.888807,614,5,4,3
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,facebook,facebook_stories,74.399278,3605,12,12,8
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,facebook,feed,1748.458013,144702,1023,561,298
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,facebook,marketplace,268.179261,47772,98,95,68
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,facebook,right_hand_column,1.909212,1365,1,1,
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,facebook,search,16.683111,2473,7,7,3
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,facebook,video_feeds,37.454534,3997,19,14,5
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,instagram,feed,362.80019,31067,39,18,13
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,instagram,instagram_explore,16.513181,3406,5,3,2
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,instagram,instagram_explore_grid_home,2.339034,853,1,,
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,instagram,instagram_profile_feed,2.888807,560,0,,
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,instagram,instagram_reels,76.398453,9774,29,15,7
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,instagram,instagram_search,0.059975,25,0,,
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,instagram,instagram_stories,213.012041,19473,45,41,30
+120207323849990251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 1 - QUOTE,ACC8,messenger,messenger_stories,1.619331,54,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,audience_network,an_classic,0.869625,72,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,facebook,facebook_reels,6.537179,870,2,1,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,facebook,facebook_reels_overlay,0.009996,4,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,facebook,facebook_stories,1.109521,59,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,facebook,feed,315.943654,23159,163,66,45
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,facebook,marketplace,9.885734,1530,2,2,1
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,facebook,right_hand_column,0.029987,71,1,1,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,facebook,search,1.52934,181,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,facebook,video_feeds,1.419387,170,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,instagram,feed,73.828139,6602,13,2,2
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,instagram,instagram_explore,1.109521,262,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,instagram,instagram_explore_grid_home,0.079965,46,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,instagram,instagram_profile_feed,0.169927,27,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,instagram,instagram_reels,0.919603,210,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,instagram,instagram_stories,3.648426,349,0,,
+120207324278260251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 2 - QUOTE,ACC8,messenger,messenger_stories,0.009996,2,0,,
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,audience_network,an_classic,2.789677,144,2,2,1
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,facebook,facebook_reels,11.368683,1128,4,2,3
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,facebook,facebook_reels_overlay,0.019998,5,0,,
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,facebook,facebook_stories,1.98977,83,0,,
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,facebook,feed,103.777979,6603,34,19,19
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,facebook,marketplace,7.899085,1135,2,2,2
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,facebook,right_hand_column,0.029997,82,0,,
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,facebook,search,0.359958,73,0,,
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,facebook,video_feeds,0.669922,67,1,1,2
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,instagram,feed,60.123036,3745,7,4,4
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,instagram,instagram_explore,1.859785,206,1,1,
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,instagram,instagram_explore_grid_home,0.129985,41,0,,
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,instagram,instagram_profile_feed,0.239972,40,0,,
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,instagram,instagram_reels,19.647724,1637,3,2,
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,instagram,instagram_stories,48.074431,3788,14,14,10
+120207324299290251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 3 - QUOTE,ACC8,messenger,messenger_stories,0.009999,1,0,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,audience_network,an_classic,3.370511,143,3,3,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,facebook,facebook_reels,3.620548,460,1,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,facebook,facebook_reels_overlay,0.020003,3,0,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,facebook,facebook_stories,1.610244,48,0,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,facebook,feed,92.454005,6125,22,11,10
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,facebook,marketplace,3.520533,783,1,1,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,facebook,right_hand_column,0.080012,37,0,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,facebook,search,1.020155,136,1,1,1
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,facebook,video_feeds,0.490074,68,0,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,instagram,feed,69.950596,6194,9,3,1
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,instagram,instagram_explore,0.99015,273,1,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,instagram,instagram_explore_grid_home,0.100015,50,0,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,instagram,instagram_profile_feed,0.080012,20,0,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,instagram,instagram_reels,3.550538,488,1,,
+120207324306320251,PRODUCT AWARE - IMAGE - Stickers - City EcoGrant - IT 4 - QUOTE,ACC8,instagram,instagram_stories,17.192604,1705,7,7,5
+120209894266440251,IMAGE - BA3 - EcoGrant - IT 1,ACC8,facebook,facebook_reels,2.79,253,0,,
+120209894266440251,IMAGE - BA3 - EcoGrant - IT 1,ACC8,facebook,facebook_reels_overlay,0,1,0,,
+120209894266440251,IMAGE - BA3 - EcoGrant - IT 1,ACC8,facebook,facebook_stories,1.52,43,0,,
+120209894266440251,IMAGE - BA3 - EcoGrant - IT 1,ACC8,facebook,feed,8.03,519,2,2,1
+120209894266440251,IMAGE - BA3 - EcoGrant - IT 1,ACC8,facebook,instream_video,0.05,7,0,,
+120209894266440251,IMAGE - BA3 - EcoGrant - IT 1,ACC8,facebook,marketplace,0.6,120,0,,
+120209894266440251,IMAGE - BA3 - EcoGrant - IT 1,ACC8,facebook,search,3.64,93,0,,
+120209894266440251,IMAGE - BA3 - EcoGrant - IT 1,ACC8,facebook,video_feeds,0.09,18,0,,
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,audience_network,an_classic,8.479102,90,2,2,
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,audience_network,rewarded_video,5.909374,320,7,7,
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,facebook,facebook_profile_feed,10.978838,4291,20,11,9
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,facebook,facebook_reels,1473.723987,109604,804,399,313
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,facebook,facebook_reels_overlay,9.089038,748,5,3,2
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,facebook,facebook_stories,95.96984,2922,57,54,31
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,facebook,feed,2542.120884,142530,1817,983,741
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,facebook,instream_video,8.509099,260,2,2,1
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,facebook,marketplace,42.955453,3386,11,11,7
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,facebook,search,11.768754,1469,2,2,3
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,facebook,video_feeds,125.216744,10669,85,38,32
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,instagram,feed,1261.336471,58786,324,292,217
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_explore,29.486878,3407,4,4,2
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_profile_feed,8.779071,581,1,,1
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_reels,577.248891,47148,157,109,85
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_search,0.389959,66,0,,
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_stories,211.447616,10823,122,118,68
+120208914881660464,VIDEO - Hyp 60.1,Affiliate,messenger,messenger_stories,0,1,0,,
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,facebook,facebook_profile_feed,3.316109,997,5,1,1
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,facebook,facebook_reels,283.297602,22098,111,43,39
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,facebook,facebook_reels_overlay,2.646894,130,0,,
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,facebook,facebook_stories,49.84152,814,16,14,9
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,facebook,feed,167.932961,6215,55,21,17
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,facebook,instream_video,1.847832,41,2,2,1
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,facebook,marketplace,11.506499,944,3,3,1
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,facebook,search,4.264996,554,0,,
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,facebook,video_feeds,15.86139,1333,9,3,3
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,instagram,feed,76.759936,2418,8,9,8
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,instagram,instagram_explore,3.086379,127,3,,
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,instagram,instagram_profile_feed,0.719156,17,0,,
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,instagram,instagram_reels,236.672308,10356,38,29,24
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,instagram,instagram_search,0.049941,4,0,,
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,instagram,instagram_stories,105.056735,4150,39,34,25
+120208915223610464,VIDEO - Hyp 60.4,Affiliate,messenger,messenger_stories,0.219742,14,0,,
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,audience_network,an_classic,3.273816,142,1,1,1
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,audience_network,rewarded_video,26.74117,793,18,18,7
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,facebook,facebook_profile_feed,15.688287,5208,26,8,4
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,facebook,facebook_reels,1912.288993,133931,747,357,320
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,facebook,facebook_reels_overlay,12.664762,908,10,3,2
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,facebook,facebook_stories,101.298075,2540,31,28,19
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,facebook,feed,1697.718887,60608,779,346,268
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,facebook,instream_video,13.806093,654,12,12,12
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,facebook,marketplace,241.771813,19493,112,107,86
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,facebook,search,45.813401,4825,29,28,22
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,facebook,video_feeds,88.473126,6225,37,20,15
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,instagram,feed,358.177497,10865,73,67,41
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_explore,6.747865,619,2,,
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_profile_feed,1.38161,125,0,,
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_reels,632.817622,49361,148,109,87
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_search,0.260303,39,0,,
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_stories,151.566668,4529,22,21,14
+120208915225300464,VIDEO - Hyp 60.5,Affiliate,messenger,messenger_stories,0.010012,1,0,,
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,facebook,facebook_profile_feed,3.246675,342,3,2,1
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,facebook,facebook_reels,32.486733,1414,8,4,4
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,facebook,facebook_reels_overlay,1.428537,70,0,,
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,facebook,facebook_stories,16.063551,289,11,9,7
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,facebook,feed,81.596444,3114,37,21,17
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,facebook,instream_video,0.299693,8,0,,
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,facebook,marketplace,11.458267,680,0,,
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,facebook,search,0.959018,144,2,1,1
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,facebook,video_feeds,2.517422,119,0,,
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,instagram,feed,21.378108,653,3,2,2
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,instagram,instagram_explore,0.599386,26,0,,
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,instagram,instagram_profile_feed,0.219775,4,0,,
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,instagram,instagram_reels,32.716498,1677,6,5,4
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,instagram,instagram_search,0.00999,1,0,,
+120208915236060464,VIDEO - Hyp 61.1 - IT 1,Affiliate,instagram,instagram_stories,9.859903,284,5,2,
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,audience_network,an_classic,0.139954,3,0,,
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,audience_network,rewarded_video,0.469846,17,1,1,1
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,facebook,facebook_profile_feed,24.082105,5591,27,10,9
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,facebook,facebook_reels,152.699937,7510,44,22,13
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,facebook,facebook_reels_overlay,8.017372,320,2,,
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,facebook,facebook_stories,16.814487,368,10,9,7
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,facebook,feed,302.630783,9349,118,57,50
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,facebook,instream_video,2.34923,141,2,2,2
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,facebook,marketplace,8.677155,530,4,4,3
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,facebook,search,1.539495,86,0,,
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,facebook,video_feeds,8.177319,458,1,,
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,instagram,feed,59.000657,2089,11,11,8
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,instagram,instagram_explore,0.829728,93,0,,
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,instagram,instagram_profile_feed,0.189938,16,0,,
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,instagram,instagram_reels,50.933302,2066,3,1,
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,instagram,instagram_search,0.019993,6,0,,
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,instagram,instagram_stories,30.070142,810,6,5,2
+120208915246140464,VIDEO - Hyp 61.1 - IT 2,Affiliate,messenger,messenger_stories,4.398558,111,2,2,1
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,audience_network,an_classic,0.079969,5,0,,
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,audience_network,rewarded_video,0.12995,4,0,,
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,facebook,facebook_profile_feed,5.617835,1057,6,3,3
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,facebook,facebook_reels,1026.334408,56053,483,242,210
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,facebook,facebook_reels_overlay,8.116871,518,4,2,1
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,facebook,facebook_stories,91.714649,1809,46,44,30
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,facebook,feed,1054.97337,49158,722,400,330
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,facebook,instream_video,5.078043,111,2,2,1
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,facebook,marketplace,25.300248,1644,6,6,2
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,facebook,search,5.537865,1106,9,9,4
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,facebook,video_feeds,61.076459,3818,42,26,24
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,instagram,feed,641.572711,23432,133,121,89
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_explore,10.665889,1103,5,1,1
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_profile_feed,3.52864,205,3,1,2
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_reels,276.763324,16623,78,58,36
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_search,0.109958,23,0,,
+120208975474710464,VIDEO - Hyp 60.1,Affiliate,instagram,instagram_stories,104.26981,4456,45,42,24
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,audience_network,an_classic,0.009998,3,0,,
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,audience_network,rewarded_video,0.889794,12,0,,
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,facebook,facebook_profile_feed,4.968849,1283,11,3,3
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,facebook,facebook_reels,84.890329,4484,22,13,8
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,facebook,facebook_reels_overlay,1.869567,62,0,,
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,facebook,facebook_stories,11.927236,225,4,4,3
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,facebook,feed,224.398001,10170,118,57,47
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,facebook,instream_video,1.019764,29,0,,
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,facebook,marketplace,15.356441,1076,7,7,4
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,facebook,search,2.219486,241,2,2,
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,facebook,video_feeds,8.548019,478,6,3,3
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,instagram,feed,38.910983,904,7,7,4
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_explore,0.709836,43,0,,
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_profile_feed,0.079981,2,0,,
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_reels,27.123715,1300,2,2,3
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_search,0.009998,2,0,,
+120208975474740464,VIDEO - Hyp 60.5,Affiliate,instagram,instagram_stories,8.608005,259,1,,
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,audience_network,an_classic,25.744974,867,17,17,7
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,facebook_profile_feed,16.403169,5893,29,9,4
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,facebook_reels,239.046186,11738,69,26,17
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,facebook_reels_overlay,1.890365,157,1,1,1
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,facebook_stories,33.446462,706,5,4,4
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,feed,1218.905505,52482,475,187,152
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,instream_video,1.650319,74,0,,
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,marketplace,16.463181,1162,4,4,2
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,right_hand_column,13.422593,14747,10,10,4
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,search,4.060785,339,1,1,2
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,facebook,video_feeds,13.982702,754,3,2,2
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,instagram,feed,190.406788,5944,15,8,8
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,instagram,instagram_explore,4.910949,228,1,1,1
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,instagram,instagram_explore_grid_home,0.05001,45,0,,
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,instagram,instagram_profile_feed,0.860166,33,0,,
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,instagram,instagram_reels,119.263043,5279,26,21,20
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,instagram,instagram_search,0,2,0,,
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,instagram,instagram_stories,109.83122,3767,18,14,8
+120209034988970464,STATIC - aff 2 - IT 1,Affiliate,messenger,messenger_stories,8.191583,610,1,1,1
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,audience_network,an_classic,60.806491,1377,20,20,7
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,facebook_profile_feed,11.819037,3502,11,4,1
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,facebook_reels,295.315791,9061,47,25,18
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,facebook_reels_overlay,3.432625,280,3,3,3
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,facebook_stories,116.919394,2070,38,32,26
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,feed,1628.034753,52601,503,239,189
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,instream_video,1.200918,110,0,,
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,marketplace,40.861241,2906,12,12,10
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,right_hand_column,8.296343,7213,5,5,3
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,search,20.065341,1529,1,1,1
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,facebook,video_feeds,39.93053,1576,10,5,4
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,instagram,feed,343.782847,9083,21,14,11
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,instagram,instagram_explore,6.845234,310,0,,
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,instagram,instagram_explore_grid_home,0.290222,294,0,,
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,instagram,instagram_profile_feed,4.94378,195,2,2,2
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,instagram,instagram_reels,110.694634,4330,12,8,7
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,instagram,instagram_search,0.100077,12,0,,
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,instagram,instagram_stories,161.043129,4105,28,26,16
+120209035098480464,STATIC - aff 2 - IT 2,Affiliate,messenger,messenger_stories,9.957613,638,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,audience_network,an_classic,1.652373,40,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,facebook_profile_feed,1.075038,449,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,facebook_reels,16.603366,573,1,1,1
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,facebook_reels_overlay,0.029862,9,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,facebook_stories,7.614853,133,3,2,2
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,feed,126.336881,4241,35,18,17
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,instream_video,0.109495,7,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,marketplace,4.409647,314,2,2,1
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,right_hand_column,2.568147,3066,4,4,2
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,search,5.982388,601,1,1,1
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,facebook,video_feeds,1.513017,72,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,instagram,feed,16.503825,516,2,2,2
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,instagram,instagram_explore,0.169219,12,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,instagram,instagram_explore_grid_home,0,1,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,instagram,instagram_profile_feed,0.009954,3,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,instagram,instagram_reels,12.562019,355,2,2,1
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,instagram,instagram_search,0,1,0,,
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,instagram,instagram_stories,28.757268,1032,7,5,3
+120209035102300464,STATIC - aff 2 - IT 3,Affiliate,messenger,messenger_stories,1.592649,154,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,audience_network,an_classic,5.789219,161,5,5,1
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,facebook_profile_feed,1.219835,44,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,facebook_reels,9.18876,274,2,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,facebook_reels_overlay,0.139981,18,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,facebook_stories,9.438726,90,4,4,2
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,feed,318.95695,10405,99,68,58
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,instream_video,0.029996,4,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,marketplace,0.759897,92,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,right_hand_column,0.66991,171,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,search,0.339954,114,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,facebook,video_feeds,1.549791,108,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,instagram,feed,16.467777,403,3,2,1
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,instagram,instagram_explore,0.059992,9,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,instagram,instagram_explore_grid_home,0,10,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,instagram,instagram_profile_feed,0.059992,7,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,instagram,instagram_reels,1.399811,29,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,instagram,instagram_search,0,1,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,instagram,instagram_stories,4.099447,125,0,,
+120209035103600464,STATIC - aff 2 - IT 4,Affiliate,messenger,messenger_stories,0.279962,23,0,,
+120209035104890464,STATIC - aff 2 - IT 5,Affiliate,audience_network,an_classic,0.319853,7,0,,
+120209035104890464,STATIC - aff 2 - IT 5,Affiliate,facebook,facebook_profile_feed,0.349839,19,0,,
+120209035104890464,STATIC - aff 2 - IT 5,Affiliate,facebook,facebook_reels,33.044833,634,3,1,1
+120209035104890464,STATIC - aff 2 - IT 5,Affiliate,facebook,facebook_reels_overlay,0.039982,10,0,,
+120209035104890464,STATIC - aff 2 - IT 5,Affiliate,facebook,facebook_stories,5.387527,39,2,2,2
