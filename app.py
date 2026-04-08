@@ -318,11 +318,9 @@ with st.sidebar:
         label_visibility="collapsed",
     )
 
-    st.divider()
-    # Default dedup/appt window (used on all pages except Funnel Analysis)
-    st.markdown("**⚙️ Global Defaults**")
-    default_dedup = st.number_input("Dedup window (days)", min_value=1, max_value=90, value=30)
-    default_appt  = st.number_input("Appt window (days)",  min_value=1, max_value=120, value=30)
+    # Fixed dedup & appt window (no sliders — consistent across all pages)
+    default_dedup = 30
+    default_appt  = 30
 
 # ─────────────────────────────────────────────
 #  DATA LOAD
@@ -332,19 +330,25 @@ load_start = start_date - timedelta(days=max(default_dedup, 90))
 
 with st.spinner("Fetching data from BigQuery…"):
     leads_raw   = load_leads(load_start, end_date, active_project)
-    calls_raw   = load_calls(start_date, end_date, active_project)
+    calls_raw   = load_calls(load_start, end_date, active_project)
     spend_df    = load_spend(start_date, end_date, active_project)
     spend_daily = load_spend_daily(start_date, end_date, active_project)
 
-    # Dedup full history, then filter to chosen date range
-    leads_all   = apply_dedup(leads_raw, default_dedup)
-    leads_range = leads_all[leads_all["date"].between(start_date, end_date)].copy()
+    # Combine leads + calls FIRST, then dedup together (30-day phone window)
+    combined_raw = pd.concat([leads_raw, calls_raw], ignore_index=True)
+    combined_all = apply_dedup(combined_raw, default_dedup)
+    combined_range = combined_all[combined_all["date"].between(start_date, end_date)].copy()
+
+    # For backward compatibility: split back into leads/calls for pages that need them separately
+    leads_range = combined_range[combined_range["source_type"] != "call"].copy()
+    calls_range = combined_range[combined_range["source_type"] == "call"].copy()
 
     # Comparison period
     leads_comp_raw = load_leads(comp_start - timedelta(days=default_dedup), comp_end, active_project)
-    leads_comp_all = apply_dedup(leads_comp_raw, default_dedup)
-    leads_comp     = leads_comp_all[leads_comp_all["date"].between(comp_start, comp_end)].copy()
-    calls_comp     = load_calls(comp_start, comp_end, active_project)
+    calls_comp_raw = load_calls(comp_start - timedelta(days=default_dedup), comp_end, active_project)
+    combined_comp_raw = pd.concat([leads_comp_raw, calls_comp_raw], ignore_index=True)
+    combined_comp_all = apply_dedup(combined_comp_raw, default_dedup)
+    combined_comp = combined_comp_all[combined_comp_all["date"].between(comp_start, comp_end)].copy()
 
 # Apply source filter
 def filter_source(df):
@@ -353,17 +357,15 @@ def filter_source(df):
     return df[df["source"].isin(source_filter)]
 
 leads_f    = filter_source(leads_range)
-calls_f    = filter_source(calls_raw)
-leads_comp_f = filter_source(leads_comp)
-calls_comp_f = filter_source(calls_comp)
+calls_f    = filter_source(calls_range)
 
-# Combined (leads + calls) — leads in selected date range only
-combined    = pd.concat([leads_f, calls_f],    ignore_index=True)
-combined_c  = pd.concat([leads_comp_f, calls_comp_f], ignore_index=True)
+# Combined (leads + calls) — already deduped together
+combined    = filter_source(combined_range)
+combined_c  = filter_source(combined_comp)
 
-# Funnel metrics — all appointments for leads in the period, keyed by lead date
-funnel      = compute_funnel(combined)
-funnel_comp = compute_funnel(combined_c)
+# Funnel metrics — appt window 30 days, consistent across all pages
+funnel      = compute_funnel(combined, default_appt)
+funnel_comp = compute_funnel(combined_c, default_appt)
 
 # City spend attribution
 city_spend  = attribute_city_spend(leads_f, spend_df)
@@ -441,7 +443,7 @@ if page == "📊 Overview":
     kc = funnel_comp
 
     # Calls breakout for KPI row
-    _calls_funnel = compute_funnel(calls_f) if not calls_f.empty else {"all_leads": 0, "appts": 0, "sold": 0}
+    _calls_funnel = compute_funnel(calls_f, default_appt) if not calls_f.empty else {"all_leads": 0, "appts": 0, "sold": 0}
     _forms_leads = k['all_leads'] - _calls_funnel['all_leads']
     _forms_appts = k['appts'] - _calls_funnel['appts']
 
@@ -630,7 +632,7 @@ if page == "📊 Overview":
     # Source cards — per-source funnel breakdown
     st.markdown('<p class="section-title">By Source</p>', unsafe_allow_html=True)
     src_funnel = pd.DataFrame([
-        {"source": src, **compute_funnel(grp)}
+        {"source": src, **compute_funnel(grp, default_appt)}
         for src, grp in combined.groupby("source")
     ])
     if src_funnel.empty:
@@ -651,7 +653,7 @@ if page == "📊 Overview":
     if not calls_f.empty:
         st.divider()
         st.markdown('<p class="section-title">Calls — First-Time Callers</p>', unsafe_allow_html=True)
-        call_funnel = compute_funnel(calls_f)
+        call_funnel = compute_funnel(calls_f, default_appt)
         cc1, cc2, cc3, cc4, cc5 = st.columns(5)
         cc1.metric("Calls", f"{call_funnel['all_leads']:,}")
         cc2.metric("Appointments", f"{call_funnel['appts']:,}")
@@ -883,7 +885,7 @@ elif page == "📈 Trends":
     spend_by_period = spend_agg.groupby("period")["spend"].sum().reset_index()
 
     trend = pd.DataFrame([
-        {"period": period, **compute_funnel(grp)}
+        {"period": period, **compute_funnel(grp, default_appt)}
         for period, grp in df.groupby("period")
     ])
     trend = trend.merge(spend_by_period, on="period", how="left")
@@ -973,7 +975,7 @@ elif page == "🗺️ Geography":
     # Build city-level table — use full combined (not pre-filtered to clean)
     # so compute_funnel can correctly split all_leads vs clean_leads per city
     geo = pd.DataFrame([
-        {"province": prov, "city": city, **compute_funnel(grp)}
+        {"province": prov, "city": city, **compute_funnel(grp, default_appt)}
         for (prov, city), grp in combined.groupby(["province", "city"])
     ])
     geo = geo.merge(city_spend[["province", "city", "est_spend"]], on=["province", "city"], how="left")
@@ -1121,44 +1123,21 @@ elif page == "📋 Lead Detail":
 
 
 # ─────────────────────────────────────────────
-#  PAGE: FUNNEL ANALYSIS  (sliders live here)
+#  PAGE: FUNNEL ANALYSIS
 # ─────────────────────────────────────────────
 elif page == "🔄 Funnel Analysis":
     st.title("Funnel Analysis")
 
-    # ── THE TWO SLIDERS ──────────────────────
-    st.markdown("### ⚙️ Analysis Controls")
-    sc1, sc2 = st.columns(2)
-    with sc1:
-        slider_dedup = st.slider(
-            "🔁 Deduplication Window (days)",
-            min_value=1, max_value=90, value=45, step=1,
-            help="Number of days to look back when deduplicating leads by phone number. "
-                 "Lower = stricter same-period dedup (fewer leads filtered). "
-                 "Higher = more aggressive dedup (more leads filtered). "
-                 "Affects: Clean Leads, CPL, CR, CPA, CPS."
-        )
-    with sc2:
-        slider_appt = st.slider(
-            "📅 Appointment Window (days)",
-            min_value=1, max_value=120, value=20, step=1,
-            help="Only count appointments that occurred within this many days of the lead. "
-                 "Default is 20 days — matches the manual daily parsing used in Looker Studio. "
-                 "Increase to 45 days to capture ~89% of all appointments in the full closing cycle."
-        )
-
     st.info(
-        f"**Dedup:** {slider_dedup} days  |  "
-        f"**Appt window:** {slider_appt} days  —  "
-        f"These controls only affect this page. All other pages use the global defaults in the sidebar.",
+        f"**Dedup:** {default_dedup} days  |  "
+        f"**Appt window:** {default_appt} days  —  "
+        f"Leads and calls are combined first, then deduplicated together by phone.",
         icon="ℹ️"
     )
     st.divider()
 
-    # Recompute with slider values
-    leads_slider = apply_dedup(leads_raw[leads_raw["date"].between(start_date, end_date)].copy(), slider_dedup)
-    combined_slider = pd.concat([filter_source(leads_slider), calls_f], ignore_index=True)
-    f = compute_funnel(combined_slider, slider_appt)
+    # Use the globally deduped combined data
+    f = compute_funnel(combined, default_appt)
 
     # KPI row
     st.markdown("### 📊 Funnel Metrics")
@@ -1256,14 +1235,14 @@ elif page == "🔄 Funnel Analysis":
 
     # Dedup impact summary
     st.markdown("### 🔁 Deduplication Impact")
-    all_in_range  = leads_raw[leads_raw["date"].between(start_date, end_date)]
-    leads_slider_clean = leads_slider[leads_slider["is_clean"].fillna(False)]["row_num"].count()
-    leads_dirty   = len(all_in_range)
+    all_in_range  = combined_raw[combined_raw["date"].between(start_date, end_date)]
+    combined_clean = combined[combined["is_clean"].fillna(False)]["row_num"].count()
+    all_dirty   = len(all_in_range)
     st.info(
-        f"With **{slider_dedup}-day dedup**: **{leads_slider_clean:,}** clean leads "
-        f"out of **{leads_dirty:,}** total form leads "
-        f"({round(leads_slider_clean/leads_dirty*100,1) if leads_dirty else 0}% pass rate). "
-        f"**{leads_dirty - leads_slider_clean:,}** filtered as duplicates."
+        f"With **{default_dedup}-day dedup** (leads + calls combined): **{combined_clean:,}** clean "
+        f"out of **{all_dirty:,}** total leads+calls "
+        f"({round(combined_clean/all_dirty*100,1) if all_dirty else 0}% pass rate). "
+        f"**{all_dirty - combined_clean:,}** filtered as duplicates."
     )
 
 
@@ -1285,7 +1264,7 @@ elif page == "📱 Campaign Intelligence":
         st.warning("No campaign data for the selected filters.")
     else:
         camp_agg = pd.DataFrame([
-            {"utm_campaign": camp, **compute_funnel(grp)}
+            {"utm_campaign": camp, **compute_funnel(grp, default_appt)}
             for camp, grp in camp_df.groupby("utm_campaign")
         ])
         # Total spend is unknown per campaign (META doesn't break spend by campaign in the data)
@@ -1335,7 +1314,7 @@ elif page == "⚖️ Source Comparison":
     st.caption("All sources side by side — META (includes inbound calls), TikTok, Other")
 
     src_groups = combined.groupby("source").apply(
-        lambda grp: pd.Series(compute_funnel(grp))
+        lambda grp: pd.Series(compute_funnel(grp, default_appt))
     ).reset_index()
 
     # Add spend for META
@@ -1418,7 +1397,7 @@ elif page == "⚖️ Source Comparison":
                 "These are already included in the source totals above."
             )
             call_groups = calls_only.groupby("source").apply(
-                lambda grp: pd.Series(compute_funnel(grp))
+                lambda grp: pd.Series(compute_funnel(grp, default_appt))
             ).reset_index()
             call_groups["Show Rate%"] = call_groups.apply(
                 lambda r: round(r["showed_up"] / r["appts"] * 100, 1) if r["appts"] else None, axis=1
@@ -2443,7 +2422,7 @@ elif page == "📡 Meta Live":
 
         # ── BQ city-level summary for META source — filtered to Meta Live period
         bq_meta = pd.DataFrame([
-            {"city": city, **compute_funnel(grp)}
+            {"city": city, **compute_funnel(grp, default_appt)}
             for city, grp in combined_ml[combined_ml["source"] == "META"].groupby("city")
         ])[["city", "clean_leads", "appts", "sold"]]
         bq_meta.columns = ["city_bq", "bq_leads", "bq_appts", "bq_sold"]

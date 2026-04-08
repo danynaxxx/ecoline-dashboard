@@ -671,7 +671,7 @@ def compute_funnel(df: pd.DataFrame, appt_window=None) -> dict:
     # the lead agreed on the call) OR is sold (sold records may lack a booked date).
     # Filter by is_clean so duplicate leads don't inflate appointment/showed-up counts.
     booked_dt = pd.to_datetime(df["cf_booked_date"]) if "cf_booked_date" in df.columns else pd.Series(pd.NaT, index=df.index)
-    has_appt = df["cf_booked_date"].notna() | (df["status"] == "sold")
+    has_appt = (df["cf_booked_date"].notna() | (df["status"] == "sold")) & is_clean_mask
 
     if appt_window is None:
         # ── Overview mode: all appointments for these leads, any date ──
