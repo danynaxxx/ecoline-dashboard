@@ -1062,24 +1062,24 @@ elif page == "🗺️ Geography":
 elif page == "📋 Lead Detail":
     st.title("Lead Detail")
 
-    col1, col2, col3, col4 = st.columns(4)
+    # Always show clean leads only (deduped leads + calls)
+    df_clean = combined[combined["is_clean"].fillna(False)].copy()
+
+    col1, col2, col3 = st.columns(3)
     with col1:
-        provinces = ["All"] + sorted(combined["province"].dropna().unique().tolist())
+        provinces = ["All"] + sorted(df_clean["province"].dropna().unique().tolist())
         prov_sel = st.selectbox("Province", provinces)
     with col2:
-        cities = ["All"] + sorted(combined["city"].dropna().unique().tolist())
+        cities = ["All"] + sorted(df_clean["city"].dropna().unique().tolist())
         city_sel = st.selectbox("City", cities)
     with col3:
-        statuses = ["All"] + sorted(combined["status"].dropna().unique().tolist())
+        statuses = ["All"] + sorted(df_clean["status"].dropna().unique().tolist())
         status_sel = st.selectbox("Status", statuses)
-    with col4:
-        show_clean = st.checkbox("Clean leads only", value=True)
 
-    df_detail = combined.copy()
+    df_detail = df_clean.copy()
     if prov_sel   != "All": df_detail = df_detail[df_detail["province"] == prov_sel]
     if city_sel   != "All": df_detail = df_detail[df_detail["city"] == city_sel]
     if status_sel != "All": df_detail = df_detail[df_detail["status"] == status_sel]
-    if show_clean:          df_detail = df_detail[df_detail["is_clean"].fillna(False)]
 
     # ── Source count summary ─────────────────────────────────────────────────
     leads_detail_df = df_detail[df_detail["source_type"] == "lead"]
