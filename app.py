@@ -1758,6 +1758,54 @@ elif page == "🎨 Creative Performance":
     if _has_creative_data:
         _cre_df = pd.read_csv(_creatives_csv)
 
+    # ── Spend by creative type from Meta API ad-level cache ──
+    _spend_by_creative_type = {}
+    _spend_by_type_group = {}
+    _spend_by_hypothesis = {}
+    _spend_by_ad_name = {}
+    _ad_spend_csv = _os.path.join(_data_dir, "meta_ad_spend.csv")
+    _has_ad_spend = _os.path.exists(_ad_spend_csv)
+    if _has_ad_spend:
+        _ad_spend_df = pd.read_csv(_ad_spend_csv)
+        _ad_spend_df["spend"] = pd.to_numeric(_ad_spend_df["spend"], errors="coerce").fillna(0)
+        _ad_spend_df["creative_type"] = _ad_spend_df["ad_name"].apply(_parse_creative_type)
+        _ad_spend_df["hypothesis"] = _ad_spend_df["ad_name"].apply(_parse_hypothesis)
+
+        # By exact creative type
+        _sct = _ad_spend_df.groupby("creative_type")["spend"].sum()
+        _spend_by_creative_type = _sct.to_dict()
+
+        # By type group (IMAGE incl DCO vs VIDEO incl DCO)
+        _ad_spend_df["type_group"] = _ad_spend_df["creative_type"].apply(
+            lambda x: "IMAGE (incl. DCO)" if "IMAGE" in str(x) else ("VIDEO (incl. DCO)" if "VIDEO" in str(x) else "Other")
+        )
+        _stg = _ad_spend_df.groupby("type_group")["spend"].sum()
+        _spend_by_type_group = _stg.to_dict()
+
+        # By hypothesis
+        _sh = _ad_spend_df[_ad_spend_df["hypothesis"].notna()].groupby("hypothesis")["spend"].sum()
+        _spend_by_hypothesis = _sh.to_dict()
+
+        # By ad_name (for detail explorer matching)
+        _spend_by_ad_name = _ad_spend_df.groupby("ad_name")["spend"].sum().to_dict()
+
+        st.caption("💰 Spend by creative type from Meta API (9 ad accounts, Jan 2025+). Data refreshed via Meta MCP.")
+    elif _has_placement_data and len(_plc_df) > 0:
+        # Fallback: use placement CSV if ad-level spend CSV not available
+        _plc_typed = _plc_df.copy()
+        _plc_typed["creative_type"] = _plc_typed["ad_name"].apply(_parse_creative_type)
+        _plc_typed["hypothesis"] = _plc_typed["ad_name"].apply(_parse_hypothesis)
+        _plc_typed["spend"] = pd.to_numeric(_plc_typed["spend"], errors="coerce").fillna(0)
+        _spend_by_creative_type = _plc_typed.groupby("creative_type")["spend"].sum().to_dict()
+        _plc_typed["type_group"] = _plc_typed["creative_type"].apply(
+            lambda x: "IMAGE (incl. DCO)" if "IMAGE" in str(x) else ("VIDEO (incl. DCO)" if "VIDEO" in str(x) else "Other")
+        )
+        _spend_by_type_group = _plc_typed.groupby("type_group")["spend"].sum().to_dict()
+        _sh = _plc_typed[_plc_typed["hypothesis"].notna()].groupby("hypothesis")["spend"].sum()
+        _spend_by_hypothesis = _sh.to_dict()
+        _spend_by_ad_name = _plc_typed.groupby("ad_name")["spend"].sum().to_dict()
+        st.caption("💰 Spend from Meta API placement cache (fallback).")
+
     # ── TAB 1: IMAGE vs VIDEO ──
     _tab_names = ["IMAGE vs VIDEO", "By Hypothesis", "By Funnel Type"]
     if _has_placement_data:
@@ -1789,37 +1837,34 @@ elif page == "🎨 Creative Performance":
             sold=("is_sold", "sum"),
             revenue=("revenue", "sum"),
         ).reset_index()
-        _type_agg["dirty_rate"] = (_type_agg["booked"] / _type_agg["leads"] * 100).round(1)
-        _type_agg["clean_rate"] = (_type_agg["happened"] / _type_agg["leads"] * 100).round(1)
+        _type_agg["appt_rate"] = (_type_agg["booked"] / _type_agg["leads"] * 100).round(1)
         _type_agg["close_rate"] = (_type_agg["sold"] / _type_agg["leads"] * 100).round(1)
         _type_agg["rev_per_lead"] = (_type_agg["revenue"] / _type_agg["leads"]).round(0)
-        _type_agg["cost_per_sale"] = (_type_agg["revenue"] / _type_agg["sold"].replace(0, float("nan"))).round(0)
+        _type_agg["spend"] = _type_agg["type_group"].map(_spend_by_type_group).fillna(0)
+        _type_agg["cpl"] = (_type_agg["spend"] / _type_agg["leads"].replace(0, float("nan"))).round(0)
+        _type_agg["cpa"] = (_type_agg["spend"] / _type_agg["sold"].replace(0, float("nan"))).round(0)
 
-        c1, c2, c3, c4 = st.columns(4)
+        c1, c2, c3, c4, c5 = st.columns(5)
         for idx, row in _type_agg.iterrows():
             label = row["type_group"]
-            if "IMAGE" in label:
-                with c1:
-                    st.metric("IMAGE Leads", f"{int(row['leads']):,}")
-                with c2:
-                    st.metric("IMAGE Dirty Rate", f"{row['dirty_rate']}%")
-                with c3:
-                    st.metric("IMAGE Close Rate", f"{row['close_rate']}%")
-                with c4:
-                    st.metric("IMAGE Revenue", f"${row['revenue']:,.0f}")
-            else:
-                with c1:
-                    st.metric("VIDEO Leads", f"{int(row['leads']):,}")
-                with c2:
-                    st.metric("VIDEO Dirty Rate", f"{row['dirty_rate']}%")
-                with c3:
-                    st.metric("VIDEO Close Rate", f"{row['close_rate']}%")
-                with c4:
-                    st.metric("VIDEO Revenue", f"${row['revenue']:,.0f}")
+            _prefix = "IMAGE" if "IMAGE" in label else "VIDEO"
+            with c1:
+                st.metric(f"{_prefix} Leads", f"{int(row['leads']):,}")
+            with c2:
+                st.metric(f"{_prefix} Spend", f"${row['spend']:,.0f}")
+            with c3:
+                st.metric(f"{_prefix} Appt Rate", f"{row['appt_rate']}%")
+            with c4:
+                st.metric(f"{_prefix} Close Rate", f"{row['close_rate']}%")
+            with c5:
+                st.metric(f"{_prefix} Revenue", f"${row['revenue']:,.0f}")
 
         st.divider()
-        _type_display = _type_agg[["type_group", "leads", "booked", "dirty_rate", "happened", "clean_rate", "sold", "close_rate", "revenue", "rev_per_lead"]].copy()
-        _type_display.columns = ["Type", "Leads", "Dirty Appts", "Dirty %", "Clean Appts", "Clean %", "Sold", "Close %", "Revenue", "Rev/Lead"]
+        _type_display = _type_agg[["type_group", "leads", "spend", "cpl", "booked", "appt_rate", "sold", "close_rate", "cpa", "revenue", "rev_per_lead"]].copy()
+        _type_display.columns = ["Type", "Leads", "Spend", "CPL", "Appts", "Appt %", "Sold", "Close %", "CPA", "Revenue", "Rev/Lead"]
+        _type_display["Spend"] = _type_display["Spend"].apply(lambda x: f"${x:,.0f}")
+        _type_display["CPL"] = _type_display["CPL"].apply(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
+        _type_display["CPA"] = _type_display["CPA"].apply(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
         _type_display["Revenue"] = _type_display["Revenue"].apply(lambda x: f"${x:,.0f}")
         _type_display["Rev/Lead"] = _type_display["Rev/Lead"].apply(lambda x: f"${x:,.0f}")
         st.dataframe(_type_display, use_container_width=True, hide_index=True)
@@ -1832,11 +1877,17 @@ elif page == "🎨 Creative Performance":
             sold=("is_sold", "sum"),
             revenue=("revenue", "sum"),
         ).reset_index()
-        _detail_type["dirty_rate"] = (_detail_type["booked"] / _detail_type["leads"] * 100).round(1)
+        _detail_type["appt_rate"] = (_detail_type["booked"] / _detail_type["leads"] * 100).round(1)
         _detail_type["close_rate"] = (_detail_type["sold"] / _detail_type["leads"] * 100).round(1)
         _detail_type["rev_per_lead"] = (_detail_type["revenue"] / _detail_type["leads"]).round(0)
-        _detail_disp = _detail_type[["creative_type", "leads", "dirty_rate", "close_rate", "sold", "revenue", "rev_per_lead"]].copy()
-        _detail_disp.columns = ["Creative Type", "Leads", "Dirty %", "Close %", "Sold", "Revenue", "Rev/Lead"]
+        _detail_type["spend"] = _detail_type["creative_type"].map(_spend_by_creative_type).fillna(0)
+        _detail_type["cpl"] = (_detail_type["spend"] / _detail_type["leads"].replace(0, float("nan"))).round(0)
+        _detail_type["cpa"] = (_detail_type["spend"] / _detail_type["sold"].replace(0, float("nan"))).round(0)
+        _detail_disp = _detail_type[["creative_type", "leads", "spend", "cpl", "booked", "appt_rate", "close_rate", "sold", "cpa", "revenue", "rev_per_lead"]].copy()
+        _detail_disp.columns = ["Creative Type", "Leads", "Spend", "CPL", "Appts", "Appt %", "Close %", "Sold", "CPA", "Revenue", "Rev/Lead"]
+        _detail_disp["Spend"] = _detail_disp["Spend"].apply(lambda x: f"${x:,.0f}")
+        _detail_disp["CPL"] = _detail_disp["CPL"].apply(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
+        _detail_disp["CPA"] = _detail_disp["CPA"].apply(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
         _detail_disp["Revenue"] = _detail_disp["Revenue"].apply(lambda x: f"${x:,.0f}")
         _detail_disp["Rev/Lead"] = _detail_disp["Rev/Lead"].apply(lambda x: f"${x:,.0f}")
         st.dataframe(_detail_disp, use_container_width=True, hide_index=True)
@@ -1866,14 +1917,16 @@ elif page == "🎨 Creative Performance":
             revenue=("revenue", "sum"),
         ).reset_index()
         _hyp_agg = _hyp_agg[_hyp_agg["leads"] >= _min_leads].copy()
-        _hyp_agg["dirty_rate"] = (_hyp_agg["booked"] / _hyp_agg["leads"] * 100).round(1)
-        _hyp_agg["clean_rate"] = (_hyp_agg["happened"] / _hyp_agg["leads"] * 100).round(1)
+        _hyp_agg["appt_rate"] = (_hyp_agg["booked"] / _hyp_agg["leads"] * 100).round(1)
         _hyp_agg["close_rate"] = (_hyp_agg["sold"] / _hyp_agg["leads"] * 100).round(1)
         _hyp_agg["rev_per_lead"] = (_hyp_agg["revenue"] / _hyp_agg["leads"]).round(0)
         _hyp_agg["avg_sale"] = (_hyp_agg["revenue"] / _hyp_agg["sold"].replace(0, float("nan"))).round(0)
+        _hyp_agg["spend"] = _hyp_agg["hypothesis"].map(_spend_by_hypothesis).fillna(0)
+        _hyp_agg["cpl"] = (_hyp_agg["spend"] / _hyp_agg["leads"].replace(0, float("nan"))).round(0)
+        _hyp_agg["cpa"] = (_hyp_agg["spend"] / _hyp_agg["sold"].replace(0, float("nan"))).round(0)
 
         # ── Data quality flags ──
-        _overall_dirty = _hyp_agg["booked"].sum() / _hyp_agg["leads"].sum() * 100 if _hyp_agg["leads"].sum() > 0 else 0
+        _overall_appt = _hyp_agg["booked"].sum() / _hyp_agg["leads"].sum() * 100 if _hyp_agg["leads"].sum() > 0 else 0
         _overall_close = _hyp_agg["sold"].sum() / _hyp_agg["leads"].sum() * 100 if _hyp_agg["leads"].sum() > 0 else 0
         _avg_sale_overall = _hyp_agg["revenue"].sum() / _hyp_agg["sold"].sum() if _hyp_agg["sold"].sum() > 0 else 0
 
@@ -1885,8 +1938,8 @@ elif page == "🎨 Creative Performance":
                 flags.append("⚠️ Zero sales — too early or low-intent")
             elif row["close_rate"] > _overall_close * 2.5 and row["leads"] < 100:
                 flags.append("🔍 Close rate 2.5x above avg — verify with small sample")
-            if row["dirty_rate"] > 55:
-                flags.append("🔍 Very high booking rate (>55%) — check if UTM naming is shared with other campaigns")
+            if row["appt_rate"] > 55:
+                flags.append("🔍 Very high appt rate (>55%) — check if UTM naming is shared with other campaigns")
             if pd.notna(row["avg_sale"]) and row["avg_sale"] > _avg_sale_overall * 2:
                 flags.append("🔍 Avg sale 2x above norm — could be outlier deals")
             if pd.notna(row["avg_sale"]) and row["avg_sale"] < _avg_sale_overall * 0.4 and row["sold"] >= 3:
@@ -1895,11 +1948,14 @@ elif page == "🎨 Creative Performance":
 
         _hyp_agg["flags"] = _hyp_agg.apply(_quality_flag, axis=1)
 
-        _sort_col = st.selectbox("Sort by", ["dirty_rate", "close_rate", "revenue", "leads", "rev_per_lead"], index=0)
+        _sort_col = st.selectbox("Sort by", ["appt_rate", "close_rate", "revenue", "leads", "spend", "cpl", "cpa", "rev_per_lead"], index=0)
         _hyp_agg = _hyp_agg.sort_values(_sort_col, ascending=False)
 
-        _hyp_display = _hyp_agg[["hypothesis", "leads", "booked", "dirty_rate", "happened", "clean_rate", "sold", "close_rate", "revenue", "rev_per_lead", "avg_sale", "flags"]].copy()
-        _hyp_display.columns = ["Hypothesis", "Leads", "Dirty Appts", "Dirty %", "Clean Appts", "Clean %", "Sold", "Close %", "Revenue", "Rev/Lead", "Avg Sale", "Data Quality"]
+        _hyp_display = _hyp_agg[["hypothesis", "leads", "spend", "cpl", "booked", "appt_rate", "sold", "close_rate", "cpa", "revenue", "rev_per_lead", "avg_sale", "flags"]].copy()
+        _hyp_display.columns = ["Hypothesis", "Leads", "Spend", "CPL", "Appts", "Appt %", "Sold", "Close %", "CPA", "Revenue", "Rev/Lead", "Avg Sale", "Data Quality"]
+        _hyp_display["Spend"] = _hyp_display["Spend"].apply(lambda x: f"${x:,.0f}")
+        _hyp_display["CPL"] = _hyp_display["CPL"].apply(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
+        _hyp_display["CPA"] = _hyp_display["CPA"].apply(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
         _hyp_display["Revenue"] = _hyp_display["Revenue"].apply(lambda x: f"${x:,.0f}")
         _hyp_display["Rev/Lead"] = _hyp_display["Rev/Lead"].apply(lambda x: f"${x:,.0f}")
         _hyp_display["Avg Sale"] = _hyp_display["Avg Sale"].apply(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
@@ -1912,15 +1968,15 @@ elif page == "🎨 Creative Performance":
                 for _, row in _flagged.iterrows():
                     st.markdown(f"**{row['hypothesis']}** ({int(row['leads'])} leads, {int(row['sold'])} sold): {row['flags']}")
 
-        # Chart: top hypotheses by dirty rate
+        # Chart: top hypotheses by appt rate
         if len(_hyp_agg) > 0:
             import plotly.graph_objects as go
             _top = _hyp_agg.head(15)
             fig = go.Figure()
-            fig.add_trace(go.Bar(x=_top["hypothesis"], y=_top["dirty_rate"], name="Dirty %", marker_color="#2563EB"))
+            fig.add_trace(go.Bar(x=_top["hypothesis"], y=_top["appt_rate"], name="Appt %", marker_color="#2563EB"))
             fig.add_trace(go.Bar(x=_top["hypothesis"], y=_top["close_rate"], name="Close %", marker_color="#10B981"))
             fig.update_layout(
-                title="Top Hypotheses: Booking vs Close Rate",
+                title="Top Hypotheses: Appt Rate vs Close Rate",
                 barmode="group", yaxis_title="%", height=400,
                 template="plotly_white",
             )
@@ -1960,14 +2016,13 @@ elif page == "🎨 Creative Performance":
             revenue=("revenue", "sum"),
         ).reset_index()
         _funnel_agg = _funnel_agg[_funnel_agg["leads"] >= 15].copy()
-        _funnel_agg["dirty_rate"] = (_funnel_agg["booked"] / _funnel_agg["leads"] * 100).round(1)
-        _funnel_agg["clean_rate"] = (_funnel_agg["happened"] / _funnel_agg["leads"] * 100).round(1)
+        _funnel_agg["appt_rate"] = (_funnel_agg["booked"] / _funnel_agg["leads"] * 100).round(1)
         _funnel_agg["close_rate"] = (_funnel_agg["sold"] / _funnel_agg["leads"] * 100).round(1)
         _funnel_agg["rev_per_lead"] = (_funnel_agg["revenue"] / _funnel_agg["leads"]).round(0)
         _funnel_agg = _funnel_agg.sort_values("close_rate", ascending=False)
 
-        _funnel_display = _funnel_agg[["funnel_type", "leads", "dirty_rate", "clean_rate", "sold", "close_rate", "revenue", "rev_per_lead"]].copy()
-        _funnel_display.columns = ["Funnel Type", "Leads", "Dirty %", "Clean %", "Sold", "Close %", "Revenue", "Rev/Lead"]
+        _funnel_display = _funnel_agg[["funnel_type", "leads", "appt_rate", "sold", "close_rate", "revenue", "rev_per_lead"]].copy()
+        _funnel_display.columns = ["Funnel Type", "Leads", "Appt %", "Sold", "Close %", "Revenue", "Rev/Lead"]
         _funnel_display["Revenue"] = _funnel_display["Revenue"].apply(lambda x: f"${x:,.0f}")
         _funnel_display["Rev/Lead"] = _funnel_display["Rev/Lead"].apply(lambda x: f"${x:,.0f}")
         st.dataframe(_funnel_display, use_container_width=True, hide_index=True)
@@ -2183,7 +2238,7 @@ elif page == "🎨 Creative Performance":
                     revenue=("revenue", "sum"),
                 ).reset_index()
                 _content_leads["close_rate"] = (_content_leads["sold"] / _content_leads["leads"] * 100).round(1)
-                _content_leads["dirty_rate"] = (_content_leads["booked"] / _content_leads["leads"] * 100).round(1)
+                _content_leads["appt_rate"] = (_content_leads["booked"] / _content_leads["leads"] * 100).round(1)
 
                 # Match by checking if creative_name is contained in utm_content or vice versa
                 _matched = []
@@ -2204,7 +2259,7 @@ elif page == "🎨 Creative Performance":
                             "hook": info["hook"],
                             "cta": info["cta"],
                             "leads": lr["leads"],
-                            "dirty_rate": lr["dirty_rate"],
+                            "appt_rate": lr["appt_rate"],
                             "close_rate": lr["close_rate"],
                             "sold": lr["sold"],
                             "revenue": lr["revenue"],
@@ -2213,8 +2268,8 @@ elif page == "🎨 Creative Performance":
                 if _matched:
                     _match_df = pd.DataFrame(_matched).sort_values("leads", ascending=False)
                     _match_df["revenue"] = _match_df["revenue"].apply(lambda x: f"${x:,.0f}")
-                    _match_display = _match_df[["headline", "hook", "cta", "leads", "dirty_rate", "close_rate", "sold", "revenue"]].copy()
-                    _match_display.columns = ["Headline", "Opening Line", "CTA", "Leads", "Dirty %", "Close %", "Sold", "Revenue"]
+                    _match_display = _match_df[["headline", "hook", "cta", "leads", "appt_rate", "close_rate", "sold", "revenue"]].copy()
+                    _match_display.columns = ["Headline", "Opening Line", "CTA", "Leads", "Appt %", "Close %", "Sold", "Revenue"]
                     st.dataframe(_match_display, use_container_width=True, hide_index=True, height=500)
                     st.caption(f"Matched {len(_matched)} creatives with lead data out of {len(_content_leads[_content_leads['leads'] >= 5])} utm_content groups")
                 else:
@@ -2265,13 +2320,22 @@ elif page == "🎨 Creative Performance":
             revenue=("revenue", "sum"),
         ).reset_index()
         _content_agg = _content_agg[_content_agg["leads"] >= 5].copy()
-        _content_agg["dirty_rate"] = (_content_agg["booked"] / _content_agg["leads"] * 100).round(1)
+        _content_agg["appt_rate"] = (_content_agg["booked"] / _content_agg["leads"] * 100).round(1)
         _content_agg["close_rate"] = (_content_agg["sold"] / _content_agg["leads"] * 100).round(1)
         _content_agg["rev_per_lead"] = (_content_agg["revenue"] / _content_agg["leads"]).round(0)
+
+        # Match spend from Meta API ad-level data by ad_name ↔ utm_content
+        if _has_ad_spend and len(_spend_by_ad_name) > 0:
+            _content_agg["spend"] = _content_agg["utm_content"].map(_spend_by_ad_name).fillna(0)
+        else:
+            _content_agg["spend"] = 0
+        _content_agg["cpl"] = (_content_agg["spend"] / _content_agg["leads"].replace(0, float("nan"))).round(0)
         _content_agg = _content_agg.sort_values("leads", ascending=False)
 
-        _content_display = _content_agg[["utm_content", "creative_type", "hypothesis", "leads", "dirty_rate", "close_rate", "sold", "revenue", "rev_per_lead"]].copy()
-        _content_display.columns = ["Creative (utm_content)", "Type", "Hypothesis", "Leads", "Dirty %", "Close %", "Sold", "Revenue", "Rev/Lead"]
+        _content_display = _content_agg[["utm_content", "creative_type", "hypothesis", "leads", "spend", "cpl", "appt_rate", "close_rate", "sold", "revenue", "rev_per_lead"]].copy()
+        _content_display.columns = ["Creative (utm_content)", "Type", "Hypothesis", "Leads", "Spend", "CPL", "Appt %", "Close %", "Sold", "Revenue", "Rev/Lead"]
+        _content_display["Spend"] = _content_display["Spend"].apply(lambda x: f"${x:,.0f}")
+        _content_display["CPL"] = _content_display["CPL"].apply(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
         _content_display["Revenue"] = _content_display["Revenue"].apply(lambda x: f"${x:,.0f}")
         _content_display["Rev/Lead"] = _content_display["Rev/Lead"].apply(lambda x: f"${x:,.0f}")
         st.dataframe(_content_display, use_container_width=True, hide_index=True, height=600)
@@ -3533,8 +3597,7 @@ Meta Live имеет свой выбор периода (вчера / 7 дней
 
 | Метрика | Формула |
 |---|---|
-| Dirty Rate (%) | (appointment + sold + cancelled + cancelled before appt) / leads × 100 |
-| Clean Rate (%) | (sold + cancelled) / leads × 100 |
+| Appt Rate (%) | (appointment + sold + cancelled + cancelled before appt) / leads × 100 |
 | Close Rate (%) | sold / leads × 100 |
 | Rev/Lead ($) | revenue / leads |
 | Avg Sale ($) | revenue / sold |
@@ -3546,7 +3609,7 @@ Meta Live имеет свой выбор периода (вчера / 7 дней
 - ⚠️ **Small sample** (<30 лидов) — выводы ненадёжны
 - ⚠️ **Zero sales** — слишком рано судить
 - 🔍 **Close rate 2.5x выше среднего** при малом объёме — может быть случайность
-- 🔍 **Dirty rate >55%** — подозрительно высокий, возможно UTM naming шарится с другими кампаниями
+- 🔍 **Appt rate >55%** — подозрительно высокий, возможно UTM naming шарится с другими кампаниями
 - 🔍 **Avg sale 2x выше/ниже нормы** — проверить на выбросы
 
 **Ограничения spend (по гипотезам):**
@@ -4023,8 +4086,7 @@ Determined from `utm_term` (Meta ad set name):
 
 | Metric | Formula |
 |---|---|
-| Dirty Rate (%) | (appointment + sold + cancelled + cancelled before appt) / leads × 100 |
-| Clean Rate (%) | (sold + cancelled) / leads × 100 |
+| Appt Rate (%) | (appointment + sold + cancelled + cancelled before appt) / leads × 100 |
 | Close Rate (%) | sold / leads × 100 |
 | Rev/Lead ($) | revenue / leads |
 | Avg Sale ($) | revenue / sold |
@@ -4036,7 +4098,7 @@ Each hypothesis is checked for anomalies:
 - ⚠️ **Small sample** (<30 leads) — low confidence
 - ⚠️ **Zero sales** — too early to judge
 - 🔍 **Close rate 2.5x above average** with small sample — might be random
-- 🔍 **Dirty rate >55%** — suspiciously high, possibly shared UTM naming with other campaigns
+- 🔍 **Appt rate >55%** — suspiciously high, possibly shared UTM naming with other campaigns
 - 🔍 **Avg sale 2x above/below norm** — check for outlier deals
 
 **Spend limitations (per hypothesis):**
