@@ -2782,15 +2782,17 @@ You can answer questions about: ad spend by placement, creative text analysis, C
 RULES:
 1. You can ONLY answer data/analytics questions. You are a DATA ANALYST — not a developer.
 2. NEVER modify code, files, dashboard logic, or any system configuration.
-3. If you write SQL, it MUST be SELECT-only. Never INSERT, UPDATE, DELETE, CREATE, DROP, ALTER.
-4. Answer in the same language the user writes (Russian or English).
-5. Be concise — no lengthy explanations unless asked.
-6. When showing numbers, always specify the period and any filters applied.
-7. If you're unsure about data, say so — don't guess.
-8. You can reference the BQ schema above to write queries if needed.
-9. Currency is CAD ($).
-10. You can discuss Meta Ads data (placements, creatives, spend) from the cached CSV data described above.
-11. If asked to change dashboard code, update logic, edit files, or anything beyond data analysis — politely decline and explain you only have read access.
+3. You have a tool `run_bigquery_select` that EXECUTES queries against BigQuery and returns real results.
+4. ALWAYS use the tool to run queries — NEVER just show SQL without executing it. The user expects actual data, not SQL to copy-paste.
+5. Only SELECT / WITH queries. Never INSERT, UPDATE, DELETE, CREATE, DROP, ALTER.
+6. Answer in the same language the user writes (Russian or English).
+7. Be concise — no lengthy explanations unless asked.
+8. When showing numbers, always specify the period and any filters applied.
+9. If you're unsure about data, say so — don't guess.
+10. Currency is CAD ($).
+11. You can discuss Meta Ads data (placements, creatives, spend) from the cached CSV data described above.
+12. If asked to change dashboard code, update logic, edit files, or anything beyond data analysis — politely decline and explain you only have read access.
+13. For eco-affiliate data, use project_id="eco-affiliate" in the tool.
 """
 
         # ── Chat UI ──
@@ -2826,20 +2828,126 @@ RULES:
             with st.chat_message("user"):
                 st.markdown(_user_input)
 
-            # Call Claude API
+            # ── Tool definition: let Claude run SELECT queries against BigQuery ──
+            _bq_tool = {
+                "name": "run_bigquery_select",
+                "description": (
+                    "Execute a read-only SELECT query against BigQuery and return the results. "
+                    "Use this tool whenever the user asks a data question that requires querying the database. "
+                    "ALWAYS use this tool instead of just showing SQL — the user expects actual results. "
+                    "Available projects: 'ecolinew' (main) and 'eco-affiliate'."
+                ),
+                "input_schema": {
+                    "type": "object",
+                    "properties": {
+                        "sql": {
+                            "type": "string",
+                            "description": "A SELECT SQL query (BigQuery dialect). Must start with SELECT — no INSERT/UPDATE/DELETE/CREATE/DROP/ALTER.",
+                        },
+                        "project_id": {
+                            "type": "string",
+                            "enum": ["ecolinew", "eco-affiliate"],
+                            "description": "Which BigQuery project to query. Default: ecolinew.",
+                        },
+                    },
+                    "required": ["sql"],
+                },
+            }
+
+            def _safe_run_query(sql: str, project_id: str = "ecolinew") -> str:
+                """Run a SELECT query with safety checks. Returns formatted result or error."""
+                import re as _re
+                stripped = sql.strip().rstrip(";").strip()
+                if not _re.match(r"(?i)^(SELECT|WITH)\b", stripped):
+                    return "❌ Only SELECT / WITH queries are allowed."
+                banned = _re.search(r"(?i)\b(INSERT|UPDATE|DELETE|DROP|CREATE|ALTER|TRUNCATE|MERGE)\b", stripped)
+                if banned:
+                    return f"❌ Forbidden keyword: {banned.group()}"
+                try:
+                    result_df = run_query(stripped, project_id)
+                    if result_df.empty:
+                        return "Query returned 0 rows."
+                    # Limit output to avoid huge responses
+                    if len(result_df) > 200:
+                        result_df = result_df.head(200)
+                        note = f"\n(Showing first 200 of {len(result_df)} rows)"
+                    else:
+                        note = ""
+                    return result_df.to_markdown(index=False) + note
+                except Exception as ex:
+                    return f"❌ Query error: {str(ex)[:500]}"
+
+            # Call Claude API with tool use
             with st.chat_message("assistant"):
                 with st.spinner("Думаю..."):
                     try:
                         _api_messages = [{"role": m["role"], "content": m["content"]} for m in st.session_state.da_messages]
                         _response = _client.messages.create(
                             model="claude-haiku-4-5-20251001",
-                            max_tokens=2048,
+                            max_tokens=4096,
                             system=_da_context,
                             messages=_api_messages,
+                            tools=[_bq_tool],
                         )
-                        _answer = _response.content[0].text
-                        st.markdown(_answer)
+
+                        # Handle tool use loop (Claude may call BQ, then summarize)
+                        _full_answer_parts = []
+                        _tool_loop = 0
+                        _max_loops = 5  # safety limit
+
+                        while _tool_loop < _max_loops:
+                            _tool_loop += 1
+                            _has_tool_use = False
+
+                            for _block in _response.content:
+                                if _block.type == "text" and _block.text.strip():
+                                    _full_answer_parts.append(_block.text)
+                                elif _block.type == "tool_use":
+                                    _has_tool_use = True
+                                    _tool_name = _block.name
+                                    _tool_input = _block.input
+                                    _tool_id = _block.id
+                                    _sql = _tool_input.get("sql", "")
+                                    _proj = _tool_input.get("project_id", "ecolinew")
+
+                                    # Show the query being run
+                                    with st.expander(f"🔍 SQL → {_proj}", expanded=False):
+                                        st.code(_sql, language="sql")
+
+                                    _result_text = _safe_run_query(_sql, _proj)
+
+                                    # Show raw result table
+                                    if not _result_text.startswith("❌") and _result_text != "Query returned 0 rows.":
+                                        with st.expander("📊 Raw result", expanded=False):
+                                            st.markdown(_result_text)
+
+                                    # Send tool result back to Claude for summary
+                                    _api_messages.append({"role": "assistant", "content": _response.content})
+                                    _api_messages.append({
+                                        "role": "user",
+                                        "content": [{
+                                            "type": "tool_result",
+                                            "tool_use_id": _tool_id,
+                                            "content": _result_text[:15000],  # limit size
+                                        }],
+                                    })
+                                    _response = _client.messages.create(
+                                        model="claude-haiku-4-5-20251001",
+                                        max_tokens=4096,
+                                        system=_da_context,
+                                        messages=_api_messages,
+                                        tools=[_bq_tool],
+                                    )
+
+                            if not _has_tool_use:
+                                break
+
+                        # Display final text answer
+                        _answer = "\n\n".join(_full_answer_parts)
+                        if _answer.strip():
+                            st.markdown(_answer)
                         st.session_state.da_messages.append({"role": "assistant", "content": _answer})
+
                     except Exception as e:
                         _err_msg = f"❌ Ошибка API: {str(e)}"
                         st.error(_err_msg)
